@@ -66,6 +66,7 @@ ScrollView {
         rightPadding: 20.0
         topPadding: 20.0
         bottomPadding: 20.0
+        implicitLayoutAnimationsEnabled: false
         WebImageView {
             id: webimage
             horizontalAlignment: HorizontalAlignment.Center
@@ -85,6 +86,7 @@ ScrollView {
                 orientation: LayoutOrientation.LeftToRight
 
             }
+            implicitLayoutAnimationsEnabled: false
             Label {
                 textStyle.fontSize: FontSize.XXSmall
                 textStyle.fontWeight: FontWeight.W100
@@ -94,6 +96,7 @@ ScrollView {
                 layoutProperties: StackLayoutProperties {
                     spaceQuota: 1.0
                 }
+                implicitLayoutAnimationsEnabled: false
             }
             Label {
                 textStyle.fontSize: FontSize.XXSmall
@@ -111,6 +114,7 @@ ScrollView {
                         }
                     }
                 }
+                implicitLayoutAnimationsEnabled: false
             }
         }
         Label {
@@ -118,6 +122,7 @@ ScrollView {
             text: hpcontent
             topMargin: 50.0
             bottomMargin: 50.0
+            implicitLayoutAnimationsEnabled: false
         }
         Label {
             horizontalAlignment: HorizontalAlignment.Fill
@@ -125,6 +130,7 @@ ScrollView {
             text: datestring
             textStyle.fontSize: FontSize.XXSmall
             opacity: 0.6
+            implicitLayoutAnimationsEnabled: false
         }
     }
 }

@@ -205,7 +205,8 @@ Page {
                 textStyle.fontSize: FontSize.XSmall
                 opacity: 0.6
                 verticalAlignment: VerticalAlignment.Fill
-                horizontalAlignment: HorizontalAlignment.Left
+                horizontalAlignment: HorizontalAlignment.Fill
+                textStyle.textAlign: TextAlign.Right
             }
         }
     }
