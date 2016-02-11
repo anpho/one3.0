@@ -4,8 +4,8 @@ import bb.system 1.2
 Page {
     property variant nav
     function setActive() {
-        if (hplistview.setActive) {
-            hplistview.setActive();
+        if (essaylistview.setActive) {
+            essaylistview.setActive();
         }
     }
     titleBar: TitleBar {
@@ -29,14 +29,17 @@ Page {
                         }
                     }
                 }
-                ImageView {
-                    imageSource: "asset:///res/nav_title.png"
+                Label {
+                    text: qsTr("Articles")
                     verticalAlignment: VerticalAlignment.Center
-                    scalingMethod: ScalingMethod.AspectFit
+                    textStyle.fontSize: FontSize.Large
+                    horizontalAlignment: HorizontalAlignment.Fill
                     layoutProperties: StackLayoutProperties {
                         spaceQuota: 1.0
 
                     }
+                    textStyle.textAlign: TextAlign.Center
+
                 }
                 ImageView {
                     imageSource: "asset:///icon/ic_search.png"
@@ -58,8 +61,8 @@ Page {
     actionBarAutoHideBehavior: ActionBarAutoHideBehavior.HideOnScroll
     actionBarVisibility: ChromeVisibility.Compact
     ListView {
-        id: hplistview
-        property string endpoint: "http://v3.wufazhuce.com:8000/api/hp/idlist/0"
+        id: essaylistview
+        property string endpoint: "http://v3.wufazhuce.com:8000/api/reading/index/"
         attachedObjects: [
             DisplayInfo {
                 id: di
@@ -90,19 +93,56 @@ Page {
         }
         verticalAlignment: VerticalAlignment.Fill
         property int width: di.pixelSize.width
+        function showEssay(essayid) {
+            // 显示短篇
+            var essayview = Qt.createComponent("Detail-EssayView.qml").createObject(nav);
+            essayview.essayid = essayid;
+            essayview.nav = nav;
+            nav.push(essayview)
+        }
         listItemComponents: [
             ListItemComponent {
                 type: ""
-                SingleHomepageView {
-                    hid: ListItemData.id
+                SingleEssayView {
                     id: shv
                     verticalAlignment: VerticalAlignment.Fill
                     preferredWidth: shv.ListItem.view.width
+                    // Set property
+                    essay_title: ListItemData.essay.hp_title
+                    essay_author: ListItemData.essay.author[0].user_name
+                    essay_authorid: ListItemData.essay.author[0].user_id
+                    essay_imgurl: ListItemData.essay.author[0].web_url
+                    essay_weibo: ListItemData.essay.author[0].wb_name
+                    essay_id: ListItemData.essay.content_id
+                    essay_intro: ListItemData.essay.guide_word
+                    essay: ListItemData.essay
+                    // serial
+                    serial_author: ListItemData.serial.author.user_name
+                    serial_authorid: ListItemData.serial.author.user_id
+                    serial_id: ListItemData.serial.id
+                    serial_imgurl: ListItemData.serial.author.web_url
+                    serial_intro: ListItemData.serial.excerpt
+                    serial_title: ListItemData.serial.title
+                    serial: ListItemData.serial
+                    // q and a
+                    q_title: ListItemData.question.question_title
+                    q_intro: ListItemData.question.answer_title
+                    q_id: ListItemData.question.question_id
+                    q: ListItemData.question
                     onRequestAuthorView: {
-                        shv.ListItem.view.invokeAuthorView(authorid)
+
                     }
-                    onRequestImageView: {
-                        shv.ListItem.view.invokeImageViewer(src)
+                    onRequestEssay: {
+                        shv.ListItem.view.showEssay(essayid)
+                    }
+                    onRequestQA: {
+
+                    }
+                    onRequestSerial: {
+
+                    }
+                    onRequestWeibo: {
+
                     }
                 }
             }
@@ -110,17 +150,17 @@ Page {
         function invokeAuthorView(authorid) {
             //TODO AUTHORVIEW
         }
-        function invokeImageViewer(imgsrc) {
-            _app.viewimage(imgsrc)
-        }
+
         onCreationCompleted: {
             co.ajax("GET", endpoint, [], function(b, d) {
                     if (b) {
                         d = JSON.parse(d);
                         if (d.data) {
-                            for (var i = 0; i < d.data.length; i ++) {
+                            for (var i = 0; i < d.data.essay.length; i ++) {
                                 adm.append({
-                                        "id": d.data[i]
+                                        "essay": d.data.essay[i],
+                                        "serial": d.data.serial[i],
+                                        "question": d.data.question[i]
                                     })
                             }
                         }

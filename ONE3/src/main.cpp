@@ -22,12 +22,19 @@
 #include <QTranslator>
 #include "WebImageView.h"
 #include <Qt/qdeclarativedebug.h>
-
+#include <unistd.h>
 using namespace bb::cascades;
 
 Q_DECL_EXPORT int main(int argc, char **argv)
 {
+    QSettings settings;
+    if (!settings.value("use_dark_theme").isNull()) {
+        qDebug() << "[SETTINGS]use_dark_theme is " << settings.value("use_dark_theme").toString();
+        qputenv("CASCADES_THEME", settings.value("use_dark_theme").toString().toUtf8());
+    }
     qmlRegisterType<WebImageView>("cn.anpho", 1, 0, "WebImageView");
+
+    sleep(1);
 
     Application app(argc, argv);
 

@@ -36,19 +36,23 @@ simulator {
 
 config_pri_assets {
     OTHER_FILES += \
-        $$quote($$BASEDIR/assets/AuthorView.qml) \
-        $$quote($$BASEDIR/assets/Common.js) \
+        $$quote($$BASEDIR/assets/Common.qml) \
+        $$quote($$BASEDIR/assets/Detail-EssayView.qml) \
+        $$quote($$BASEDIR/assets/ListEssayView.qml) \
         $$quote($$BASEDIR/assets/ListHomepageView.qml) \
         $$quote($$BASEDIR/assets/Page-About.qml) \
+        $$quote($$BASEDIR/assets/Page-Settings.qml) \
         $$quote($$BASEDIR/assets/SingleEssayView.qml) \
         $$quote($$BASEDIR/assets/SingleHomepageView.qml) \
-        $$quote($$BASEDIR/assets/SingleSerialView.qml) \
         $$quote($$BASEDIR/assets/WebBrowser.qml) \
+        $$quote($$BASEDIR/assets/font/BradleyHandITCTTBold.ttf) \
+        $$quote($$BASEDIR/assets/icon/ic_all.png) \
         $$quote($$BASEDIR/assets/icon/ic_diagnostics.png) \
         $$quote($$BASEDIR/assets/icon/ic_doctype_generic.png) \
         $$quote($$BASEDIR/assets/icon/ic_doctype_music.png) \
         $$quote($$BASEDIR/assets/icon/ic_doctype_video.png) \
         $$quote($$BASEDIR/assets/icon/ic_email_dk.png) \
+        $$quote($$BASEDIR/assets/icon/ic_help.png) \
         $$quote($$BASEDIR/assets/icon/ic_home.png) \
         $$quote($$BASEDIR/assets/icon/ic_info.png) \
         $$quote($$BASEDIR/assets/icon/ic_microphone.png) \
@@ -58,10 +62,14 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/icon/ic_open_link.png) \
         $$quote($$BASEDIR/assets/icon/ic_pause.png) \
         $$quote($$BASEDIR/assets/icon/ic_play.png) \
+        $$quote($$BASEDIR/assets/icon/ic_search.png) \
         $$quote($$BASEDIR/assets/icon/ic_share.png) \
         $$quote($$BASEDIR/assets/icon/ic_speaker_dk.png) \
         $$quote($$BASEDIR/assets/icon/ic_speaker_mute.png) \
-        $$quote($$BASEDIR/assets/main.qml)
+        $$quote($$BASEDIR/assets/main.qml) \
+        $$quote($$BASEDIR/assets/res/144.png) \
+        $$quote($$BASEDIR/assets/res/icon.png) \
+        $$quote($$BASEDIR/assets/res/nav_title.png)
 }
 
 config_pri_source_group1 {
@@ -89,9 +97,15 @@ lupdate_inclusion {
         $$quote($$BASEDIR/../assets/*.qml) \
         $$quote($$BASEDIR/../assets/*.js) \
         $$quote($$BASEDIR/../assets/*.qs) \
+        $$quote($$BASEDIR/../assets/font/*.qml) \
+        $$quote($$BASEDIR/../assets/font/*.js) \
+        $$quote($$BASEDIR/../assets/font/*.qs) \
         $$quote($$BASEDIR/../assets/icon/*.qml) \
         $$quote($$BASEDIR/../assets/icon/*.js) \
-        $$quote($$BASEDIR/../assets/icon/*.qs)
+        $$quote($$BASEDIR/../assets/icon/*.qs) \
+        $$quote($$BASEDIR/../assets/res/*.qml) \
+        $$quote($$BASEDIR/../assets/res/*.js) \
+        $$quote($$BASEDIR/../assets/res/*.qs)
 
     HEADERS += \
         $$quote($$BASEDIR/../src/*.h) \

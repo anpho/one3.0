@@ -18,9 +18,16 @@
 #define ApplicationUI_HPP_
 
 #include <QObject>
-
+#include <bb/system/InvokeManager>
+#include <bb/cascades/InvokeQuery>
+#include <bb/cascades/Invocation>
+#include <bb/PpsObject>
 namespace bb
 {
+    namespace system
+    {
+        class InvokeManager;
+    }
     namespace cascades
     {
         class LocaleHandler;
@@ -34,17 +41,26 @@ class QTranslator;
  *
  * Use this object to create and init app UI, to create context objects, to register the new meta types etc.
  */
-class ApplicationUI : public QObject
+class ApplicationUI: public QObject
 {
     Q_OBJECT
 public:
+    Q_INVOKABLE
+    static void setv(const QString &objectName, const QString &inputValue);Q_INVOKABLE
+    static QString getv(const QString &objectName, const QString &defaultValue);Q_INVOKABLE
+    void invokeVideo(const QString &title, const QString &url);Q_INVOKABLE
+    void viewimage(QString path);Q_INVOKABLE
+    QString html2text(QString htmlString);
     ApplicationUI();
-    virtual ~ApplicationUI() {}
+    virtual ~ApplicationUI()
+    {
+    }
 private slots:
     void onSystemLanguageChanged();
 private:
     QTranslator* m_pTranslator;
     bb::cascades::LocaleHandler* m_pLocaleHandler;
+    bb::system::InvokeManager* m_pInvokeManager;
 };
 
 #endif /* ApplicationUI_HPP_ */

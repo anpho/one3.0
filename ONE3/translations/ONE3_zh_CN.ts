@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0">
+<TS version="2.0" language="zh_CN">
 <context>
     <name>Detail-EssayView</name>
     <message>
@@ -11,12 +11,12 @@
     <message>
         <location filename="../assets/Detail-EssayView.qml" line="46"/>
         <source>Error : %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">错误信息：%1</translation>
     </message>
     <message>
         <location filename="../assets/Detail-EssayView.qml" line="100"/>
         <source>Essay</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">短篇</translation>
     </message>
     <message>
         <location filename="../assets/Detail-EssayView.qml" line="102"/>
@@ -37,22 +37,22 @@
     <message>
         <location filename="../assets/Page-About.qml" line="14"/>
         <source>Copyrights</source>
-        <translation type="unfinished"></translation>
+        <translation>版权说明</translation>
     </message>
     <message>
         <location filename="../assets/Page-About.qml" line="39"/>
         <source>ABOUT THIS APP</source>
-        <translation type="unfinished"></translation>
+        <translation>关于这个应用程序</translation>
     </message>
     <message>
         <location filename="../assets/Page-About.qml" line="40"/>
         <source>UNOFFICIAL ONE</source>
-        <translation type="unfinished"></translation>
+        <translation>非官方版本</translation>
     </message>
     <message>
         <location filename="../assets/Page-About.qml" line="50"/>
         <source>one for BlackBerry 10, </source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../assets/Page-About.qml" line="75"/>
@@ -67,7 +67,7 @@
     <message>
         <location filename="../assets/Page-About.qml" line="67"/>
         <source>ABOUT THE DEVELOPER</source>
-        <translation type="unfinished"></translation>
+        <translation>关于开发人员</translation>
     </message>
 </context>
 <context>
@@ -75,27 +75,27 @@
     <message>
         <location filename="../assets/Page-Settings.qml" line="5"/>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>设置</translation>
     </message>
     <message>
         <location filename="../assets/Page-Settings.qml" line="12"/>
         <source>VISUAL SETTINGS</source>
-        <translation type="unfinished"></translation>
+        <translation>视觉效果设置</translation>
     </message>
     <message>
         <location filename="../assets/Page-Settings.qml" line="24"/>
         <source>Use Dark Theme</source>
-        <translation type="unfinished"></translation>
+        <translation>使用暗调主题</translation>
     </message>
     <message>
         <location filename="../assets/Page-Settings.qml" line="47"/>
         <source>Turn this on to save battery on OLED screen devices.</source>
-        <translation type="unfinished"></translation>
+        <translation>切换到此模式以节省OLED屏幕设备的电源。</translation>
     </message>
     <message>
         <location filename="../assets/Page-Settings.qml" line="55"/>
         <source>-- one --</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -103,7 +103,7 @@
     <message>
         <location filename="../assets/SingleHomepageView.qml" line="13"/>
         <source>Error : %1</source>
-        <translation type="unfinished"></translation>
+        <translation>错误信息：%1</translation>
     </message>
 </context>
 <context>
@@ -111,22 +111,30 @@
     <message>
         <location filename="../assets/main.qml" line="40"/>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation>主页</translation>
     </message>
     <message>
         <location filename="../assets/main.qml" line="53"/>
         <source>Essay</source>
-        <translation type="unfinished"></translation>
+        <translation>短篇</translation>
+    </message>
+    <message>
+        <source>Serials</source>
+        <translation type="obsolete">连载</translation>
+    </message>
+    <message>
+        <source>Q&amp;A</source>
+        <translation type="obsolete">问答</translation>
     </message>
     <message>
         <location filename="../assets/main.qml" line="88"/>
         <source>Music</source>
-        <translation type="unfinished"></translation>
+        <translation>音乐</translation>
     </message>
     <message>
         <location filename="../assets/main.qml" line="98"/>
         <source>Movie</source>
-        <translation type="unfinished"></translation>
+        <translation>电影</translation>
     </message>
 </context>
 </TS>
