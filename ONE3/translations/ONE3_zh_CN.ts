@@ -32,39 +32,39 @@
 <context>
     <name>Detail-MovieView</name>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="43"/>
+        <location filename="../assets/Detail-MovieView.qml" line="44"/>
         <source>Back</source>
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="78"/>
-        <location filename="../assets/Detail-MovieView.qml" line="98"/>
+        <location filename="../assets/Detail-MovieView.qml" line="79"/>
+        <location filename="../assets/Detail-MovieView.qml" line="99"/>
         <source>Error: %1</source>
         <translation>错误信息：%1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="84"/>
-        <location filename="../assets/Detail-MovieView.qml" line="103"/>
+        <location filename="../assets/Detail-MovieView.qml" line="85"/>
+        <location filename="../assets/Detail-MovieView.qml" line="104"/>
         <source>Error : %1</source>
         <translation>错误信息：%1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="145"/>
+        <location filename="../assets/Detail-MovieView.qml" line="146"/>
         <source>Trailer</source>
         <translation>播放预告片</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="173"/>
+        <location filename="../assets/Detail-MovieView.qml" line="174"/>
         <source>Intro</source>
         <translation>电影简介</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="188"/>
+        <location filename="../assets/Detail-MovieView.qml" line="189"/>
         <source>Staff</source>
         <translation>演职员</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="204"/>
+        <location filename="../assets/Detail-MovieView.qml" line="205"/>
         <source>Story</source>
         <translation>电影故事</translation>
     </message>

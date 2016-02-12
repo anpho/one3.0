@@ -21,6 +21,7 @@ Page {
             coverimage.url = cover
         }
     }
+    id: pageroot
     property string video_url //video
     property string title // title
     property string info // info
@@ -35,7 +36,7 @@ Page {
     property string s_content
 
     titleBar: TitleBar {
-        title: title
+        title: pageroot.title
         dismissAction: ActionItem {
             onTriggered: {
                 nav.pop();

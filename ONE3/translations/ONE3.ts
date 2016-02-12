@@ -32,39 +32,39 @@
 <context>
     <name>Detail-MovieView</name>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="43"/>
+        <location filename="../assets/Detail-MovieView.qml" line="44"/>
         <source>Back</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="78"/>
-        <location filename="../assets/Detail-MovieView.qml" line="98"/>
+        <location filename="../assets/Detail-MovieView.qml" line="79"/>
+        <location filename="../assets/Detail-MovieView.qml" line="99"/>
         <source>Error: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="84"/>
-        <location filename="../assets/Detail-MovieView.qml" line="103"/>
+        <location filename="../assets/Detail-MovieView.qml" line="85"/>
+        <location filename="../assets/Detail-MovieView.qml" line="104"/>
         <source>Error : %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="145"/>
+        <location filename="../assets/Detail-MovieView.qml" line="146"/>
         <source>Trailer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="173"/>
+        <location filename="../assets/Detail-MovieView.qml" line="174"/>
         <source>Intro</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="188"/>
+        <location filename="../assets/Detail-MovieView.qml" line="189"/>
         <source>Staff</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="204"/>
+        <location filename="../assets/Detail-MovieView.qml" line="205"/>
         <source>Story</source>
         <translation type="unfinished"></translation>
     </message>
