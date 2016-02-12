@@ -30,6 +30,46 @@
     </message>
 </context>
 <context>
+    <name>Detail-MovieView</name>
+    <message>
+        <location filename="../assets/Detail-MovieView.qml" line="43"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Detail-MovieView.qml" line="78"/>
+        <location filename="../assets/Detail-MovieView.qml" line="98"/>
+        <source>Error: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Detail-MovieView.qml" line="84"/>
+        <location filename="../assets/Detail-MovieView.qml" line="103"/>
+        <source>Error : %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Detail-MovieView.qml" line="145"/>
+        <source>Trailer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Detail-MovieView.qml" line="173"/>
+        <source>Intro</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Detail-MovieView.qml" line="188"/>
+        <source>Staff</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Detail-MovieView.qml" line="204"/>
+        <source>Story</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Detail-QAView</name>
     <message>
         <location filename="../assets/Detail-QAView.qml" line="28"/>
@@ -90,6 +130,28 @@
     <message>
         <location filename="../assets/ListEssayView.qml" line="30"/>
         <source>Articles</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ListMovieView</name>
+    <message>
+        <location filename="../assets/ListMovieView.qml" line="40"/>
+        <source>Movie</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/ListMovieView.qml" line="108"/>
+        <location filename="../assets/ListMovieView.qml" line="113"/>
+        <source>Error : %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ListMusicView</name>
+    <message>
+        <location filename="../assets/ListMusicView.qml" line="30"/>
+        <source>Music</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

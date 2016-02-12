@@ -30,31 +30,71 @@
     </message>
 </context>
 <context>
+    <name>Detail-MovieView</name>
+    <message>
+        <location filename="../assets/Detail-MovieView.qml" line="43"/>
+        <source>Back</source>
+        <translation>返回</translation>
+    </message>
+    <message>
+        <location filename="../assets/Detail-MovieView.qml" line="78"/>
+        <location filename="../assets/Detail-MovieView.qml" line="98"/>
+        <source>Error: %1</source>
+        <translation>错误信息：%1</translation>
+    </message>
+    <message>
+        <location filename="../assets/Detail-MovieView.qml" line="84"/>
+        <location filename="../assets/Detail-MovieView.qml" line="103"/>
+        <source>Error : %1</source>
+        <translation>错误信息：%1</translation>
+    </message>
+    <message>
+        <location filename="../assets/Detail-MovieView.qml" line="145"/>
+        <source>Trailer</source>
+        <translation>播放预告片</translation>
+    </message>
+    <message>
+        <location filename="../assets/Detail-MovieView.qml" line="173"/>
+        <source>Intro</source>
+        <translation>电影简介</translation>
+    </message>
+    <message>
+        <location filename="../assets/Detail-MovieView.qml" line="188"/>
+        <source>Staff</source>
+        <translation>演职员</translation>
+    </message>
+    <message>
+        <location filename="../assets/Detail-MovieView.qml" line="204"/>
+        <source>Story</source>
+        <translation>电影故事</translation>
+    </message>
+</context>
+<context>
     <name>Detail-QAView</name>
     <message>
         <location filename="../assets/Detail-QAView.qml" line="28"/>
         <source>Error: %1</source>
-        <translation type="unfinished">错误信息：%1</translation>
+        <translation>错误信息：%1</translation>
     </message>
     <message>
         <location filename="../assets/Detail-QAView.qml" line="33"/>
         <source>Error : %1</source>
-        <translation type="unfinished">错误信息：%1</translation>
+        <translation>错误信息：%1</translation>
     </message>
     <message>
         <location filename="../assets/Detail-QAView.qml" line="95"/>
         <source>Q&amp;A</source>
-        <translation type="unfinished">问答</translation>
+        <translation>问答</translation>
     </message>
     <message>
         <location filename="../assets/Detail-QAView.qml" line="97"/>
         <source>Back</source>
-        <translation type="unfinished">返回</translation>
+        <translation>返回</translation>
     </message>
     <message>
         <location filename="../assets/Detail-QAView.qml" line="171"/>
         <source>RELATED ARTICLES</source>
-        <translation type="unfinished">相关作品</translation>
+        <translation>相关作品</translation>
     </message>
 </context>
 <context>
@@ -91,6 +131,28 @@
         <location filename="../assets/ListEssayView.qml" line="30"/>
         <source>Articles</source>
         <translation>阅读</translation>
+    </message>
+</context>
+<context>
+    <name>ListMovieView</name>
+    <message>
+        <location filename="../assets/ListMovieView.qml" line="40"/>
+        <source>Movie</source>
+        <translation>电影</translation>
+    </message>
+    <message>
+        <location filename="../assets/ListMovieView.qml" line="108"/>
+        <location filename="../assets/ListMovieView.qml" line="113"/>
+        <source>Error : %1</source>
+        <translation>错误信息：%1</translation>
+    </message>
+</context>
+<context>
+    <name>ListMusicView</name>
+    <message>
+        <location filename="../assets/ListMusicView.qml" line="30"/>
+        <source>Music</source>
+        <translation>音乐</translation>
     </message>
 </context>
 <context>
@@ -172,12 +234,12 @@
     <message>
         <location filename="../assets/SingleMusicView.qml" line="13"/>
         <source>Error : %1</source>
-        <translation type="unfinished">错误信息：%1</translation>
+        <translation>错误信息：%1</translation>
     </message>
     <message>
         <location filename="../assets/SingleMusicView.qml" line="234"/>
         <source>RELATED MUSIC</source>
-        <translation type="unfinished"></translation>
+        <translation>相关作品</translation>
     </message>
 </context>
 <context>
@@ -185,7 +247,7 @@
     <message>
         <location filename="../assets/WebBrowser.qml" line="11"/>
         <source>Back</source>
-        <translation type="unfinished">返回</translation>
+        <translation>返回</translation>
     </message>
 </context>
 <context>

@@ -83,6 +83,9 @@ TabbedPane {
             id: nav_movie
             onPopTransitionEnded: co.onPopTransitionEnded(page, nav_movie)
             onPushTransitionEnded: co.onPushTransitionEnded(page, nav_movie)
+            ListMovieView {
+                nav: nav_movie
+            }
         }
     }
     attachedObjects: [

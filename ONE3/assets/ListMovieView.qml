@@ -1,10 +1,20 @@
 import bb.cascades 1.4
-import bb.device 1.4
 import bb.system 1.2
 Page {
     property variant nav
-    function setActive() {
-    }
+
+    // API
+    property string endpoint: "http://v3.wufazhuce.com:8000/api/movie/list/0"
+    attachedObjects: [
+        Common {
+            id: co
+        },
+        SystemToast {
+            id: sst
+        }
+    ]
+    actionBarAutoHideBehavior: ActionBarAutoHideBehavior.HideOnScroll
+    actionBarVisibility: ChromeVisibility.Compact
     titleBar: TitleBar {
         kind: TitleBarKind.FreeForm
         kindProperties: FreeFormTitleBarKindProperties {
@@ -27,7 +37,7 @@ Page {
                     }
                 }
                 Label {
-                    text: qsTr("Music")
+                    text: qsTr("Movie")
                     textStyle.fontSize: FontSize.Large
                     verticalAlignment: VerticalAlignment.Center
                     layoutProperties: StackLayoutProperties {
@@ -55,84 +65,56 @@ Page {
         }
 
     }
-    actionBarAutoHideBehavior: ActionBarAutoHideBehavior.HideOnScroll
-    actionBarVisibility: ChromeVisibility.Compact
     ListView {
-        id: mlistview
-        property string endpoint: "http://v3.wufazhuce.com:8000/api/music/idlist/0"
-        attachedObjects: [
-            DisplayInfo {
-                id: di
-            },
-            Common {
-                id: co
-            },
-            SystemToast {
-                id: sst
-            },
-            ListScrollStateHandler {
-                onFirstVisibleItemChanged: {
-                    var page = adm.data(firstVisibleItem)
-                    if (page && page.setActive) {
-                        page.setActive();
-                    }
-                }
-            }
-        ]
         dataModel: ArrayDataModel {
             id: adm
         }
         scrollIndicatorMode: ScrollIndicatorMode.ProportionalBar
         snapMode: SnapMode.LeadingEdge
-        flickMode: FlickMode.SingleItem
-        layout: StackListLayout {
-            orientation: LayoutOrientation.LeftToRight
-            headerMode: ListHeaderMode.None
+        bufferedScrollingEnabled: true
+        horizontalAlignment: HorizontalAlignment.Fill
+        implicitLayoutAnimationsEnabled: false
+        function showMovie(movieID) {
+            var movpage = Qt.createComponent("Detail-MovieView.qml").createObject(nav);
+            movpage.mid = movieID;
+            movpage.nav = nav;
+            nav.push(movpage)
         }
-        verticalAlignment: VerticalAlignment.Fill
-        property int width: di.pixelSize.width
         listItemComponents: [
             ListItemComponent {
                 type: ""
-                SingleMusicView {
-                    music_id: ListItemData.id
+                SingleMovieEntryView {
                     id: shv
-                    verticalAlignment: VerticalAlignment.Fill
-                    preferredWidth: shv.ListItem.view.width
-                    onRequestWebView: {
-                        shv.ListItem.view.showweb(uri)
+                    onRequestMovieView: {
+                        shv.ListItem.view.showMovie(movieid)
                     }
+                    m_cover: ListItemData.cover
+                    m_id: ListItemData.id
+                    m_score: "" + ListItemData.score
+                    m_title: ListItemData.title
                 }
+
             }
         ]
-        function showweb(url) {
-            var webpage = Qt.createComponent("WebBrowser.qml").createObject(nav);
-            webpage.nav = nav
-            webpage.uri = url;
-            nav.push(webpage)
-        }
-        function html2text(story) {
-            return _app.html2text(story);
-        }
+        builtInShortcutsEnabled: true
+        scrollRole: ScrollRole.Main
         onCreationCompleted: {
             co.ajax("GET", endpoint, [], function(b, d) {
                     if (b) {
-                        d = JSON.parse(d);
-                        if (d.data) {
-                            for (var i = 0; i < d.data.length; i ++) {
-                                adm.append({
-                                        "id": d.data[i]
-                                    })
-                            }
+                        try {
+                            d = JSON.parse(d).data;
+                            adm.append(d)
+                        } catch (e) {
+                            sst.body = qsTr("Error : %1").arg(e)
+                            console.log(sst.body)
+                            sst.show()
                         }
                     } else {
-                        sst.body = d;
-                        sst.show();
+                        sst.body = qsTr("Error : %1").arg(d)
+                        console.log(sst.body)
+                        sst.show()
                     }
                 }, [], false)
         }
-        scrollRole: ScrollRole.None
-        builtInShortcutsEnabled: false
     }
-
 }

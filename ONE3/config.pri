@@ -39,15 +39,18 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/ArticleItemTemplate.qml) \
         $$quote($$BASEDIR/assets/Common.qml) \
         $$quote($$BASEDIR/assets/Detail-EssayView.qml) \
+        $$quote($$BASEDIR/assets/Detail-MovieView.qml) \
         $$quote($$BASEDIR/assets/Detail-QAView.qml) \
         $$quote($$BASEDIR/assets/Detail-SerialView.qml) \
         $$quote($$BASEDIR/assets/ListEssayView.qml) \
         $$quote($$BASEDIR/assets/ListHomepageView.qml) \
+        $$quote($$BASEDIR/assets/ListMovieView.qml) \
         $$quote($$BASEDIR/assets/ListMusicView.qml) \
         $$quote($$BASEDIR/assets/Page-About.qml) \
         $$quote($$BASEDIR/assets/Page-Settings.qml) \
         $$quote($$BASEDIR/assets/SingleEssayView.qml) \
         $$quote($$BASEDIR/assets/SingleHomepageView.qml) \
+        $$quote($$BASEDIR/assets/SingleMovieEntryView.qml) \
         $$quote($$BASEDIR/assets/SingleMusicView.qml) \
         $$quote($$BASEDIR/assets/WebBrowser.qml) \
         $$quote($$BASEDIR/assets/font/BradleyHandITCTTBold.ttf) \
@@ -76,6 +79,7 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/main.qml) \
         $$quote($$BASEDIR/assets/res/144.png) \
         $$quote($$BASEDIR/assets/res/icon.png) \
+        $$quote($$BASEDIR/assets/res/movie_play_189px_1189635_easyicon.net.png) \
         $$quote($$BASEDIR/assets/res/music_cover.png) \
         $$quote($$BASEDIR/assets/res/music_tone.png) \
         $$quote($$BASEDIR/assets/res/nav_title.png)
