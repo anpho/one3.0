@@ -100,6 +100,12 @@ Page {
             essayview.nav = nav;
             nav.push(essayview)
         }
+        function showSerial(serialid) {
+            var serialview = Qt.createComponent("Detail-SerialView.qml").createObject(nav);
+            serialview.serialid = serialid
+            serialview.nav = nav;
+            nav.push(serialview)
+        }
         listItemComponents: [
             ListItemComponent {
                 type: ""
@@ -139,7 +145,7 @@ Page {
 
                     }
                     onRequestSerial: {
-
+                        shv.ListItem.view.showSerial(serialid)
                     }
                     onRequestWeibo: {
 

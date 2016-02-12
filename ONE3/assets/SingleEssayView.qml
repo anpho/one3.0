@@ -48,7 +48,7 @@ ScrollView {
         }
         ArticleItemTemplate {
             onReqDetail: {
-                requestSerial(essay_id)
+                requestSerial(serial_id)
             }
             tid: serial_id
             leftImage: "asset:///icon/ic_notes.png"
@@ -59,7 +59,7 @@ ScrollView {
         }
         ArticleItemTemplate {
             onReqDetail: {
-                requestQA(essay_id)
+                requestQA(q_id)
             }
             leftImage: "asset:///icon/ic_help.png"
             ttitle: q_title

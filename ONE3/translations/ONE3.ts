@@ -30,6 +30,34 @@
     </message>
 </context>
 <context>
+    <name>Detail-SerialView</name>
+    <message>
+        <location filename="../assets/Detail-SerialView.qml" line="39"/>
+        <source>Error: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Detail-SerialView.qml" line="44"/>
+        <source>Error : %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Detail-SerialView.qml" line="137"/>
+        <source>Serials</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Detail-SerialView.qml" line="139"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Detail-SerialView.qml" line="252"/>
+        <source>RELATED ARTICLES</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ListEssayView</name>
     <message>
         <location filename="../assets/ListEssayView.qml" line="33"/>

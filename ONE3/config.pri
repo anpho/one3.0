@@ -39,6 +39,7 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/ArticleItemTemplate.qml) \
         $$quote($$BASEDIR/assets/Common.qml) \
         $$quote($$BASEDIR/assets/Detail-EssayView.qml) \
+        $$quote($$BASEDIR/assets/Detail-SerialView.qml) \
         $$quote($$BASEDIR/assets/ListEssayView.qml) \
         $$quote($$BASEDIR/assets/ListHomepageView.qml) \
         $$quote($$BASEDIR/assets/Page-About.qml) \

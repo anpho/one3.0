@@ -1,8 +1,9 @@
 1
-35
+36
 ArticleItemTemplate.qml
 Common.qml
 Detail-EssayView.qml
+Detail-SerialView.qml
 font/BradleyHandITCTTBold.ttf
 icon/ic_all.png
 icon/ic_diagnostics.png
