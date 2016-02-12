@@ -4,9 +4,6 @@ import bb.system 1.2
 Page {
     property variant nav
     function setActive() {
-        if (essaylistview.setActive) {
-            essaylistview.setActive();
-        }
     }
     titleBar: TitleBar {
         kind: TitleBarKind.FreeForm
@@ -106,6 +103,12 @@ Page {
             serialview.nav = nav;
             nav.push(serialview)
         }
+        function showQA(qid) {
+            var qaview = Qt.createComponent("Detail-QAView.qml").createObject(nav);
+            qaview.qid = qid
+            qaview.nav = nav;
+            nav.push(qaview)
+        }
         listItemComponents: [
             ListItemComponent {
                 type: ""
@@ -142,7 +145,7 @@ Page {
                         shv.ListItem.view.showEssay(essayid)
                     }
                     onRequestQA: {
-
+                        shv.ListItem.view.showQA(qid)
                     }
                     onRequestSerial: {
                         shv.ListItem.view.showSerial(serialid)
@@ -176,6 +179,8 @@ Page {
                     }
                 }, [], false)
         }
+        builtInShortcutsEnabled: false
+        scrollRole: ScrollRole.None
     }
 
 }

@@ -5,14 +5,28 @@ Page {
     function setActive() {
         web_scrollview.scrollRole = ScrollRole.Main
     }
+    actions: [
+        ActionItem {
+            ActionBar.placement: ActionBarPlacement.Signature
+            title: qsTr("Back")
+            imageSource: "asset:///icon/ic_previous.png"
+            enabled: webv.canGoBack
+            onTriggered: {
+                webv.goBack()
+            }
+        }
+    ]
+    actionBarVisibility: ChromeVisibility.Compact
     property variant nav
     property alias uri: webv.url
     ScrollView {
         id: web_scrollview
         horizontalAlignment: HorizontalAlignment.Fill
         WebView {
+            preferredHeight: Infinity
             id: webv
             horizontalAlignment: HorizontalAlignment.Fill
+            settings.userAgent: "Mozilla/5.0 (Linux; U; Android 2.3.7; en-us; Nexus One Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
             onNavigationRequested: {
                 var target = request.url;
                 if (request.navigationType == WebNavigationType.OpenWindow) {

@@ -26,14 +26,17 @@ Page {
                         }
                     }
                 }
-                ImageView {
-                    imageSource: "asset:///res/nav_title.png"
+                Label {
+                    text: "Music"
+                    textStyle.fontSize: FontSize.Large
                     verticalAlignment: VerticalAlignment.Center
-                    scalingMethod: ScalingMethod.AspectFit
                     layoutProperties: StackLayoutProperties {
                         spaceQuota: 1.0
 
                     }
+                    horizontalAlignment: HorizontalAlignment.Fill
+                    textStyle.textAlign: TextAlign.Center
+
                 }
                 ImageView {
                     imageSource: "asset:///icon/ic_search.png"
@@ -55,8 +58,8 @@ Page {
     actionBarAutoHideBehavior: ActionBarAutoHideBehavior.HideOnScroll
     actionBarVisibility: ChromeVisibility.Compact
     ListView {
-        id: hplistview
-        property string endpoint: "http://v3.wufazhuce.com:8000/api/hp/idlist/0"
+        id: mlistview
+        property string endpoint: "http://v3.wufazhuce.com:8000/api/music/idlist/0"
         attachedObjects: [
             DisplayInfo {
                 id: di
@@ -69,8 +72,9 @@ Page {
             },
             ListScrollStateHandler {
                 onFirstVisibleItemChanged: {
-                    if (firstVisibleItem.setActive) {
-                        firstVisibleItem.setActive()
+                    var page = adm.data(firstVisibleItem)
+                    if (page && page.setActive) {
+                        page.setActive();
                     }
                 }
             }
@@ -90,25 +94,25 @@ Page {
         listItemComponents: [
             ListItemComponent {
                 type: ""
-                SingleHomepageView {
-                    hid: ListItemData.id
+                SingleMusicView {
+                    music_id: ListItemData.id
                     id: shv
                     verticalAlignment: VerticalAlignment.Fill
                     preferredWidth: shv.ListItem.view.width
-                    onRequestAuthorView: {
-                        shv.ListItem.view.invokeAuthorView(authorid)
-                    }
-                    onRequestImageView: {
-                        shv.ListItem.view.invokeImageViewer(src)
+                    onRequestWebView: {
+                        shv.ListItem.view.showweb(uri)
                     }
                 }
             }
         ]
-        function invokeAuthorView(authorid) {
-            //TODO AUTHORVIEW
+        function showweb(url) {
+            var webpage = Qt.createComponent("WebBrowser.qml").createObject(nav);
+            webpage.nav = nav
+            webpage.uri = url;
+            nav.push(webpage)
         }
-        function invokeImageViewer(imgsrc) {
-            _app.viewimage(imgsrc)
+        function html2text(story) {
+            return _app.html2text(story);
         }
         onCreationCompleted: {
             co.ajax("GET", endpoint, [], function(b, d) {
@@ -127,8 +131,8 @@ Page {
                     }
                 }, [], false)
         }
-        builtInShortcutsEnabled: false
         scrollRole: ScrollRole.None
+        builtInShortcutsEnabled: false
     }
 
 }

@@ -39,13 +39,16 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/ArticleItemTemplate.qml) \
         $$quote($$BASEDIR/assets/Common.qml) \
         $$quote($$BASEDIR/assets/Detail-EssayView.qml) \
+        $$quote($$BASEDIR/assets/Detail-QAView.qml) \
         $$quote($$BASEDIR/assets/Detail-SerialView.qml) \
         $$quote($$BASEDIR/assets/ListEssayView.qml) \
         $$quote($$BASEDIR/assets/ListHomepageView.qml) \
+        $$quote($$BASEDIR/assets/ListMusicView.qml) \
         $$quote($$BASEDIR/assets/Page-About.qml) \
         $$quote($$BASEDIR/assets/Page-Settings.qml) \
         $$quote($$BASEDIR/assets/SingleEssayView.qml) \
         $$quote($$BASEDIR/assets/SingleHomepageView.qml) \
+        $$quote($$BASEDIR/assets/SingleMusicView.qml) \
         $$quote($$BASEDIR/assets/WebBrowser.qml) \
         $$quote($$BASEDIR/assets/font/BradleyHandITCTTBold.ttf) \
         $$quote($$BASEDIR/assets/icon/ic_all.png) \
@@ -59,11 +62,13 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/icon/ic_info.png) \
         $$quote($$BASEDIR/assets/icon/ic_microphone.png) \
         $$quote($$BASEDIR/assets/icon/ic_microphone_mute.png) \
+        $$quote($$BASEDIR/assets/icon/ic_next.png) \
         $$quote($$BASEDIR/assets/icon/ic_notes.png) \
         $$quote($$BASEDIR/assets/icon/ic_open.png) \
         $$quote($$BASEDIR/assets/icon/ic_open_link.png) \
         $$quote($$BASEDIR/assets/icon/ic_pause.png) \
         $$quote($$BASEDIR/assets/icon/ic_play.png) \
+        $$quote($$BASEDIR/assets/icon/ic_previous.png) \
         $$quote($$BASEDIR/assets/icon/ic_search.png) \
         $$quote($$BASEDIR/assets/icon/ic_share.png) \
         $$quote($$BASEDIR/assets/icon/ic_speaker_dk.png) \
@@ -71,6 +76,8 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/main.qml) \
         $$quote($$BASEDIR/assets/res/144.png) \
         $$quote($$BASEDIR/assets/res/icon.png) \
+        $$quote($$BASEDIR/assets/res/music_cover.png) \
+        $$quote($$BASEDIR/assets/res/music_tone.png) \
         $$quote($$BASEDIR/assets/res/nav_title.png)
 }
 

@@ -62,28 +62,6 @@ TabbedPane {
             }
         }
     }
-    /*
-     * Tab { //连载
-     * title: qsTr("Serials") + Retranslate.onLocaleOrLanguageChanged
-     * imageSource: "asset:///icon/ic_notes.png"
-     * property alias nav: nav_serial
-     * NavigationPane {
-     * id: nav_serial
-     * onPopTransitionEnded: co.onPopTransitionEnded(page, nav_serial)
-     * onPushTransitionEnded: co.onPushTransitionEnded(page, nav_serial)
-     * }
-     * }
-     * Tab { //问答
-     * title: qsTr("Q&A") + Retranslate.onLocaleOrLanguageChanged
-     * imageSource: "asset:///icon/ic_help.png"
-     * property alias nav: nav_qa
-     * NavigationPane {
-     * id: nav_qa
-     * onPopTransitionEnded: co.onPopTransitionEnded(page, nav_qa)
-     * onPushTransitionEnded: co.onPushTransitionEnded(page, nav_qa)
-     * }
-     * }
-     */
     Tab { //音乐 tab
         title: qsTr("Music") + Retranslate.onLocaleOrLanguageChanged
         imageSource: "asset:///icon/ic_doctype_music.png"
@@ -92,6 +70,9 @@ TabbedPane {
             id: nav_music
             onPopTransitionEnded: co.onPopTransitionEnded(page, nav_music)
             onPushTransitionEnded: co.onPushTransitionEnded(page, nav_music)
+            ListMusicView {
+                nav: nav_music
+            }
         }
     }
     Tab { //电影 tab
