@@ -31,189 +31,40 @@ ScrollView {
     property string q_id
 
     Container {
-        Container {
-            gestureHandlers: TapHandler {
-                onTapped: {
-                    requestEssay(essay_id)
-                }
+        ArticleItemTemplate {
+            leftImage: "asset:///icon/ic_doctype_generic.png"
+            onReqDetail: {
+                requestEssay(essay_id)
             }
-            layout: StackLayout {
-                orientation: LayoutOrientation.LeftToRight
+            onReqWeibo: {
+                requestWeibo(weibo)
             }
-            topPadding: 20.0
-            leftPadding: 20.0
-            rightPadding: 20.0
-            bottomPadding: 20.0
-            ImageView {
-                verticalAlignment: VerticalAlignment.Top
-                imageSource: "asset:///icon/ic_doctype_generic.png"
-                filterColor: Color.DarkGray
-            }
-            Container {
-                verticalAlignment: VerticalAlignment.Top
-                horizontalAlignment: HorizontalAlignment.Fill
-                layoutProperties: StackLayoutProperties {
-                    spaceQuota: 1.0
-                }
-                leftPadding: 10.0
-                rightPadding: 10.0
-                Label {
-                    text: essay_title
-                    textStyle.fontSize: FontSize.Large
-
-                    multiline: true
-                }
-                Divider {
-
-                }
-                Container {
-                    layout: StackLayout {
-                        orientation: LayoutOrientation.LeftToRight
-
-                    }
-                    WebImageView {
-                        scalingMethod: ScalingMethod.AspectFit
-                        url: essay_imgurl
-                        preferredWidth: ui.du(7)
-                        preferredHeight: ui.du(7)
-                        verticalAlignment: VerticalAlignment.Center
-                    }
-                    Label {
-                        text: essay_author
-                        textStyle.fontSize: FontSize.XSmall
-                        layoutProperties: StackLayoutProperties {
-                            spaceQuota: 1.0
-                        }
-                        opacity: 0.6
-                        verticalAlignment: VerticalAlignment.Center
-                    }
-                    Label {
-                        text: essay_weibo
-                        textStyle.fontSize: FontSize.XSmall
-                        opacity: 0.6
-                        verticalAlignment: VerticalAlignment.Center
-                        textStyle.color: ui.palette.primary
-                        gestureHandlers: TapHandler {
-                            onTapped: {
-                                if (essay_weibo.length > 0) {
-                                    requestWeibo(essay_weibo)
-                                }
-                            }
-                        }
-                    }
-                }
-                Label {
-                    multiline: true
-                    text: essay_intro
-
-                }
-            }
+            tid: essay_id
+            tauthor: essay_author
+            timgurl: essay_imgurl
+            tintro: essay_intro
+            ttitle: essay_title
+            tweibo: essay_weibo
         }
-        Container {
-            gestureHandlers: TapHandler {
-                onTapped: {
-                    requestSerial(serial_id)
-                }
+        ArticleItemTemplate {
+            onReqDetail: {
+                requestSerial(essay_id)
             }
-            layout: StackLayout {
-                orientation: LayoutOrientation.LeftToRight
-            }
-            topPadding: 20.0
-            leftPadding: 20.0
-            rightPadding: 20.0
-            bottomPadding: 20.0
-            ImageView {
-                verticalAlignment: VerticalAlignment.Top
-                imageSource: "asset:///icon/ic_notes.png"
-                filterColor: Color.DarkGray
-            }
-            Container {
-                verticalAlignment: VerticalAlignment.Top
-                horizontalAlignment: HorizontalAlignment.Fill
-                layoutProperties: StackLayoutProperties {
-                    spaceQuota: 1.0
-                }
-                leftPadding: 10.0
-                rightPadding: 10.0
-                Label {
-                    text: serial_title
-                    textStyle.fontSize: FontSize.Large
-
-                    multiline: true
-                }
-                Divider {
-
-                }
-                Container {
-                    layout: StackLayout {
-                        orientation: LayoutOrientation.LeftToRight
-
-                    }
-                    WebImageView {
-                        scalingMethod: ScalingMethod.AspectFit
-                        url: serial_imgurl
-                        preferredWidth: ui.du(7)
-                        preferredHeight: ui.du(7)
-                        verticalAlignment: VerticalAlignment.Center
-                    }
-                    Label {
-                        text: serial_author
-                        textStyle.fontSize: FontSize.XSmall
-                        layoutProperties: StackLayoutProperties {
-                            spaceQuota: 1.0
-                        }
-                        opacity: 0.6
-                        verticalAlignment: VerticalAlignment.Center
-                    }
-                }
-                Label {
-                    multiline: true
-                    text: serial_intro
-
-                }
-            }
+            tid: serial_id
+            leftImage: "asset:///icon/ic_notes.png"
+            ttitle: serial_title
+            timgurl: serial_imgurl
+            tauthor: serial_author
+            tintro: serial_intro
         }
-        Container {
-            gestureHandlers: TapHandler {
-                onTapped: {
-                    requestQA(q_id)
-                }
+        ArticleItemTemplate {
+            onReqDetail: {
+                requestQA(essay_id)
             }
-            layout: StackLayout {
-                orientation: LayoutOrientation.LeftToRight
-            }
-            topPadding: 20.0
-            leftPadding: 20.0
-            rightPadding: 20.0
-            bottomPadding: 20.0
-            ImageView {
-                verticalAlignment: VerticalAlignment.Top
-                imageSource: "asset:///icon/ic_help.png"
-                filterColor: Color.DarkGray
-            }
-            Container {
-                verticalAlignment: VerticalAlignment.Top
-                horizontalAlignment: HorizontalAlignment.Fill
-                layoutProperties: StackLayoutProperties {
-                    spaceQuota: 1.0
-                }
-                leftPadding: 10.0
-                rightPadding: 10.0
-                Label {
-                    text: q_title
-                    textStyle.fontSize: FontSize.Large
-
-                    multiline: true
-                }
-                Divider {
-
-                }
-                Label {
-                    multiline: true
-                    text: q_intro
-                    opacity: 0.6
-                }
-            }
+            leftImage: "asset:///icon/ic_help.png"
+            ttitle: q_title
+            tintro: q_intro
         }
+
     }
 }

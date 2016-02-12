@@ -36,6 +36,7 @@ simulator {
 
 config_pri_assets {
     OTHER_FILES += \
+        $$quote($$BASEDIR/assets/ArticleItemTemplate.qml) \
         $$quote($$BASEDIR/assets/Common.qml) \
         $$quote($$BASEDIR/assets/Detail-EssayView.qml) \
         $$quote($$BASEDIR/assets/ListEssayView.qml) \

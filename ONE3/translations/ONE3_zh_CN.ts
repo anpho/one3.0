@@ -14,13 +14,18 @@
         <translation type="unfinished">错误信息：%1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="100"/>
+        <location filename="../assets/Detail-EssayView.qml" line="140"/>
         <source>Essay</source>
         <translation type="unfinished">短篇</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="102"/>
+        <location filename="../assets/Detail-EssayView.qml" line="142"/>
         <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Detail-EssayView.qml" line="255"/>
+        <source>RELATED ARTICLES</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

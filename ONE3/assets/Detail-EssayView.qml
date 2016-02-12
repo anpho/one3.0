@@ -46,6 +46,7 @@ Page {
                     sst.body = qsTr("Error : %1").arg(d)
                     sst.show();
                 }
+                loadRelated()
             }, [], false)
     }
     // AUTHOR
@@ -74,6 +75,32 @@ Page {
     property string c_time
     property string author_introduce
 
+    // RELATED CONTENT
+    property int related_content_count
+    property string related_endpoint: "http://v3.wufazhuce.com:8000/api/related/essay/%1"
+    function loadRelated() {
+        var endp = related_endpoint.arg(essayid)
+        co.ajax("GET", endp, [], function(b, d) {
+                if (b) {
+                    try {
+                        d = JSON.parse(d).data;
+                        related_content_count = d.length;
+                        for (var i = 0; i < related_content_count; i ++) {
+                            var relContainer = relatedArticle.createObject(nav);
+                            relContainer.ttitle = d[i].hp_title;
+                            relContainer.tid = d[i].content_id;
+                            relContainer.tintro = d[i].guide_word;
+                            relContainer.timgurl = d[i].author[0].web_url;
+                            relContainer.tauthor = d[i].author[0].user_name;
+                            relContainer.tweibo = d[i].author[0].wb_name;
+                            relatedArticles.add(relContainer)
+                        }
+                    } catch (e) {
+
+                    }
+                }
+            }, [], false)
+    }
     attachedObjects: [
         MediaPlayer {
             id: mp
@@ -91,6 +118,19 @@ Page {
         },
         SystemToast {
             id: sst
+        },
+        ComponentDefinition {
+            id: relatedArticle
+            ArticleItemTemplate {
+                leftPadding: 0.0
+                rightPadding: 0.0
+                onReqDetail: {
+                    var newEssay = Qt.createComponent("Detail-EssayView.qml").createObject(nav);
+                    newEssay.nav = nav;
+                    newEssay.essayid = tid;
+                    nav.push(newEssay);
+                }
+            }
         }
     ]
     function setActive() {
@@ -207,6 +247,13 @@ Page {
                 verticalAlignment: VerticalAlignment.Fill
                 horizontalAlignment: HorizontalAlignment.Fill
                 textStyle.textAlign: TextAlign.Right
+            }
+            Container {
+                id: relatedArticles
+                visible: related_content_count > 0
+                Header {
+                    title: qsTr("RELATED ARTICLES")
+                }
             }
         }
     }
