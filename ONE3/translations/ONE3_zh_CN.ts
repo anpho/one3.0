@@ -6,27 +6,27 @@
     <message>
         <location filename="../assets/Detail-EssayView.qml" line="41"/>
         <source>Error: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>错误信息：%1</translation>
     </message>
     <message>
         <location filename="../assets/Detail-EssayView.qml" line="46"/>
         <source>Error : %1</source>
-        <translation type="unfinished">错误信息：%1</translation>
+        <translation>错误信息：%1</translation>
     </message>
     <message>
         <location filename="../assets/Detail-EssayView.qml" line="140"/>
         <source>Essay</source>
-        <translation type="unfinished">短篇</translation>
+        <translation>短篇</translation>
     </message>
     <message>
         <location filename="../assets/Detail-EssayView.qml" line="142"/>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation>返回</translation>
     </message>
     <message>
         <location filename="../assets/Detail-EssayView.qml" line="255"/>
         <source>RELATED ARTICLES</source>
-        <translation type="unfinished"></translation>
+        <translation>相关作品</translation>
     </message>
 </context>
 <context>
@@ -34,27 +34,27 @@
     <message>
         <location filename="../assets/Detail-SerialView.qml" line="39"/>
         <source>Error: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>错误信息：%1</translation>
     </message>
     <message>
         <location filename="../assets/Detail-SerialView.qml" line="44"/>
         <source>Error : %1</source>
-        <translation type="unfinished">错误信息：%1</translation>
+        <translation>错误信息：%1</translation>
     </message>
     <message>
         <location filename="../assets/Detail-SerialView.qml" line="137"/>
         <source>Serials</source>
-        <translation type="unfinished">连载</translation>
+        <translation>连载</translation>
     </message>
     <message>
         <location filename="../assets/Detail-SerialView.qml" line="139"/>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation>返回</translation>
     </message>
     <message>
         <location filename="../assets/Detail-SerialView.qml" line="252"/>
         <source>RELATED ARTICLES</source>
-        <translation type="unfinished"></translation>
+        <translation>相关作品</translation>
     </message>
 </context>
 <context>
@@ -62,7 +62,7 @@
     <message>
         <location filename="../assets/ListEssayView.qml" line="33"/>
         <source>Articles</source>
-        <translation type="unfinished"></translation>
+        <translation>阅读</translation>
     </message>
 </context>
 <context>
