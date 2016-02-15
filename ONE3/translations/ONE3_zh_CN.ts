@@ -49,22 +49,22 @@
         <translation>错误信息：%1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="146"/>
+        <location filename="../assets/Detail-MovieView.qml" line="148"/>
         <source>Trailer</source>
         <translation>播放预告片</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="174"/>
+        <location filename="../assets/Detail-MovieView.qml" line="178"/>
         <source>Intro</source>
         <translation>电影简介</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="189"/>
+        <location filename="../assets/Detail-MovieView.qml" line="195"/>
         <source>Staff</source>
         <translation>演职员</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="205"/>
+        <location filename="../assets/Detail-MovieView.qml" line="213"/>
         <source>Story</source>
         <translation>电影故事</translation>
     </message>
@@ -131,6 +131,19 @@
         <location filename="../assets/ListEssayView.qml" line="30"/>
         <source>Articles</source>
         <translation>阅读</translation>
+    </message>
+</context>
+<context>
+    <name>ListHomepageView</name>
+    <message>
+        <location filename="../assets/ListHomepageView.qml" line="119"/>
+        <source>Copied to Clipboard</source>
+        <translation>已复制</translation>
+    </message>
+    <message>
+        <location filename="../assets/ListHomepageView.qml" line="121"/>
+        <source>ERROR</source>
+        <translation>复制出错</translation>
     </message>
 </context>
 <context>
@@ -224,9 +237,20 @@
 <context>
     <name>SingleHomepageView</name>
     <message>
-        <location filename="../assets/SingleHomepageView.qml" line="13"/>
+        <location filename="../assets/SingleHomepageView.qml" line="15"/>
         <source>Error : %1</source>
         <translation>错误信息：%1</translation>
+    </message>
+    <message>
+        <location filename="../assets/SingleHomepageView.qml" line="130"/>
+        <location filename="../assets/SingleHomepageView.qml" line="141"/>
+        <source>Share</source>
+        <translation>分享</translation>
+    </message>
+    <message>
+        <location filename="../assets/SingleHomepageView.qml" line="133"/>
+        <source>Copy</source>
+        <translation>复制</translation>
     </message>
 </context>
 <context>
@@ -258,9 +282,8 @@
         <translation>主页</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="53"/>
         <source>Essay</source>
-        <translation>短篇</translation>
+        <translation type="obsolete">短篇</translation>
     </message>
     <message>
         <source>Serials</source>
@@ -269,6 +292,11 @@
     <message>
         <source>Q&amp;A</source>
         <translation type="obsolete">问答</translation>
+    </message>
+    <message>
+        <location filename="../assets/main.qml" line="53"/>
+        <source>Articles</source>
+        <translation>阅读</translation>
     </message>
     <message>
         <location filename="../assets/main.qml" line="66"/>

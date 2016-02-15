@@ -22,6 +22,9 @@
 #include <bb/cascades/InvokeQuery>
 #include <bb/cascades/Invocation>
 #include <bb/PpsObject>
+#include "clipboard/clipboard.h"
+#include <bb/cascades/InvokeQuery>
+#include <bb/cascades/Invocation>
 namespace bb
 {
     namespace system
@@ -45,18 +48,23 @@ class ApplicationUI: public QObject
 {
     Q_OBJECT
 public:
-    Q_INVOKABLE
-    static void setv(const QString &objectName, const QString &inputValue);Q_INVOKABLE
-    static QString getv(const QString &objectName, const QString &defaultValue);Q_INVOKABLE
-    void invokeVideo(const QString &title, const QString &url);Q_INVOKABLE
-    void viewimage(QString path);Q_INVOKABLE
-    QString html2text(QString htmlString);
     ApplicationUI();
     virtual ~ApplicationUI()
     {
     }
+    Q_INVOKABLE static void setv(const QString &objectName, const QString &inputValue);
+    Q_INVOKABLE static QString getv(const QString &objectName, const QString &defaultValue);
+    Q_INVOKABLE void invokeVideo(const QString &title, const QString &url);
+    Q_INVOKABLE void viewimage(QString path);
+    Q_INVOKABLE QString html2text(QString htmlString);
+    Q_INVOKABLE int setTextToClipboard(QString text);
+    Q_INVOKABLE void remember(QString uri,QString title,QString text);
+    Q_INVOKABLE void shareText(QString text);
+
 private slots:
     void onSystemLanguageChanged();
+    void onArmed();
+    void onFinished();
 private:
     QTranslator* m_pTranslator;
     bb::cascades::LocaleHandler* m_pLocaleHandler;

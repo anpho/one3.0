@@ -30,7 +30,7 @@ ApplicationUI::ApplicationUI() :
     // prepare the localization
     m_pTranslator = new QTranslator(this);
     m_pLocaleHandler = new LocaleHandler(this);
-    m_pInvokeManager = new  InvokeManager(this);
+    m_pInvokeManager = new InvokeManager(this);
 
     bool res = QObject::connect(m_pLocaleHandler, SIGNAL(systemLanguageChanged()), this,
             SLOT(onSystemLanguageChanged()));
@@ -111,9 +111,61 @@ void ApplicationUI::viewimage(QString path)
     InvokeTargetReply *cardreply = m_pInvokeManager->invoke(request);
     Q_UNUSED(cardreply);
 }
-QString ApplicationUI::html2text(QString htmlString){
+QString ApplicationUI::html2text(QString htmlString)
+{
     QTextDocument doc;
-    doc.setHtml( htmlString );
+    doc.setHtml(htmlString);
 
     return doc.toPlainText();
+}
+
+int ApplicationUI::setTextToClipboard(QString text)
+{
+    QByteArray ba = text.toLocal8Bit();
+
+    if (get_clipboard_can_write() == 0) {
+        empty_clipboard();
+        int ret = set_clipboard_data("text/plain", ba.length(), ba.data());
+        return ret;
+    } else {
+        return -1;
+    }
+}
+
+void ApplicationUI::shareText(QString text)
+{
+    InvokeQuery *query = InvokeQuery::create().data(text.toUtf8()).mimeType("text/plain");
+    Invocation *invocation = Invocation::create(query);
+    query->setParent(invocation); // destroy query with invocation
+    invocation->setParent(this); // app can be destroyed before onFinished() is called
+    connect(invocation, SIGNAL(armed()), this, SLOT(onArmed()));
+    connect(invocation, SIGNAL(finished()), this, SLOT(onFinished()));
+}
+void ApplicationUI::remember(QString uri, QString title, QString text)
+{
+    InvokeQuery *query = InvokeQuery::create();
+    query->setInvokeTargetId("sys.pim.remember.composer");
+    query->setUri(uri);
+
+    QVariantMap qm;
+    qm["subject"] = title;
+    qm["description"] = text;
+    query->setMetadata(qm);
+
+    Invocation *invocation = Invocation::create(query);
+    query->setParent(invocation); // destroy query with invocation
+    invocation->setParent(this); // app can be destroyed before onFinished() is called
+
+    connect(invocation, SIGNAL(armed()), this, SLOT(onArmed()));
+    connect(invocation, SIGNAL(finished()), this, SLOT(onFinished()));
+}
+void ApplicationUI::onArmed()
+{
+    Invocation *invocation = qobject_cast<Invocation *>(sender());
+    invocation->trigger("bb.action.SHARE");
+}
+void ApplicationUI::onFinished()
+{
+    Invocation *invocation = qobject_cast<Invocation *>(sender());
+    invocation->deleteLater();
 }

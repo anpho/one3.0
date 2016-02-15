@@ -4,6 +4,8 @@ import cn.anpho 1.0
 ScrollView {
     signal requestImageView(string src)
     signal requestAuthorView(string authorid)
+    signal requestCopyText(string text)
+    signal requestShareText(string text)
 
     function setActive() {
         scrollRole = ScrollRole.Main
@@ -11,11 +13,11 @@ ScrollView {
     //用于显示一幅题图
     property string endpoint: "http://v3.wufazhuce.com:8000/api/hp/detail/%1"
     property string errmsg: qsTr("Error : %1")
-    
+
     property variant nest
     property string hpid
     property string hid
-    
+
     onHidChanged: {
         if (hid.trim().length > 0)
             loadByID(hid);
@@ -33,7 +35,7 @@ ScrollView {
                         author = nest.hp_author;
                         hpcontent = nest.hp_content;
                         datestring = nest.hp_makettime;
-                        ipadimage = nest.ipad_url;
+                        ipadimage = co.valueOrEmpty(nest.ipad_url);
                         authorid = nest.author_id;
                     }
                 } else {
@@ -123,6 +125,29 @@ ScrollView {
             topMargin: 50.0
             bottomMargin: 50.0
             implicitLayoutAnimationsEnabled: false
+            contextActions: [
+                ActionSet {
+                    title: qsTr("Share")
+                    actions: [
+                        ActionItem {
+                            title: qsTr("Copy")
+                            imageSource: "asset:///icon/ic_copy.png"
+                            onTriggered: {
+                                requestCopyText(hpcontent)
+                            }
+                            accessibility.name: "Copy"
+                        },
+                        ActionItem {
+                            title: qsTr("Share")
+                            imageSource: "asset:///icon/ic_share.png"
+                            accessibility.name: "Share"
+                            onTriggered: {
+                                requestShareText(hpcontent)
+                            }
+                        }
+                    ]
+                }
+            ]
         }
         Label {
             horizontalAlignment: HorizontalAlignment.Fill

@@ -101,9 +101,27 @@ Page {
                     onRequestImageView: {
                         shv.ListItem.view.invokeImageViewer(src)
                     }
+                    onRequestCopyText: {
+                        shv.ListItem.view.invokeCopyText(text)
+                    }
+                    onRequestShareText: {
+                        shv.ListItem.view.invokeShareText(text)
+                    }
                 }
             }
         ]
+        function invokeShareText(text) {
+            _app.shareText(text)
+        }
+        function invokeCopyText(text) {
+            var ret = parseInt(_app.setTextToClipboard(text))
+            if (ret > 0) {
+                sst.body = qsTr("Copied to Clipboard");
+            } else {
+                sst.body = qsTr("ERROR")
+            }
+            sst.show();
+        }
         function invokeAuthorView(authorid) {
             //TODO AUTHORVIEW
         }

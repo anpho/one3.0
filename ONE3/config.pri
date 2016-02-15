@@ -55,6 +55,7 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/WebBrowser.qml) \
         $$quote($$BASEDIR/assets/font/BradleyHandITCTTBold.ttf) \
         $$quote($$BASEDIR/assets/icon/ic_all.png) \
+        $$quote($$BASEDIR/assets/icon/ic_copy.png) \
         $$quote($$BASEDIR/assets/icon/ic_diagnostics.png) \
         $$quote($$BASEDIR/assets/icon/ic_doctype_generic.png) \
         $$quote($$BASEDIR/assets/icon/ic_doctype_music.png) \

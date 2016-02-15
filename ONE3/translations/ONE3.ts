@@ -49,22 +49,22 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="146"/>
+        <location filename="../assets/Detail-MovieView.qml" line="148"/>
         <source>Trailer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="174"/>
+        <location filename="../assets/Detail-MovieView.qml" line="178"/>
         <source>Intro</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="189"/>
+        <location filename="../assets/Detail-MovieView.qml" line="195"/>
         <source>Staff</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="205"/>
+        <location filename="../assets/Detail-MovieView.qml" line="213"/>
         <source>Story</source>
         <translation type="unfinished"></translation>
     </message>
@@ -130,6 +130,19 @@
     <message>
         <location filename="../assets/ListEssayView.qml" line="30"/>
         <source>Articles</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ListHomepageView</name>
+    <message>
+        <location filename="../assets/ListHomepageView.qml" line="119"/>
+        <source>Copied to Clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/ListHomepageView.qml" line="121"/>
+        <source>ERROR</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -224,8 +237,19 @@
 <context>
     <name>SingleHomepageView</name>
     <message>
-        <location filename="../assets/SingleHomepageView.qml" line="13"/>
+        <location filename="../assets/SingleHomepageView.qml" line="15"/>
         <source>Error : %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/SingleHomepageView.qml" line="130"/>
+        <location filename="../assets/SingleHomepageView.qml" line="141"/>
+        <source>Share</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/SingleHomepageView.qml" line="133"/>
+        <source>Copy</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -259,7 +283,7 @@
     </message>
     <message>
         <location filename="../assets/main.qml" line="53"/>
-        <source>Essay</source>
+        <source>Articles</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
