@@ -131,7 +131,7 @@ Page {
                 textStyle.fontWeight: FontWeight.W100
             }
             Divider {
-
+                visible: q_content.length > 0
             }
             Label {
                 text: a_title
@@ -149,7 +149,7 @@ Page {
                 verticalAlignment: VerticalAlignment.Top
                 horizontalAlignment: HorizontalAlignment.Fill
                 multiline: true
-                textStyle.fontSize: FontSize.Small
+                textStyle.fontSize: FontSize.Medium
                 textStyle.textAlign: TextAlign.Left
                 implicitLayoutAnimationsEnabled: false
                 textStyle.fontWeight: FontWeight.W100

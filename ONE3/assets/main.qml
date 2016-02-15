@@ -50,7 +50,7 @@ TabbedPane {
         }
     }
     Tab { //阅读
-        title: qsTr("Essay") + Retranslate.onLocaleOrLanguageChanged
+        title: qsTr("Articles") + Retranslate.onLocaleOrLanguageChanged
         imageSource: "asset:///icon/ic_doctype_generic.png"
         property alias nav: nav_essay
         NavigationPane {

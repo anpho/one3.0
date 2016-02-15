@@ -90,7 +90,7 @@ Page {
                     }
                     m_cover: ListItemData.cover
                     m_id: ListItemData.id
-                    m_score: "" + ListItemData.score
+                    m_score: co.valueOrEmpty(ListItemData.score)
                     m_title: ListItemData.title
                 }
 

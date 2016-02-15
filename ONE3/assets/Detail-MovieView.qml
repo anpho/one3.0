@@ -69,12 +69,12 @@ Page {
                         d = JSON.parse(d).data;
                         title = d.title
                         cover = d.detailcover
-                        video_url = d.video
-                        score = d.score
-                        info = d.info
-                        officialstory = d.officialstory
-                        charge_edt = d.charge_edt
-                        photos = d.photo
+                        video_url = co.valueOrEmpty(d.video)
+                        score = co.valueOrEmpty(d.score)
+                        info = co.valueOrEmpty(d.info)
+                        officialstory = co.valueOrEmpty(d.officialstory)
+                        charge_edt = co.valueOrEmpty(d.charge_edt)
+                        photos = d.photo ? d.photo : []
                     } catch (e) {
                         sst.body = qsTr("Error: %1").arg(JSON.stringify(e))
                         console.log(sst.body)
@@ -129,6 +129,7 @@ Page {
                 bottomPadding: 20.0
                 leftPadding: 20.0
                 rightPadding: 20.0
+                horizontalAlignment: HorizontalAlignment.Fill
                 ImageView {
                     preferredHeight: ui.du(4)
                     preferredWidth: ui.du(4)
@@ -141,6 +142,7 @@ Page {
                             showvideo(video_url);
                         }
                     }
+                    visible: video_url.length>0
                 }
                 Label {
                     text: qsTr("Trailer")
@@ -148,6 +150,7 @@ Page {
                     layoutProperties: StackLayoutProperties {
                         spaceQuota: 1.0
                     }
+                    visible: video_url.length>0
                     gestureHandlers: TapHandler {
                         onTapped: {
                             showvideo(video_url);
@@ -157,6 +160,7 @@ Page {
                 Label {
                     text: score
                     textStyle.fontSize: FontSize.Medium
+                    visible: score.length>0
                     textStyle.fontWeight: FontWeight.Default
                     textStyle.textAlign: TextAlign.Center
                     textStyle.color: Color.Red
@@ -172,8 +176,10 @@ Page {
             }
             Header {
                 title: qsTr("Intro")
+                visible: officialstory.length>0
             }
             Container {
+                visible: officialstory.length>0
                 leftPadding: 20.0
                 topPadding: 20.0
                 bottomPadding: 20.0
@@ -187,8 +193,10 @@ Page {
             }
             Header {
                 title: qsTr("Staff")
+                visible: info.length>0
             }
             Container {
+                visible: info.length>0
                 leftPadding: 20.0
                 topPadding: 20.0
                 bottomPadding: 20.0

@@ -70,4 +70,7 @@ QtObject {
             }
         }
     }
+    function valueOrEmpty(e) {
+        return e ? e : ""
+    }
 }
