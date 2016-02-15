@@ -79,8 +79,10 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/icon/ic_speaker_mute.png) \
         $$quote($$BASEDIR/assets/main.qml) \
         $$quote($$BASEDIR/assets/res/144.png) \
+        $$quote($$BASEDIR/assets/res/github.png) \
         $$quote($$BASEDIR/assets/res/icon.png) \
-        $$quote($$BASEDIR/assets/res/movie_play_189px_1189635_easyicon.net.png) \
+        $$quote($$BASEDIR/assets/res/merrick.png) \
+        $$quote($$BASEDIR/assets/res/movie_play.png) \
         $$quote($$BASEDIR/assets/res/music_cover.png) \
         $$quote($$BASEDIR/assets/res/music_tone.png) \
         $$quote($$BASEDIR/assets/res/nav_title.png)

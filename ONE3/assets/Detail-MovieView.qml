@@ -133,7 +133,7 @@ Page {
                 ImageView {
                     preferredHeight: ui.du(4)
                     preferredWidth: ui.du(4)
-                    imageSource: "asset:///res/movie_play_189px_1189635_easyicon.net.png"
+                    imageSource: "asset:///res/movie_play.png"
                     scalingMethod: ScalingMethod.AspectFit
                     filterColor: Color.create("#ff008dff")
                     verticalAlignment: VerticalAlignment.Center

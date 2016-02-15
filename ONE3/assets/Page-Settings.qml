@@ -52,7 +52,7 @@ Page {
             }
            
             Label {
-                text: qsTr("-- one --")
+                text: qsTr("-- end --")
                 textStyle.textAlign: TextAlign.Center
                 horizontalAlignment: HorizontalAlignment.Fill
                 textStyle.rules: [

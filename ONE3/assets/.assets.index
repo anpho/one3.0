@@ -1,5 +1,5 @@
 1
-48
+50
 ArticleItemTemplate.qml
 Common.qml
 Detail-EssayView.qml
@@ -38,8 +38,10 @@ main.qml
 Page-About.qml
 Page-Settings.qml
 res/144.png
+res/github.png
 res/icon.png
-res/movie_play_189px_1189635_easyicon.net.png
+res/merrick.png
+res/movie_play.png
 res/music_cover.png
 res/music_tone.png
 res/nav_title.png

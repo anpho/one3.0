@@ -136,12 +136,12 @@
 <context>
     <name>ListHomepageView</name>
     <message>
-        <location filename="../assets/ListHomepageView.qml" line="119"/>
+        <location filename="../assets/ListHomepageView.qml" line="120"/>
         <source>Copied to Clipboard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/ListHomepageView.qml" line="121"/>
+        <location filename="../assets/ListHomepageView.qml" line="122"/>
         <source>ERROR</source>
         <translation type="unfinished"></translation>
     </message>
@@ -154,8 +154,8 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/ListMovieView.qml" line="108"/>
-        <location filename="../assets/ListMovieView.qml" line="113"/>
+        <location filename="../assets/ListMovieView.qml" line="109"/>
+        <location filename="../assets/ListMovieView.qml" line="114"/>
         <source>Error : %1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -191,17 +191,57 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="75"/>
-        <source>&lt;p&gt;Merrick Zhang&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;mailto:anphorea@gmail.com?subject=one3&quot;&gt;Email&lt;/a&gt;  ~  &lt;a href=&quot;http://twitter.com/anpho&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;If you like this app, please make a donation to anphorea@gmail.com via paypal or alipay to support my development. Thank you.&lt;/p&gt;
-&lt;p&gt;This app is open-sourced&lt;/p&gt;
-&lt;a href=&quot;http://github.com/anpho/one3.0&quot;&gt;Github&lt;/a&gt;  ~  &lt;a href=&quot;https://github.com/anpho/one3.0/issues&quot;&gt;Submit Issues&lt;/a&gt;
-</source>
+        <location filename="../assets/Page-About.qml" line="67"/>
+        <source>ABOUT PROJECT ONE3.0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="67"/>
+        <location filename="../assets/Page-About.qml" line="70"/>
+        <source>Project ONE 3.0 is my 1st BlackBerry 10 project in 2016, it&apos;s FREE and offers a similar UI for ONE readers from other platforms. The complete project is open-sourced on Github, you&apos;re always welcomed to send me pull requests.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-About.qml" line="135"/>
+        <source>Please make donations to anphorea@gmail.com via PayPal or Alipay if you want to support my work. Thank you!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-About.qml" line="140"/>
+        <source>My BlackBerry 10 Apps</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-About.qml" line="146"/>
+        <source>-- end --</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-About.qml" line="78"/>
+        <source>Source Code on Github</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-About.qml" line="87"/>
+        <source>Please use the button below to submit issues, including bugs, feature requests, etc.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-About.qml" line="95"/>
+        <source>Submit Issues</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-About.qml" line="115"/>
+        <source>http://twitter.com/anpho</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-About.qml" line="126"/>
+        <source>Merrick Zhang</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-About.qml" line="104"/>
         <source>ABOUT THE DEVELOPER</source>
         <translation type="unfinished"></translation>
     </message>
@@ -230,7 +270,7 @@
     </message>
     <message>
         <location filename="../assets/Page-Settings.qml" line="55"/>
-        <source>-- one --</source>
+        <source>-- end --</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

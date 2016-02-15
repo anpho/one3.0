@@ -53,7 +53,7 @@ Page {
                 textStyle.textAlign: TextAlign.Center
             }
             Divider {
-                
+
             }
             Label {
                 multiline: true
@@ -64,7 +64,58 @@ Page {
                 textStyle.fontStyle: FontStyle.Normal
             }
             Header {
+                title: qsTr("ABOUT PROJECT ONE3.0")
+            }
+            Label {
+                text: qsTr("Project ONE 3.0 is my 1st BlackBerry 10 project in 2016, it's FREE and offers a similar UI for ONE readers from other platforms. The complete project is open-sourced on Github, you're always welcomed to send me pull requests.")
+                multiline: true
+                horizontalAlignment: HorizontalAlignment.Fill
+                textStyle.textAlign: TextAlign.Center
+
+            }
+            Button {
+                horizontalAlignment: HorizontalAlignment.Center
+                text: qsTr("Source Code on Github")
+                onClicked: {
+                    var web = Qt.createComponent("WebBrowser.qml").createObject(nav);
+                    web.nav = nav;
+                    web.uri = "https://github.com/anpho/one3.0"
+                    nav.push(web);
+                }
+            }
+            Label {
+                text: qsTr("Please use the button below to submit issues, including bugs, feature requests, etc.")
+                multiline: true
+                horizontalAlignment: HorizontalAlignment.Fill
+                textStyle.textAlign: TextAlign.Center
+
+            }
+            Button {
+                horizontalAlignment: HorizontalAlignment.Center
+                text: qsTr("Submit Issues")
+                onClicked: {
+                    var web = Qt.createComponent("WebBrowser.qml").createObject(nav);
+                    web.nav = nav;
+                    web.uri = "https://github.com/anpho/one3.0/issues"
+                    nav.push(web);
+                }
+            }
+            Header {
                 title: qsTr("ABOUT THE DEVELOPER")
+            }
+            ImageView {
+                imageSource: "asset:///res/merrick.png"
+                horizontalAlignment: HorizontalAlignment.Center
+                scalingMethod: ScalingMethod.AspectFit
+                topMargin: 20.0
+                gestureHandlers: TapHandler {
+                    onTapped: {
+                        var web = Qt.createComponent("WebBrowser.qml").createObject(nav);
+                        web.nav = nav;
+                        web.uri = qsTr("http://twitter.com/anpho")
+                        nav.push(web);
+                    }
+                }
             }
             Label {
                 multiline: true
@@ -72,8 +123,38 @@ Page {
                 horizontalAlignment: HorizontalAlignment.Fill
                 textStyle.fontWeight: FontWeight.W100
                 textStyle.fontStyle: FontStyle.Normal
-                text: qsTr("<p>Merrick Zhang</p>\r\n<p><a href=\"mailto:anphorea@gmail.com?subject=one3\">Email</a>  ~  <a href=\"http://twitter.com/anpho\">Twitter</a></p>\r\n<p>If you like this app, please make a donation to anphorea@gmail.com via paypal or alipay to support my development. Thank you.</p>\r\n<p>This app is open-sourced</p>\r\n<a href=\"http://github.com/anpho/one3.0\">Github</a>  ~  <a href=\"https://github.com/anpho/one3.0/issues\">Submit Issues</a>\r\n")
+                text: qsTr("Merrick Zhang")
                 textFormat: TextFormat.Html
+            }
+            Label {
+                multiline: true
+                textStyle.textAlign: TextAlign.Center
+                horizontalAlignment: HorizontalAlignment.Fill
+                textStyle.fontWeight: FontWeight.W100
+                textStyle.fontStyle: FontStyle.Normal
+                text: qsTr("Please make donations to anphorea@gmail.com via PayPal or Alipay if you want to support my work. Thank you!")
+                textFormat: TextFormat.Html
+            }
+            Button {
+                horizontalAlignment: HorizontalAlignment.Center
+                text: qsTr("My BlackBerry 10 Apps")
+                onClicked: {
+                    Qt.openUrlExternally("appworld://vendor/26755")
+                }
+            }
+            Label {
+                text: qsTr("-- end --")
+                textStyle.textAlign: TextAlign.Center
+                horizontalAlignment: HorizontalAlignment.Fill
+                textStyle.rules: [
+                    FontFaceRule {
+                        source: "asset:///font/BradleyHandITCTTBold.ttf"
+                        fontFamily: "bradley"
+                    }
+                ]
+                textStyle.fontFamily: "bradley"
+                textStyle.fontWeight: FontWeight.Normal
+                textStyle.fontStyle: FontStyle.Default
             }
         }
     }

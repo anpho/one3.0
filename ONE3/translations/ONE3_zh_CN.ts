@@ -136,12 +136,12 @@
 <context>
     <name>ListHomepageView</name>
     <message>
-        <location filename="../assets/ListHomepageView.qml" line="119"/>
+        <location filename="../assets/ListHomepageView.qml" line="120"/>
         <source>Copied to Clipboard</source>
         <translation>已复制</translation>
     </message>
     <message>
-        <location filename="../assets/ListHomepageView.qml" line="121"/>
+        <location filename="../assets/ListHomepageView.qml" line="122"/>
         <source>ERROR</source>
         <translation>复制出错</translation>
     </message>
@@ -154,8 +154,8 @@
         <translation>电影</translation>
     </message>
     <message>
-        <location filename="../assets/ListMovieView.qml" line="108"/>
-        <location filename="../assets/ListMovieView.qml" line="113"/>
+        <location filename="../assets/ListMovieView.qml" line="109"/>
+        <location filename="../assets/ListMovieView.qml" line="114"/>
         <source>Error : %1</source>
         <translation>错误信息：%1</translation>
     </message>
@@ -191,17 +191,57 @@
         <translation></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="75"/>
-        <source>&lt;p&gt;Merrick Zhang&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;mailto:anphorea@gmail.com?subject=one3&quot;&gt;Email&lt;/a&gt;  ~  &lt;a href=&quot;http://twitter.com/anpho&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;If you like this app, please make a donation to anphorea@gmail.com via paypal or alipay to support my development. Thank you.&lt;/p&gt;
-&lt;p&gt;This app is open-sourced&lt;/p&gt;
-&lt;a href=&quot;http://github.com/anpho/one3.0&quot;&gt;Github&lt;/a&gt;  ~  &lt;a href=&quot;https://github.com/anpho/one3.0/issues&quot;&gt;Submit Issues&lt;/a&gt;
-</source>
-        <translation type="unfinished"></translation>
+        <location filename="../assets/Page-About.qml" line="67"/>
+        <source>ABOUT PROJECT ONE3.0</source>
+        <translation>关于 ONE 3.0 项目</translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="67"/>
+        <location filename="../assets/Page-About.qml" line="70"/>
+        <source>Project ONE 3.0 is my 1st BlackBerry 10 project in 2016, it&apos;s FREE and offers a similar UI for ONE readers from other platforms. The complete project is open-sourced on Github, you&apos;re always welcomed to send me pull requests.</source>
+        <translation>ONE 3.0 项目是我2016年的第一个BlackBerry 10应用项目，免费，并提供了与其他平台的 ONE 相近的界面。 本项目源代码已全部开源在Github上，诚挚欢迎您来提交pull request。</translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-About.qml" line="135"/>
+        <source>Please make donations to anphorea@gmail.com via PayPal or Alipay if you want to support my work. Thank you!</source>
+        <translation>如果您想要赞助，请通过支付宝或PayPal转账至 anphorea@gmail.com 来支持我的开发工作， 谢谢！</translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-About.qml" line="140"/>
+        <source>My BlackBerry 10 Apps</source>
+        <translation>我的BlackBerry 10应用程序</translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-About.qml" line="146"/>
+        <source>-- end --</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-About.qml" line="78"/>
+        <source>Source Code on Github</source>
+        <translation>Github上的项目主页</translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-About.qml" line="87"/>
+        <source>Please use the button below to submit issues, including bugs, feature requests, etc.</source>
+        <translation>请使用下面的按钮来提交Bug、提出功能申请等等，请勿直接发邮件给我。</translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-About.qml" line="95"/>
+        <source>Submit Issues</source>
+        <translation>提交问题</translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-About.qml" line="115"/>
+        <source>http://twitter.com/anpho</source>
+        <translation>http://weibo.com/anphox</translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-About.qml" line="126"/>
+        <source>Merrick Zhang</source>
+        <translation>狮子头SAMA</translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-About.qml" line="104"/>
         <source>ABOUT THE DEVELOPER</source>
         <translation>关于开发人员</translation>
     </message>
@@ -230,7 +270,7 @@
     </message>
     <message>
         <location filename="../assets/Page-Settings.qml" line="55"/>
-        <source>-- one --</source>
+        <source>-- end --</source>
         <translation></translation>
     </message>
 </context>
