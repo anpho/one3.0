@@ -34,12 +34,12 @@
     <message>
         <location filename="../assets/Detail-HPView.qml" line="12"/>
         <source>Copied to Clipboard</source>
-        <translation type="unfinished">已复制</translation>
+        <translation>已复制</translation>
     </message>
     <message>
         <location filename="../assets/Detail-HPView.qml" line="14"/>
         <source>ERROR</source>
-        <translation type="unfinished">复制出错</translation>
+        <translation>复制出错</translation>
     </message>
 </context>
 <context>
@@ -271,22 +271,22 @@
     <message>
         <location filename="../assets/Page-Search-Essay.qml" line="16"/>
         <source>Search in Articles</source>
-        <translation type="unfinished"></translation>
+        <translation>搜索短篇、连载及问答</translation>
     </message>
     <message>
         <location filename="../assets/Page-Search-Essay.qml" line="77"/>
         <source>Articles</source>
-        <translation type="unfinished">阅读</translation>
+        <translation>文章</translation>
     </message>
     <message>
         <location filename="../assets/Page-Search-Essay.qml" line="85"/>
         <source>Nothing Here</source>
-        <translation type="unfinished"></translation>
+        <translation>什么也没有</translation>
     </message>
     <message>
         <location filename="../assets/Page-Search-Essay.qml" line="94"/>
         <source> results</source>
-        <translation type="unfinished"></translation>
+        <translation> 个结果</translation>
     </message>
 </context>
 <context>
@@ -294,22 +294,22 @@
     <message>
         <location filename="../assets/Page-Search-Movie.qml" line="16"/>
         <source>Search in Movies</source>
-        <translation type="unfinished"></translation>
+        <translation>搜索电影资料</translation>
     </message>
     <message>
         <location filename="../assets/Page-Search-Movie.qml" line="65"/>
         <source>Movies</source>
-        <translation type="unfinished"></translation>
+        <translation>电影</translation>
     </message>
     <message>
         <location filename="../assets/Page-Search-Movie.qml" line="73"/>
         <source>Nothing Here</source>
-        <translation type="unfinished"></translation>
+        <translation>什么也没有</translation>
     </message>
     <message>
         <location filename="../assets/Page-Search-Movie.qml" line="82"/>
         <source> results</source>
-        <translation type="unfinished"></translation>
+        <translation> 个结果</translation>
     </message>
 </context>
 <context>
@@ -317,22 +317,22 @@
     <message>
         <location filename="../assets/Page-Search-Music.qml" line="16"/>
         <source>Search in Musics</source>
-        <translation type="unfinished"></translation>
+        <translation>搜索音乐</translation>
     </message>
     <message>
         <location filename="../assets/Page-Search-Music.qml" line="65"/>
-        <source>Pictures</source>
-        <translation type="unfinished"></translation>
+        <source>Musics</source>
+        <translation>音乐</translation>
     </message>
     <message>
         <location filename="../assets/Page-Search-Music.qml" line="73"/>
         <source>Nothing Here</source>
-        <translation type="unfinished"></translation>
+        <translation>什么也没有</translation>
     </message>
     <message>
         <location filename="../assets/Page-Search-Music.qml" line="82"/>
         <source> results</source>
-        <translation type="unfinished"></translation>
+        <translation> 个结果</translation>
     </message>
 </context>
 <context>
@@ -340,22 +340,22 @@
     <message>
         <location filename="../assets/Page-Search-Pic.qml" line="16"/>
         <source>Search in Pictures</source>
-        <translation type="unfinished"></translation>
+        <translation>搜索图片</translation>
     </message>
     <message>
         <location filename="../assets/Page-Search-Pic.qml" line="66"/>
         <source>Pictures</source>
-        <translation type="unfinished"></translation>
+        <translation>图片</translation>
     </message>
     <message>
         <location filename="../assets/Page-Search-Pic.qml" line="83"/>
         <source> results</source>
-        <translation type="unfinished"></translation>
+        <translation> 个结果</translation>
     </message>
     <message>
         <location filename="../assets/Page-Search-Pic.qml" line="74"/>
         <source>Nothing Here</source>
-        <translation type="unfinished"></translation>
+        <translation>什么也没有</translation>
     </message>
 </context>
 <context>
@@ -383,6 +383,35 @@
     <message>
         <location filename="../assets/Page-Settings.qml" line="55"/>
         <source>-- end --</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>Readme</name>
+    <message>
+        <location filename="../assets/Readme.qml" line="6"/>
+        <source>Welcome</source>
+        <translation>欢迎</translation>
+    </message>
+    <message>
+        <location filename="../assets/Readme.qml" line="8"/>
+        <location filename="../assets/Readme.qml" line="57"/>
+        <source>Close</source>
+        <translation>关闭</translation>
+    </message>
+    <message>
+        <location filename="../assets/Readme.qml" line="18"/>
+        <source>Disclaimer</source>
+        <translation>声明</translation>
+    </message>
+    <message>
+        <location filename="../assets/Readme.qml" line="28"/>
+        <source>This is an early development version of ONE, in this version you may find some features are limited or disabled, trust me, I&apos;m working on it.</source>
+        <translation>这是《一个 3.0》的早期开发版本，在使用中你可能会发现部分功能被禁用，对现在的版本来说是正常的。请至“关于”中的提交问题处，将你遇到的问题提交给我，谢谢！</translation>
+    </message>
+    <message>
+        <location filename="../assets/Readme.qml" line="42"/>
+        <source>-- rebuilt for You --</source>
         <translation></translation>
     </message>
 </context>
@@ -429,7 +458,7 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../assets/main.qml" line="40"/>
+        <location filename="../assets/main.qml" line="46"/>
         <source>Home</source>
         <translation>主页</translation>
     </message>
@@ -446,17 +475,17 @@
         <translation type="obsolete">问答</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="53"/>
+        <location filename="../assets/main.qml" line="59"/>
         <source>Articles</source>
         <translation>阅读</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="66"/>
+        <location filename="../assets/main.qml" line="72"/>
         <source>Music</source>
         <translation>音乐</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="79"/>
+        <location filename="../assets/main.qml" line="85"/>
         <source>Movie</source>
         <translation>电影</translation>
     </message>

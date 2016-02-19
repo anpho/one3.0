@@ -34,6 +34,13 @@ TabbedPane {
             }
         }
     }
+    onCreationCompleted: {
+        if (_app.getv("showwelcome", "true") == "true") {
+            var welcomesheet = Qt.createComponent("Readme.qml").createObject(tabroot)
+            welcomesheet.open();
+        }
+    }
+    id: tabroot
     property variant currentNav: activeTab.nav
     showTabsOnActionBar: false
     Tab { //主页

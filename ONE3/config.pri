@@ -54,6 +54,7 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/Page-Search-Music.qml) \
         $$quote($$BASEDIR/assets/Page-Search-Pic.qml) \
         $$quote($$BASEDIR/assets/Page-Settings.qml) \
+        $$quote($$BASEDIR/assets/Readme.qml) \
         $$quote($$BASEDIR/assets/SearchPictureTemplate.qml) \
         $$quote($$BASEDIR/assets/SingleEssayView.qml) \
         $$quote($$BASEDIR/assets/SingleHomepageView.qml) \

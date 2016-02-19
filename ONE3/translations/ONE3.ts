@@ -314,7 +314,7 @@
     </message>
     <message>
         <location filename="../assets/Page-Search-Music.qml" line="65"/>
-        <source>Pictures</source>
+        <source>Musics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -380,6 +380,35 @@
     </message>
 </context>
 <context>
+    <name>Readme</name>
+    <message>
+        <location filename="../assets/Readme.qml" line="6"/>
+        <source>Welcome</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Readme.qml" line="8"/>
+        <location filename="../assets/Readme.qml" line="57"/>
+        <source>Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Readme.qml" line="18"/>
+        <source>Disclaimer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Readme.qml" line="28"/>
+        <source>This is an early development version of ONE, in this version you may find some features are limited or disabled, trust me, I&apos;m working on it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Readme.qml" line="42"/>
+        <source>-- rebuilt for You --</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SingleHomepageView</name>
     <message>
         <location filename="../assets/SingleHomepageView.qml" line="15"/>
@@ -422,22 +451,22 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../assets/main.qml" line="40"/>
+        <location filename="../assets/main.qml" line="47"/>
         <source>Home</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="53"/>
+        <location filename="../assets/main.qml" line="60"/>
         <source>Articles</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="66"/>
+        <location filename="../assets/main.qml" line="73"/>
         <source>Music</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="79"/>
+        <location filename="../assets/main.qml" line="86"/>
         <source>Movie</source>
         <translation type="unfinished"></translation>
     </message>

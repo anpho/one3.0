@@ -1,5 +1,5 @@
 1
-57
+58
 ArticleItemTemplate.qml
 Common.qml
 Detail-EssayView.qml
@@ -43,6 +43,7 @@ Page-Search-Movie.qml
 Page-Search-Music.qml
 Page-Search-Pic.qml
 Page-Settings.qml
+Readme.qml
 res/144.png
 res/github.png
 res/icon.png
