@@ -45,7 +45,7 @@ Container {
             multiline: true
         }
         Divider {
-        
+            visible: tintro.length>0
         }
         Container {
             layout: StackLayout {

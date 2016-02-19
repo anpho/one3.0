@@ -30,6 +30,19 @@
     </message>
 </context>
 <context>
+    <name>Detail-HPView</name>
+    <message>
+        <location filename="../assets/Detail-HPView.qml" line="12"/>
+        <source>Copied to Clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Detail-HPView.qml" line="14"/>
+        <source>ERROR</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Detail-MovieView</name>
     <message>
         <location filename="../assets/Detail-MovieView.qml" line="44"/>
@@ -136,12 +149,12 @@
 <context>
     <name>ListHomepageView</name>
     <message>
-        <location filename="../assets/ListHomepageView.qml" line="120"/>
+        <location filename="../assets/ListHomepageView.qml" line="122"/>
         <source>Copied to Clipboard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/ListHomepageView.qml" line="122"/>
+        <location filename="../assets/ListHomepageView.qml" line="124"/>
         <source>ERROR</source>
         <translation type="unfinished"></translation>
     </message>
@@ -154,8 +167,8 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/ListMovieView.qml" line="109"/>
-        <location filename="../assets/ListMovieView.qml" line="114"/>
+        <location filename="../assets/ListMovieView.qml" line="112"/>
+        <location filename="../assets/ListMovieView.qml" line="117"/>
         <source>Error : %1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -247,6 +260,98 @@
     </message>
 </context>
 <context>
+    <name>Page-Search-Essay</name>
+    <message>
+        <location filename="../assets/Page-Search-Essay.qml" line="16"/>
+        <source>Search in Articles</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Search-Essay.qml" line="77"/>
+        <source>Articles</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Search-Essay.qml" line="85"/>
+        <source>Nothing Here</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Search-Essay.qml" line="94"/>
+        <source> results</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Page-Search-Movie</name>
+    <message>
+        <location filename="../assets/Page-Search-Movie.qml" line="16"/>
+        <source>Search in Movies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Search-Movie.qml" line="65"/>
+        <source>Movies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Search-Movie.qml" line="73"/>
+        <source>Nothing Here</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Search-Movie.qml" line="82"/>
+        <source> results</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Page-Search-Music</name>
+    <message>
+        <location filename="../assets/Page-Search-Music.qml" line="16"/>
+        <source>Search in Musics</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Search-Music.qml" line="65"/>
+        <source>Pictures</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Search-Music.qml" line="73"/>
+        <source>Nothing Here</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Search-Music.qml" line="82"/>
+        <source> results</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Page-Search-Pic</name>
+    <message>
+        <location filename="../assets/Page-Search-Pic.qml" line="16"/>
+        <source>Search in Pictures</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Search-Pic.qml" line="66"/>
+        <source>Pictures</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Search-Pic.qml" line="83"/>
+        <source> results</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Search-Pic.qml" line="74"/>
+        <source>Nothing Here</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Page-Settings</name>
     <message>
         <location filename="../assets/Page-Settings.qml" line="5"/>
@@ -296,12 +401,12 @@
 <context>
     <name>SingleMusicView</name>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="13"/>
+        <location filename="../assets/SingleMusicView.qml" line="15"/>
         <source>Error : %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="234"/>
+        <location filename="../assets/SingleMusicView.qml" line="236"/>
         <source>RELATED MUSIC</source>
         <translation type="unfinished"></translation>
     </message>

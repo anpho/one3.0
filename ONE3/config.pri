@@ -39,7 +39,9 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/ArticleItemTemplate.qml) \
         $$quote($$BASEDIR/assets/Common.qml) \
         $$quote($$BASEDIR/assets/Detail-EssayView.qml) \
+        $$quote($$BASEDIR/assets/Detail-HPView.qml) \
         $$quote($$BASEDIR/assets/Detail-MovieView.qml) \
+        $$quote($$BASEDIR/assets/Detail-MusicView.qml) \
         $$quote($$BASEDIR/assets/Detail-QAView.qml) \
         $$quote($$BASEDIR/assets/Detail-SerialView.qml) \
         $$quote($$BASEDIR/assets/ListEssayView.qml) \
@@ -47,7 +49,12 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/ListMovieView.qml) \
         $$quote($$BASEDIR/assets/ListMusicView.qml) \
         $$quote($$BASEDIR/assets/Page-About.qml) \
+        $$quote($$BASEDIR/assets/Page-Search-Essay.qml) \
+        $$quote($$BASEDIR/assets/Page-Search-Movie.qml) \
+        $$quote($$BASEDIR/assets/Page-Search-Music.qml) \
+        $$quote($$BASEDIR/assets/Page-Search-Pic.qml) \
         $$quote($$BASEDIR/assets/Page-Settings.qml) \
+        $$quote($$BASEDIR/assets/SearchPictureTemplate.qml) \
         $$quote($$BASEDIR/assets/SingleEssayView.qml) \
         $$quote($$BASEDIR/assets/SingleHomepageView.qml) \
         $$quote($$BASEDIR/assets/SingleMovieEntryView.qml) \

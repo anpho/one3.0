@@ -47,6 +47,9 @@ Page {
                         onTapped: {
                             console.log("SEARCH")
                             //TODO SHOW SEARCH PANEL
+                            var searchPanel  = Qt.createComponent("Page-Search-Essay.qml").createObject(nav);
+                            searchPanel.nav = nav;
+                            nav.push(searchPanel)
                         }
                     }
                 }

@@ -8,7 +8,9 @@ ScrollView {
     function setActive() {
         scrollRole = ScrollRole.Main
     }
-
+    function html2text(story){
+        return scrollviewroot.ListItem.view.html2text(story)
+    }
     property string endpoint: "http://v3.wufazhuce.com:8000/api/music/detail/%1"
     property string errmsg: qsTr("Error : %1")
 
@@ -185,14 +187,14 @@ ScrollView {
                 textStyle.fontSize: FontSize.Large
                 textStyle.fontWeight: FontWeight.W100
                 horizontalAlignment: HorizontalAlignment.Fill
-                textStyle.textAlign: TextAlign.Right
+                textStyle.textAlign: TextAlign.Left
             }
             Label {
                 text: story_author_name
-                horizontalAlignment: HorizontalAlignment.Right
+                horizontalAlignment: HorizontalAlignment.Left
             }
             Label {
-                text: scrollviewroot.ListItem.view.html2text(story)
+                text: html2text(story) 
                 multiline: true
                 textFormat: TextFormat.Html
                 horizontalAlignment: HorizontalAlignment.Fill

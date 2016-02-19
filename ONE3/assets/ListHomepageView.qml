@@ -43,7 +43,9 @@ Page {
                     gestureHandlers: TapHandler {
                         onTapped: {
                             console.log("SEARCH")
-                            //TODO SHOW SEARCH PANEL
+                            var searchPanel = Qt.createComponent("Page-Search-Pic.qml").createObject(nav);
+                            searchPanel.nav = nav;
+                            nav.push(searchPanel)
                         }
                     }
                 }
