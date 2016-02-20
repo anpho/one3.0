@@ -2,7 +2,7 @@ import bb.cascades 1.4
 import bb.device 1.4
 import bb.system 1.2
 Page {
-    property variant nav
+    property NavigationPane nav
     function setActive() {
     }
     titleBar: TitleBar {
@@ -23,6 +23,9 @@ Page {
                         onTapped: {
                             console.log("ALL SERIES")
                             //TODO SHOW ALL HOMEPAGE ENTRIES
+                            var olddays = Qt.createComponent("Page-By-Month.qml").createObject(nav);
+                            olddays.nav = nav;
+                            nav.push(olddays)
                         }
                     }
                 }

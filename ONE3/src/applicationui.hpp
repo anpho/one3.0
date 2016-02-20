@@ -54,6 +54,7 @@ public:
     }
     Q_INVOKABLE static void setv(const QString &objectName, const QString &inputValue);
     Q_INVOKABLE static QString getv(const QString &objectName, const QString &defaultValue);
+    Q_INVOKABLE static void reset();
     Q_INVOKABLE void invokeVideo(const QString &title, const QString &url);
     Q_INVOKABLE void viewimage(QString path);
     Q_INVOKABLE QString html2text(QString htmlString);

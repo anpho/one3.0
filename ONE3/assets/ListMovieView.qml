@@ -35,6 +35,8 @@ Page {
                             //TODO SHOW ALL HOMEPAGE ENTRIES
                         }
                     }
+                    visible: true
+                    opacity: 0.0
                 }
                 Label {
                     text: qsTr("Movie")

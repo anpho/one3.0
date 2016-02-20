@@ -41,7 +41,7 @@ ScrollView {
                 } else {
                     hpcontent = errmsg.arg(d)
                 }
-            }, [], false);
+            }, [], false, true);
     }
     property string imageurl
     property string vol
@@ -67,11 +67,11 @@ ScrollView {
         leftPadding: 20.0
         rightPadding: 20.0
         topPadding: 20.0
-        bottomPadding: 20.0
+        bottomPadding: 100.0
         implicitLayoutAnimationsEnabled: false
         WebImageView {
             id: webimage
-            horizontalAlignment: HorizontalAlignment.Center
+            horizontalAlignment: HorizontalAlignment.Fill
             scalingMethod: ScalingMethod.AspectFit
             implicitLayoutAnimationsEnabled: false
             gestureHandlers: [

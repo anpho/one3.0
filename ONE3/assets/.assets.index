@@ -1,5 +1,5 @@
 1
-58
+64
 ArticleItemTemplate.qml
 Common.qml
 Detail-EssayView.qml
@@ -37,7 +37,13 @@ ListHomepageView.qml
 ListMovieView.qml
 ListMusicView.qml
 main.qml
+Month-Essay-ListView.qml
+Month-HP-ListView.qml
+Month-QA-ListView.qml
+Month-Serials-ListView.qml
 Page-About.qml
+Page-Articles-By-Month.qml
+Page-By-Month.qml
 Page-Search-Essay.qml
 Page-Search-Movie.qml
 Page-Search-Music.qml

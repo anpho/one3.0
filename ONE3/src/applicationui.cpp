@@ -82,6 +82,13 @@ void ApplicationUI::setv(const QString &objectName, const QString &inputValue)
     qDebug() << "[SETTINGS]" << objectName << " set to " << inputValue;
 }
 
+void ApplicationUI::reset()
+{
+    QSettings settings;
+    settings.clear();
+    qDebug() << "[SETTINGS]RESETED";
+}
+
 void ApplicationUI::invokeVideo(const QString &title, const QString &url)
 {
     // invoke a video card to play video.

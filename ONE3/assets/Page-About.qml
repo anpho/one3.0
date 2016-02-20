@@ -66,12 +66,18 @@ Page {
             Header {
                 title: qsTr("ABOUT PROJECT ONE3.0")
             }
-            Label {
-                text: qsTr("Project ONE 3.0 is my 1st BlackBerry 10 project in 2016, it's FREE and offers a similar UI for ONE readers from other platforms. The complete project is open-sourced on Github, you're always welcomed to send me pull requests.")
-                multiline: true
-                horizontalAlignment: HorizontalAlignment.Fill
-                textStyle.textAlign: TextAlign.Center
+            Container {
+                topPadding: 20.0
+                leftPadding: 20.0
+                bottomPadding: 20.0
+                rightPadding: 20.0
+                Label {
+                    text: qsTr("Project ONE 3.0 is my 1st BlackBerry 10 project in 2016, it's FREE and offers a similar UI for ONE readers from other platforms. The complete project is open-sourced on Github, you're always welcomed to send me pull requests.")
+                    multiline: true
+                    horizontalAlignment: HorizontalAlignment.Fill
+                    textStyle.textAlign: TextAlign.Center
 
+                }
             }
             Button {
                 horizontalAlignment: HorizontalAlignment.Center
@@ -83,12 +89,18 @@ Page {
                     nav.push(web);
                 }
             }
-            Label {
-                text: qsTr("Please use the button below to submit issues, including bugs, feature requests, etc.")
-                multiline: true
-                horizontalAlignment: HorizontalAlignment.Fill
-                textStyle.textAlign: TextAlign.Center
+            Container {
+                topPadding: 20.0
+                leftPadding: 20.0
+                bottomPadding: 20.0
+                rightPadding: 20.0
+                Label {
+                    text: qsTr("Please use the button below to submit issues, including bugs, feature requests, etc.")
+                    multiline: true
+                    horizontalAlignment: HorizontalAlignment.Fill
+                    textStyle.textAlign: TextAlign.Center
 
+                }
             }
             Button {
                 horizontalAlignment: HorizontalAlignment.Center

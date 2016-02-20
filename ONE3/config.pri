@@ -48,7 +48,13 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/ListHomepageView.qml) \
         $$quote($$BASEDIR/assets/ListMovieView.qml) \
         $$quote($$BASEDIR/assets/ListMusicView.qml) \
+        $$quote($$BASEDIR/assets/Month-Essay-ListView.qml) \
+        $$quote($$BASEDIR/assets/Month-HP-ListView.qml) \
+        $$quote($$BASEDIR/assets/Month-QA-ListView.qml) \
+        $$quote($$BASEDIR/assets/Month-Serials-ListView.qml) \
         $$quote($$BASEDIR/assets/Page-About.qml) \
+        $$quote($$BASEDIR/assets/Page-Articles-By-Month.qml) \
+        $$quote($$BASEDIR/assets/Page-By-Month.qml) \
         $$quote($$BASEDIR/assets/Page-Search-Essay.qml) \
         $$quote($$BASEDIR/assets/Page-Search-Movie.qml) \
         $$quote($$BASEDIR/assets/Page-Search-Music.qml) \

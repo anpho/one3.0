@@ -25,6 +25,7 @@ Page {
                             //TODO SHOW ALL HOMEPAGE ENTRIES
                         }
                     }
+                    opacity: 0.0
                 }
                 Label {
                     text: qsTr("Music")

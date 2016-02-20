@@ -105,12 +105,13 @@ Page {
                             sst.show();
                         }
                     }, [], false)
-            }, [], false)
+            }, [], false,true )
 
     }
     ScrollView {
         Container {
             horizontalAlignment: HorizontalAlignment.Fill
+            bottomPadding: 100.0
             WebImageView {
                 horizontalAlignment: HorizontalAlignment.Fill
                 scalingMethod: ScalingMethod.AspectFill

@@ -1,13 +1,27 @@
 import bb.cascades 1.4
 
 QtObject {
-    function ajax(method, endpoint, paramsArray, callback, customheader, form) {
+    property bool networkCacheEnabled: _app.getv("ncache", "false") == "true"
+
+    function ajax(method, endpoint, paramsArray, callback, customheader, form, cache) {
         console.log(method + "//" + endpoint + JSON.stringify(paramsArray))
+        var cacheid = "CACHE-" + Qt.md5(endpoint);
+        // network cache
+        if (networkCacheEnabled && cache) {
+            var cached = _app.getv(cacheid, "");
+            if (cached.length > 0) {
+                callback(true, cached)
+            }
+        }
+        // append
         var request = new XMLHttpRequest();
         request.onreadystatechange = function() {
             if (request.readyState === XMLHttpRequest.DONE) {
                 if (request.status == 200) {
                     console.log("[AJAX]Response = " + request.responseText);
+                    if (networkCacheEnabled) {
+                        _app.setv(cacheid, request.responseText);
+                    }
                     callback(true, request.responseText);
                 } else {
                     console.log("[AJAX]Status: " + request.status + ", Status Text: " + request.statusText);
@@ -72,5 +86,9 @@ QtObject {
     }
     function valueOrEmpty(e) {
         return e ? e : ""
+    }
+    function genStr(d) {
+        var p = d.toDateString().split(" ");
+        return p[1] + " " + p[3];
     }
 }

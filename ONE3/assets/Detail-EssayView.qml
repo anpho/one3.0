@@ -47,7 +47,7 @@ Page {
                     sst.show();
                 }
                 loadRelated()
-            }, [], false)
+            }, [], false,true )
     }
     // AUTHOR
     property string author_img
@@ -165,7 +165,7 @@ Page {
             leftPadding: 20.0
             topPadding: 20.0
             rightPadding: 20.0
-            bottomPadding: 20.0
+            bottomPadding: 100.0
             Container {
                 gestureHandlers: TapHandler {
                     onTapped: {

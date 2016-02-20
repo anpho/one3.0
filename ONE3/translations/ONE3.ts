@@ -62,22 +62,22 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="148"/>
+        <location filename="../assets/Detail-MovieView.qml" line="149"/>
         <source>Trailer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="178"/>
+        <location filename="../assets/Detail-MovieView.qml" line="179"/>
         <source>Intro</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="195"/>
+        <location filename="../assets/Detail-MovieView.qml" line="196"/>
         <source>Staff</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="213"/>
+        <location filename="../assets/Detail-MovieView.qml" line="214"/>
         <source>Story</source>
         <translation type="unfinished"></translation>
     </message>
@@ -141,7 +141,7 @@
 <context>
     <name>ListEssayView</name>
     <message>
-        <location filename="../assets/ListEssayView.qml" line="30"/>
+        <location filename="../assets/ListEssayView.qml" line="33"/>
         <source>Articles</source>
         <translation type="unfinished"></translation>
     </message>
@@ -149,12 +149,12 @@
 <context>
     <name>ListHomepageView</name>
     <message>
-        <location filename="../assets/ListHomepageView.qml" line="122"/>
+        <location filename="../assets/ListHomepageView.qml" line="125"/>
         <source>Copied to Clipboard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/ListHomepageView.qml" line="124"/>
+        <location filename="../assets/ListHomepageView.qml" line="127"/>
         <source>ERROR</source>
         <translation type="unfinished"></translation>
     </message>
@@ -162,13 +162,13 @@
 <context>
     <name>ListMovieView</name>
     <message>
-        <location filename="../assets/ListMovieView.qml" line="40"/>
+        <location filename="../assets/ListMovieView.qml" line="42"/>
         <source>Movie</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/ListMovieView.qml" line="112"/>
-        <location filename="../assets/ListMovieView.qml" line="117"/>
+        <location filename="../assets/ListMovieView.qml" line="114"/>
+        <location filename="../assets/ListMovieView.qml" line="119"/>
         <source>Error : %1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -176,8 +176,60 @@
 <context>
     <name>ListMusicView</name>
     <message>
-        <location filename="../assets/ListMusicView.qml" line="30"/>
+        <location filename="../assets/ListMusicView.qml" line="31"/>
         <source>Music</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Month-Essay-ListView</name>
+    <message>
+        <location filename="../assets/Month-Essay-ListView.qml" line="33"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Month-Essay-ListView.qml" line="38"/>
+        <source>Month View</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Month-HP-ListView</name>
+    <message>
+        <location filename="../assets/Month-HP-ListView.qml" line="33"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Month-HP-ListView.qml" line="38"/>
+        <source>Month View</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Month-QA-ListView</name>
+    <message>
+        <location filename="../assets/Month-QA-ListView.qml" line="33"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Month-QA-ListView.qml" line="38"/>
+        <source>Month View</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Month-Serials-ListView</name>
+    <message>
+        <location filename="../assets/Month-Serials-ListView.qml" line="33"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Month-Serials-ListView.qml" line="38"/>
+        <source>Month View</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -209,53 +261,106 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="70"/>
+        <location filename="../assets/Page-About.qml" line="75"/>
         <source>Project ONE 3.0 is my 1st BlackBerry 10 project in 2016, it&apos;s FREE and offers a similar UI for ONE readers from other platforms. The complete project is open-sourced on Github, you&apos;re always welcomed to send me pull requests.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="135"/>
+        <location filename="../assets/Page-About.qml" line="147"/>
         <source>Please make donations to anphorea@gmail.com via PayPal or Alipay if you want to support my work. Thank you!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="140"/>
+        <location filename="../assets/Page-About.qml" line="152"/>
         <source>My BlackBerry 10 Apps</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="146"/>
+        <location filename="../assets/Page-About.qml" line="158"/>
         <source>-- end --</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="78"/>
+        <location filename="../assets/Page-About.qml" line="84"/>
         <source>Source Code on Github</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="87"/>
+        <location filename="../assets/Page-About.qml" line="98"/>
         <source>Please use the button below to submit issues, including bugs, feature requests, etc.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="95"/>
+        <location filename="../assets/Page-About.qml" line="107"/>
         <source>Submit Issues</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="115"/>
+        <location filename="../assets/Page-About.qml" line="127"/>
         <source>http://twitter.com/anpho</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="126"/>
+        <location filename="../assets/Page-About.qml" line="138"/>
         <source>Merrick Zhang</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="104"/>
+        <location filename="../assets/Page-About.qml" line="116"/>
         <source>ABOUT THE DEVELOPER</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Page-Articles-By-Month</name>
+    <message>
+        <location filename="../assets/Page-Articles-By-Month.qml" line="7"/>
+        <source>Browse By Month</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Articles-By-Month.qml" line="9"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Articles-By-Month.qml" line="89"/>
+        <location filename="../assets/Page-Articles-By-Month.qml" line="94"/>
+        <source>Essay</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Articles-By-Month.qml" line="90"/>
+        <location filename="../assets/Page-Articles-By-Month.qml" line="95"/>
+        <source>Q&amp;A</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Articles-By-Month.qml" line="91"/>
+        <source>Serials</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Articles-By-Month.qml" line="105"/>
+        <source>Current Month</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Page-By-Month</name>
+    <message>
+        <location filename="../assets/Page-By-Month.qml" line="7"/>
+        <source>Browse By Month</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-By-Month.qml" line="9"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-By-Month.qml" line="54"/>
+        <source>Current Month</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -354,27 +459,87 @@
 <context>
     <name>Page-Settings</name>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="5"/>
+        <location filename="../assets/Page-Settings.qml" line="6"/>
         <source>Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="12"/>
+        <location filename="../assets/Page-Settings.qml" line="21"/>
         <source>VISUAL SETTINGS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="24"/>
+        <location filename="../assets/Page-Settings.qml" line="33"/>
         <source>Use Dark Theme</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="47"/>
+        <location filename="../assets/Page-Settings.qml" line="56"/>
         <source>Turn this on to save battery on OLED screen devices.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="55"/>
+        <location filename="../assets/Page-Settings.qml" line="63"/>
+        <source>CONTENT CACHE(EXPERIMENTAL)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Settings.qml" line="64"/>
+        <source>WARNING</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Settings.qml" line="72"/>
+        <source>Enable this feature will increase the storage usage, while decreases network traffic.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Settings.qml" line="82"/>
+        <source>Use Network Cache</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Settings.qml" line="97"/>
+        <source>RESET APPLICATION</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Settings.qml" line="105"/>
+        <source>If anything wrong happens, please use this button to RESET all application settings. This will erease all cached content too.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Settings.qml" line="113"/>
+        <source>RESET</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Settings.qml" line="118"/>
+        <source>Settings Reseted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Settings.qml" line="123"/>
+        <source>IMAGE CACHE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Settings.qml" line="131"/>
+        <source>This app will store as top as 100MBytes image cache on device, which will improve the application performance. Make sure you know what you&apos;re doing before you press the button below.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Settings.qml" line="140"/>
+        <source>CLEAR CACHE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Settings.qml" line="143"/>
+        <source>Cache Cleared</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Settings.qml" line="149"/>
         <source>-- end --</source>
         <translation type="unfinished"></translation>
     </message>
@@ -435,7 +600,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="236"/>
+        <location filename="../assets/SingleMusicView.qml" line="237"/>
         <source>RELATED MUSIC</source>
         <translation type="unfinished"></translation>
     </message>

@@ -23,6 +23,9 @@ Page {
                         onTapped: {
                             console.log("ALL SERIES")
                             //TODO SHOW ALL HOMEPAGE ENTRIES
+                            var olddays = Qt.createComponent("Page-Articles-By-Month.qml").createObject(nav);
+                            olddays.nav = nav;
+                            nav.push(olddays)
                         }
                     }
                 }
@@ -47,7 +50,7 @@ Page {
                         onTapped: {
                             console.log("SEARCH")
                             //TODO SHOW SEARCH PANEL
-                            var searchPanel  = Qt.createComponent("Page-Search-Essay.qml").createObject(nav);
+                            var searchPanel = Qt.createComponent("Page-Search-Essay.qml").createObject(nav);
                             searchPanel.nav = nav;
                             nav.push(searchPanel)
                         }

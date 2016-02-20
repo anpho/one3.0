@@ -45,7 +45,7 @@ Page {
                     sst.show();
                 }
                 loadRelated()
-            }, [], false)
+            }, [], false,true )
     }
     // AUTHOR
     property string author_img

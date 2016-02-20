@@ -8,7 +8,7 @@ ScrollView {
     function setActive() {
         scrollRole = ScrollRole.Main
     }
-    function html2text(story){
+    function html2text(story) {
         return scrollviewroot.ListItem.view.html2text(story)
     }
     property string endpoint: "http://v3.wufazhuce.com:8000/api/music/detail/%1"
@@ -79,7 +79,7 @@ ScrollView {
                 } else {
                     music_info = errmsg.arg(d)
                 }
-            }, [], false);
+            }, [], false, true);
     }
     attachedObjects: [
         Common {
@@ -93,6 +93,7 @@ ScrollView {
     builtInShortcutsEnabled: true
     Container {
         horizontalAlignment: HorizontalAlignment.Fill
+        bottomPadding: 100.0
         WebImageView {
             scalingMethod: ScalingMethod.AspectFill
             horizontalAlignment: HorizontalAlignment.Fill
@@ -194,7 +195,7 @@ ScrollView {
                 horizontalAlignment: HorizontalAlignment.Left
             }
             Label {
-                text: html2text(story) 
+                text: html2text(story)
                 multiline: true
                 textFormat: TextFormat.Html
                 horizontalAlignment: HorizontalAlignment.Fill
