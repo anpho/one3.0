@@ -14,17 +14,17 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="140"/>
+        <location filename="../assets/Detail-EssayView.qml" line="168"/>
         <source>Essay</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="142"/>
+        <location filename="../assets/Detail-EssayView.qml" line="170"/>
         <source>Back</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="255"/>
+        <location filename="../assets/Detail-EssayView.qml" line="283"/>
         <source>RELATED ARTICLES</source>
         <translation type="unfinished"></translation>
     </message>
@@ -464,82 +464,82 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="21"/>
+        <location filename="../assets/Page-Settings.qml" line="22"/>
         <source>VISUAL SETTINGS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="33"/>
+        <location filename="../assets/Page-Settings.qml" line="34"/>
         <source>Use Dark Theme</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="56"/>
+        <location filename="../assets/Page-Settings.qml" line="57"/>
         <source>Turn this on to save battery on OLED screen devices.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="63"/>
+        <location filename="../assets/Page-Settings.qml" line="64"/>
         <source>CONTENT CACHE(EXPERIMENTAL)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="64"/>
+        <location filename="../assets/Page-Settings.qml" line="65"/>
         <source>WARNING</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="72"/>
+        <location filename="../assets/Page-Settings.qml" line="73"/>
         <source>Enable this feature will increase the storage usage, while decreases network traffic.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="82"/>
+        <location filename="../assets/Page-Settings.qml" line="83"/>
         <source>Use Network Cache</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="97"/>
+        <location filename="../assets/Page-Settings.qml" line="98"/>
         <source>RESET APPLICATION</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="105"/>
+        <location filename="../assets/Page-Settings.qml" line="106"/>
         <source>If anything wrong happens, please use this button to RESET all application settings. This will erease all cached content too.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="113"/>
+        <location filename="../assets/Page-Settings.qml" line="114"/>
         <source>RESET</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="118"/>
+        <location filename="../assets/Page-Settings.qml" line="119"/>
         <source>Settings Reseted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="123"/>
+        <location filename="../assets/Page-Settings.qml" line="124"/>
         <source>IMAGE CACHE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="131"/>
+        <location filename="../assets/Page-Settings.qml" line="132"/>
         <source>This app will store as top as 100MBytes image cache on device, which will improve the application performance. Make sure you know what you&apos;re doing before you press the button below.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="140"/>
+        <location filename="../assets/Page-Settings.qml" line="141"/>
         <source>CLEAR CACHE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="143"/>
+        <location filename="../assets/Page-Settings.qml" line="144"/>
         <source>Cache Cleared</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="149"/>
+        <location filename="../assets/Page-Settings.qml" line="150"/>
         <source>-- end --</source>
         <translation type="unfinished"></translation>
     </message>

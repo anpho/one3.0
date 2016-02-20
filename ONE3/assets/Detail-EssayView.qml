@@ -47,7 +47,7 @@ Page {
                     sst.show();
                 }
                 loadRelated()
-            }, [], false,true )
+            }, [], false, true)
     }
     // AUTHOR
     property string author_img
@@ -108,9 +108,37 @@ Page {
             onMediaStateChanged: {
                 if (mediaState == MediaState.Started) {
                     isPlaying = true
+                    npc.acquire()
+                    npc.mediaState = MediaState.Started
                 } else {
                     isPlaying = false
+                    npc.revoke()
                 }
+            }
+        },
+        NowPlayingConnection {
+            connectionName: "mpconn"
+            id: npc
+            iconUrl: "asset:///res/nav_title.png"
+            onAcquired: {
+                var metadata = {
+                    "track": c_title,
+                    "artist": author_name
+                };
+                npc.mediaState = MediaState.Started;
+                npc.setMetaData(metadata);
+            }
+            overlayStyle: OverlayStyle.Fancy
+            nextEnabled: false
+            previousEnabled: false
+            repeatMode: RepeatMode.Unsupported
+            shuffleMode: ShuffleMode.Unsupported
+            deviceMode: DeviceMode.Playback
+            onPause: {
+                mp.pause()
+            }
+            onPlay: {
+                mp.play()
             }
         },
         Common {

@@ -14,6 +14,7 @@ Page {
             id: sst
         }
     ]
+    actionBarVisibility: ChromeVisibility.Compact
     ScrollView {
         id: scrview
         Container {
