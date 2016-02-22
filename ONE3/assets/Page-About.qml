@@ -13,7 +13,7 @@ Page {
         ActionItem {
             title: qsTr("Copyrights")
             imageSource: "asset:///icon/ic_open.png"
-            ActionBar.placement: ActionBarPlacement.OnBar
+            ActionBar.placement: ActionBarPlacement.InOverflow
             onTriggered: {
                 var newpage = Qt.createComponent("WebBrowser.qml").createObject(nav);
                 newpage.uri = "http://m.wufazhuce.com/about?from=ONEApp"
@@ -31,6 +31,7 @@ Page {
             id: ai
         }
     ]
+    actionBarVisibility: ChromeVisibility.Compact
     ScrollView {
         id: about_scrollview
         horizontalAlignment: HorizontalAlignment.Fill
@@ -113,7 +114,7 @@ Page {
                 }
             }
             Header {
-                title: qsTr("ABOUT THE DEVELOPER")
+                title: qsTr("ABOUT THE DEVELOPER TEAM")
             }
             ImageView {
                 imageSource: "asset:///res/merrick.png"
@@ -137,6 +138,7 @@ Page {
                 textStyle.fontStyle: FontStyle.Normal
                 text: qsTr("Merrick Zhang")
                 textFormat: TextFormat.Html
+                textStyle.fontSize: FontSize.Large
             }
             Label {
                 multiline: true
@@ -144,7 +146,7 @@ Page {
                 horizontalAlignment: HorizontalAlignment.Fill
                 textStyle.fontWeight: FontWeight.W100
                 textStyle.fontStyle: FontStyle.Normal
-                text: qsTr("Please make donations to anphorea@gmail.com via PayPal or Alipay if you want to support my work. Thank you!")
+                text: qsTr("Designer, UI, Developer, i18n")
                 textFormat: TextFormat.Html
             }
             Button {
@@ -153,6 +155,25 @@ Page {
                 onClicked: {
                     Qt.openUrlExternally("appworld://vendor/26755")
                 }
+            }
+            Divider {
+                
+            }
+            Label {
+                text: "果果Song"
+                horizontalAlignment: HorizontalAlignment.Fill
+                textStyle.textAlign: TextAlign.Center
+                textStyle.fontSize: FontSize.Large
+                textStyle.fontWeight: FontWeight.W100
+            }
+            Label {
+                multiline: true
+                textStyle.textAlign: TextAlign.Center
+                horizontalAlignment: HorizontalAlignment.Fill
+                textStyle.fontWeight: FontWeight.W100
+                textStyle.fontStyle: FontStyle.Normal
+                text: qsTr("Tester, Github Issues Maintainer")
+                textFormat: TextFormat.Html
             }
             Label {
                 text: qsTr("-- end --")
@@ -168,6 +189,7 @@ Page {
                 textStyle.fontWeight: FontWeight.Normal
                 textStyle.fontStyle: FontStyle.Default
             }
+
         }
     }
 }

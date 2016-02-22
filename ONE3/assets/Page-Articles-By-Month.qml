@@ -42,10 +42,10 @@ Page {
         SystemListDialog {
             id: sld
             property variant rawdate
-            title: "Catagory"
+            title: qsTr("Catagory")
             selectionIndicator: ListSelectionIndicator.Highlight
             dismissOnSelection: true
-            body: "Choose a catagory to browse"
+            body: qsTr("Choose a catagory to browse")
             onFinished: {
                 var selected = parseInt(selectedIndices);
                 console.log(selected)

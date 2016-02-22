@@ -241,73 +241,78 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="39"/>
+        <location filename="../assets/Page-About.qml" line="40"/>
         <source>ABOUT THIS APP</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="40"/>
+        <location filename="../assets/Page-About.qml" line="41"/>
         <source>UNOFFICIAL ONE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="50"/>
+        <location filename="../assets/Page-About.qml" line="51"/>
         <source>one for BlackBerry 10, </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="67"/>
+        <location filename="../assets/Page-About.qml" line="68"/>
         <source>ABOUT PROJECT ONE3.0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="75"/>
+        <location filename="../assets/Page-About.qml" line="76"/>
         <source>Project ONE 3.0 is my 1st BlackBerry 10 project in 2016, it&apos;s FREE and offers a similar UI for ONE readers from other platforms. The complete project is open-sourced on Github, you&apos;re always welcomed to send me pull requests.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="147"/>
-        <source>Please make donations to anphorea@gmail.com via PayPal or Alipay if you want to support my work. Thank you!</source>
+        <location filename="../assets/Page-About.qml" line="149"/>
+        <source>Designer, UI, Developer, i18n</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="152"/>
+        <location filename="../assets/Page-About.qml" line="154"/>
         <source>My BlackBerry 10 Apps</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="158"/>
+        <location filename="../assets/Page-About.qml" line="175"/>
+        <source>Tester, Github Issues Maintainer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-About.qml" line="179"/>
         <source>-- end --</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="84"/>
+        <location filename="../assets/Page-About.qml" line="85"/>
         <source>Source Code on Github</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="98"/>
+        <location filename="../assets/Page-About.qml" line="99"/>
         <source>Please use the button below to submit issues, including bugs, feature requests, etc.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="107"/>
+        <location filename="../assets/Page-About.qml" line="108"/>
         <source>Submit Issues</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="127"/>
+        <location filename="../assets/Page-About.qml" line="117"/>
+        <source>ABOUT THE DEVELOPER TEAM</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-About.qml" line="128"/>
         <source>http://twitter.com/anpho</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="138"/>
+        <location filename="../assets/Page-About.qml" line="139"/>
         <source>Merrick Zhang</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../assets/Page-About.qml" line="116"/>
-        <source>ABOUT THE DEVELOPER</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -321,6 +326,16 @@
     <message>
         <location filename="../assets/Page-Articles-By-Month.qml" line="9"/>
         <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Articles-By-Month.qml" line="45"/>
+        <source>Catagory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Articles-By-Month.qml" line="48"/>
+        <source>Choose a catagory to browse</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -545,6 +560,29 @@
     </message>
 </context>
 <context>
+    <name>Page-Sponsor</name>
+    <message>
+        <location filename="../assets/Page-Sponsor.qml" line="6"/>
+        <source>Sponsors</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Sponsor.qml" line="8"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Sponsor.qml" line="55"/>
+        <source>Thanks!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Sponsor.qml" line="64"/>
+        <source>I&apos;ve received many donations during development, thank you all for your support ! </source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Readme</name>
     <message>
         <location filename="../assets/Readme.qml" line="6"/>
@@ -616,22 +654,32 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../assets/main.qml" line="47"/>
+        <location filename="../assets/main.qml" line="38"/>
+        <source>Sponsors</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/main.qml" line="50"/>
+        <source>Review</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/main.qml" line="68"/>
         <source>Home</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="60"/>
+        <location filename="../assets/main.qml" line="81"/>
         <source>Articles</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="73"/>
+        <location filename="../assets/main.qml" line="94"/>
         <source>Music</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="86"/>
+        <location filename="../assets/main.qml" line="107"/>
         <source>Movie</source>
         <translation type="unfinished"></translation>
     </message>

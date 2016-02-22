@@ -33,6 +33,27 @@ TabbedPane {
                 currentNav.push(aboutpage)
             }
         }
+        actions: [
+            ActionItem {
+                title: qsTr("Sponsors")
+                imageSource: "asset:///icon/ic_info.png"
+                onTriggered: {
+                    onTriggered:
+                    {
+                        var aboutpage = Qt.createComponent("Page-Sponsor.qml").createObject(currentNav);
+                        aboutpage.nav = currentNav;
+                        currentNav.push(aboutpage)
+                    }
+                }
+            },
+            ActionItem {
+                title: qsTr("Review")
+                imageSource: "asset:///icon/ic_edit_bookmarks.png"
+                onTriggered: {
+                    Qt.openUrlExternally("appworld://content/59939466")
+                }
+            }
+        ]
     }
     onCreationCompleted: {
         if (_app.getv("showwelcome", "true") == "true") {

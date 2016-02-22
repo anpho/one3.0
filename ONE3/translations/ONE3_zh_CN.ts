@@ -241,74 +241,87 @@
         <translation>版权说明</translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="39"/>
+        <location filename="../assets/Page-About.qml" line="40"/>
         <source>ABOUT THIS APP</source>
         <translation>关于这个应用程序</translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="40"/>
+        <location filename="../assets/Page-About.qml" line="41"/>
         <source>UNOFFICIAL ONE</source>
         <translation>非官方版本</translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="50"/>
+        <location filename="../assets/Page-About.qml" line="51"/>
         <source>one for BlackBerry 10, </source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="67"/>
+        <location filename="../assets/Page-About.qml" line="68"/>
         <source>ABOUT PROJECT ONE3.0</source>
         <translation>关于 ONE 3.0 项目</translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="75"/>
+        <location filename="../assets/Page-About.qml" line="76"/>
         <source>Project ONE 3.0 is my 1st BlackBerry 10 project in 2016, it&apos;s FREE and offers a similar UI for ONE readers from other platforms. The complete project is open-sourced on Github, you&apos;re always welcomed to send me pull requests.</source>
         <translation>ONE 3.0 项目是我2016年的第一个BlackBerry 10应用项目，免费，并提供了与其他平台的 ONE 相近的界面。 本项目源代码已全部开源在Github上，诚挚欢迎您来提交pull request。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="147"/>
-        <source>Please make donations to anphorea@gmail.com via PayPal or Alipay if you want to support my work. Thank you!</source>
-        <translation>如果您想要赞助，请通过支付宝或PayPal转账至 anphorea@gmail.com 来支持我的开发工作， 谢谢！</translation>
+        <location filename="../assets/Page-About.qml" line="149"/>
+        <source>Designer, UI, Developer, i18n</source>
+        <translation>架构设计，界面设计，界面翻译，代码开发</translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="152"/>
+        <source>Please make donations to anphorea@gmail.com via PayPal or Alipay if you want to support my work. Thank you!</source>
+        <translation type="obsolete">如果您想要赞助，请通过支付宝或PayPal转账至 anphorea@gmail.com 来支持我的开发工作， 谢谢！</translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-About.qml" line="154"/>
         <source>My BlackBerry 10 Apps</source>
         <translation>我的BlackBerry 10应用程序</translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="158"/>
+        <location filename="../assets/Page-About.qml" line="175"/>
+        <source>Tester, Github Issues Maintainer</source>
+        <translation>测试，Github维护</translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-About.qml" line="179"/>
         <source>-- end --</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="84"/>
+        <location filename="../assets/Page-About.qml" line="85"/>
         <source>Source Code on Github</source>
         <translation>Github上的项目主页</translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="98"/>
+        <location filename="../assets/Page-About.qml" line="99"/>
         <source>Please use the button below to submit issues, including bugs, feature requests, etc.</source>
         <translation>请使用下面的按钮来提交Bug、提出功能申请等等，请勿直接发邮件给我。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="107"/>
+        <location filename="../assets/Page-About.qml" line="108"/>
         <source>Submit Issues</source>
         <translation>提交问题</translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="127"/>
+        <location filename="../assets/Page-About.qml" line="117"/>
+        <source>ABOUT THE DEVELOPER TEAM</source>
+        <translation>关于开发组</translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-About.qml" line="128"/>
         <source>http://twitter.com/anpho</source>
         <translation>http://weibo.com/anphox</translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="138"/>
+        <location filename="../assets/Page-About.qml" line="139"/>
         <source>Merrick Zhang</source>
         <translation>狮子头SAMA</translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="116"/>
         <source>ABOUT THE DEVELOPER</source>
-        <translation>关于开发人员</translation>
+        <translation type="obsolete">关于开发人员</translation>
     </message>
 </context>
 <context>
@@ -322,6 +335,16 @@
         <location filename="../assets/Page-Articles-By-Month.qml" line="9"/>
         <source>Back</source>
         <translation>返回</translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Articles-By-Month.qml" line="45"/>
+        <source>Catagory</source>
+        <translation>分类</translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Articles-By-Month.qml" line="48"/>
+        <source>Choose a catagory to browse</source>
+        <translation>请选择要浏览的分类</translation>
     </message>
     <message>
         <location filename="../assets/Page-Articles-By-Month.qml" line="89"/>
@@ -552,6 +575,29 @@
     </message>
 </context>
 <context>
+    <name>Page-Sponsor</name>
+    <message>
+        <location filename="../assets/Page-Sponsor.qml" line="6"/>
+        <source>Sponsors</source>
+        <translation>致谢</translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Sponsor.qml" line="8"/>
+        <source>Back</source>
+        <translation>返回</translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Sponsor.qml" line="55"/>
+        <source>Thanks!</source>
+        <translation>感谢！</translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Sponsor.qml" line="64"/>
+        <source>I&apos;ve received many donations during development, thank you all for your support ! </source>
+        <translation>在《一个 3.0》的开发过程中，得到了以下莓友的大力支持，在此向您致谢！</translation>
+    </message>
+</context>
+<context>
     <name>Readme</name>
     <message>
         <location filename="../assets/Readme.qml" line="6"/>
@@ -623,7 +669,7 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../assets/main.qml" line="47"/>
+        <location filename="../assets/main.qml" line="68"/>
         <source>Home</source>
         <translation>主页</translation>
     </message>
@@ -640,17 +686,27 @@
         <translation type="obsolete">问答</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="60"/>
+        <location filename="../assets/main.qml" line="38"/>
+        <source>Sponsors</source>
+        <translation>致谢</translation>
+    </message>
+    <message>
+        <location filename="../assets/main.qml" line="50"/>
+        <source>Review</source>
+        <translation>评论</translation>
+    </message>
+    <message>
+        <location filename="../assets/main.qml" line="81"/>
         <source>Articles</source>
         <translation>阅读</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="73"/>
+        <location filename="../assets/main.qml" line="94"/>
         <source>Music</source>
         <translation>音乐</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="86"/>
+        <location filename="../assets/main.qml" line="107"/>
         <source>Movie</source>
         <translation>电影</translation>
     </message>

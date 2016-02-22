@@ -60,6 +60,7 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/Page-Search-Music.qml) \
         $$quote($$BASEDIR/assets/Page-Search-Pic.qml) \
         $$quote($$BASEDIR/assets/Page-Settings.qml) \
+        $$quote($$BASEDIR/assets/Page-Sponsor.qml) \
         $$quote($$BASEDIR/assets/Readme.qml) \
         $$quote($$BASEDIR/assets/SearchPictureTemplate.qml) \
         $$quote($$BASEDIR/assets/SingleEssayView.qml) \
@@ -74,6 +75,7 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/icon/ic_doctype_generic.png) \
         $$quote($$BASEDIR/assets/icon/ic_doctype_music.png) \
         $$quote($$BASEDIR/assets/icon/ic_doctype_video.png) \
+        $$quote($$BASEDIR/assets/icon/ic_edit_bookmarks.png) \
         $$quote($$BASEDIR/assets/icon/ic_email_dk.png) \
         $$quote($$BASEDIR/assets/icon/ic_help.png) \
         $$quote($$BASEDIR/assets/icon/ic_home.png) \

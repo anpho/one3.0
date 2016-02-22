@@ -68,7 +68,6 @@ QString ApplicationUI::getv(const QString &objectName, const QString &defaultVal
 {
     QSettings settings;
     if (settings.value(objectName).isNull()) {
-        qDebug() << "[SETTINGS]" << objectName << " is " << defaultValue;
         return defaultValue;
     }
     qDebug() << "[SETTINGS]" << objectName << " is " << settings.value(objectName).toString();
@@ -86,7 +85,7 @@ void ApplicationUI::reset()
 {
     QSettings settings;
     settings.clear();
-    qDebug() << "[SETTINGS]RESETED";
+    qDebug() << "[SETTINGS]ALL SETTINGS RESETED";
 }
 
 void ApplicationUI::invokeVideo(const QString &title, const QString &url)

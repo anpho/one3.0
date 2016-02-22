@@ -1,5 +1,5 @@
 1
-64
+66
 ArticleItemTemplate.qml
 Common.qml
 Detail-EssayView.qml
@@ -15,6 +15,7 @@ icon/ic_diagnostics.png
 icon/ic_doctype_generic.png
 icon/ic_doctype_music.png
 icon/ic_doctype_video.png
+icon/ic_edit_bookmarks.png
 icon/ic_email_dk.png
 icon/ic_help.png
 icon/ic_home.png
@@ -49,6 +50,7 @@ Page-Search-Movie.qml
 Page-Search-Music.qml
 Page-Search-Pic.qml
 Page-Settings.qml
+Page-Sponsor.qml
 Readme.qml
 res/144.png
 res/github.png
