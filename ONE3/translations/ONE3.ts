@@ -602,7 +602,7 @@
     </message>
     <message>
         <location filename="../assets/Readme.qml" line="28"/>
-        <source>This is an early development version of ONE, in this version you may find some features are limited or disabled, trust me, I&apos;m working on it.</source>
+        <source>This is an unofficial release of ONE 3.0, which was designed to offer a similar UI with official release in other platforms. Please check out &quot;HELP&quot; page for details. Thank you.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -617,8 +617,12 @@
     </message>
     <message>
         <location filename="../assets/Readme.qml" line="28"/>
+        <source>This is an unofficial release of ONE 3.0, which was designed to offer a similar UI with official release in other platforms. Please check out &quot;HELP&quot; page for details. Thank you.</source>
+        <translation>这是《一个 3.0》的非官方版本，与其他平台的《一个》官方版本相比，该版本在提供原生黑莓体验的同时，尽可能的重现了官方设计风格。有关本应用的详细信息，请参阅应用内的“帮助”菜单。 谢谢你。</translation>
+    </message>
+    <message>
         <source>This is an early development version of ONE, in this version you may find some features are limited or disabled, trust me, I&apos;m working on it.</source>
-        <translation>这是《一个 3.0》的早期开发版本，在使用中你可能会发现部分功能被禁用，对现在的版本来说是正常的。请至“关于”中的提交问题处，将你遇到的问题提交给我，谢谢！</translation>
+        <translation type="obsolete">这是《一个 3.0》的早期开发版本，在使用中你可能会发现部分功能被禁用，对现在的版本来说是正常的。请至“关于”中的提交问题处，将你遇到的问题提交给我，谢谢！</translation>
     </message>
     <message>
         <location filename="../assets/Readme.qml" line="42"/>

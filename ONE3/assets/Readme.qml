@@ -25,7 +25,7 @@ Sheet {
                 horizontalAlignment: HorizontalAlignment.Fill
                 Label {
                     multiline: true
-                    text: qsTr("This is an early development version of ONE, in this version you may find some features are limited or disabled, trust me, I'm working on it.")
+                    text: qsTr("This is an unofficial release of ONE 3.0, which was designed to offer a similar UI with official release in other platforms. Please check out \"HELP\" page for details. Thank you.")
 
                 }
                 ImageView {
