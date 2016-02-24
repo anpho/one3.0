@@ -1,6 +1,7 @@
 import bb.cascades 1.4
 import bb.device 1.4
 import bb.system 1.2
+import bb.multimedia 1.4
 Page {
     property variant nav
     function setActive() {
@@ -82,6 +83,39 @@ Page {
                         page.setActive();
                     }
                 }
+            },
+            NowPlayingConnection {
+                connectionName: "mpconnMusic"
+                id: npc
+                iconUrl: "asset:///res/nav_title.png"
+                onAcquired: {
+                    var metadata = {
+                        "track": "",
+                        "artist": ""
+                    };
+                    npc.mediaState = MediaState.Started;
+                    npc.setMetaData(metadata);
+                }
+                nextEnabled: false
+                previousEnabled: false
+                repeatMode: RepeatMode.Unsupported
+                shuffleMode: ShuffleMode.Unsupported
+                onPause: {
+                    mp.pause()
+                }
+                onPlay: {
+                    mp.play()
+                }
+            },
+            MediaPlayer {
+                id: mp
+                onMediaStateChanged: {
+                    if (mediaState == MediaState.Started) {
+                        npc.acquire()
+                    } else {
+                        npc.revoke()
+                    }
+                }
             }
         ]
         dataModel: ArrayDataModel {
@@ -107,9 +141,25 @@ Page {
                     onRequestWebView: {
                         shv.ListItem.view.showweb(uri)
                     }
+                    onRequestDirectPlay: {
+                        shv.ListItem.view.doplay(uri);
+                        isPlaying = true;
+                    }
+                    onRequestDirectPause: {
+                        shv.ListItem.view.dopause()
+                        isPlaying = false;
+                    }
                 }
             }
         ]
+        function doplay(uri) {
+            mp.reset()
+            mp.sourceUrl = uri;
+            mp.play();
+        }
+        function dopause() {
+            mp.pause();
+        }
         function showweb(url) {
             var webpage = Qt.createComponent("WebBrowser.qml").createObject(nav);
             webpage.nav = nav

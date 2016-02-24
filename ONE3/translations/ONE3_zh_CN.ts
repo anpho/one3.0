@@ -14,17 +14,17 @@
         <translation>错误信息：%1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="168"/>
+        <location filename="../assets/Detail-EssayView.qml" line="167"/>
         <source>Essay</source>
         <translation>短篇</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="170"/>
+        <location filename="../assets/Detail-EssayView.qml" line="169"/>
         <source>Back</source>
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="283"/>
+        <location filename="../assets/Detail-EssayView.qml" line="282"/>
         <source>RELATED ARTICLES</source>
         <translation>相关作品</translation>
     </message>
@@ -176,7 +176,7 @@
 <context>
     <name>ListMusicView</name>
     <message>
-        <location filename="../assets/ListMusicView.qml" line="31"/>
+        <location filename="../assets/ListMusicView.qml" line="32"/>
         <source>Music</source>
         <translation>音乐</translation>
     </message>
@@ -652,12 +652,12 @@
 <context>
     <name>SingleMusicView</name>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="15"/>
+        <location filename="../assets/SingleMusicView.qml" line="16"/>
         <source>Error : %1</source>
         <translation>错误信息：%1</translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="237"/>
+        <location filename="../assets/SingleMusicView.qml" line="247"/>
         <source>RELATED MUSIC</source>
         <translation>相关作品</translation>
     </message>

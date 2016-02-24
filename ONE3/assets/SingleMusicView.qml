@@ -4,7 +4,8 @@ import bb.device 1.4
 ScrollView {
     id: scrollviewroot
     signal requestWebView(string uri)
-
+    signal requestDirectPlay(string uri)
+    signal requestDirectPause()
     function setActive() {
         scrollRole = ScrollRole.Main
     }
@@ -29,6 +30,7 @@ ScrollView {
             cover_img.url = music_cover
         }
     }
+    property bool isPlaying: false
     property string music_lyric
     property string music_info
     property string related_to
@@ -60,7 +62,7 @@ ScrollView {
                         music_info = ajaxdata.info
                         music_lyric = ajaxdata.lyric
                         music_title = ajaxdata.title
-                        music_url = ajaxdata.web_url //TODO DECODE URL
+                        music_url = ajaxdata.music_id
                         related_to = ajaxdata.related_to
                         xiami_id = ajaxdata.music_id
                         charge_edt = ajaxdata.charge_edt
@@ -135,12 +137,20 @@ ScrollView {
                     }
                 }
                 ImageView {
-                    imageSource: "asset:///icon/ic_play.png"
+                    imageSource: "asset:///res/xiami.png"
+                    scalingMethod: ScalingMethod.AspectFit
+                    visible: music_url.indexOf("http://") < 0
+                }
+                ImageView {
+                    imageSource: isPlaying ? "asset:///icon/ic_pause.png" : "asset:///icon/ic_play.png"
                     filterColor: Color.create("#ff00a4ff")
-                    //TODO OPEN IN BROWSER
                     gestureHandlers: TapHandler {
                         onTapped: {
-                            requestWebView(web_url);
+                            if (music_url.indexOf("http://") == 0) {
+                                isPlaying ? requestDirectPause() : requestDirectPlay(music_url)
+                            } else {
+                                requestWebView(web_url);
+                            }
                         }
                     }
                 }

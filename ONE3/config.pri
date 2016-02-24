@@ -101,7 +101,8 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/res/movie_play.png) \
         $$quote($$BASEDIR/assets/res/music_cover.png) \
         $$quote($$BASEDIR/assets/res/music_tone.png) \
-        $$quote($$BASEDIR/assets/res/nav_title.png)
+        $$quote($$BASEDIR/assets/res/nav_title.png) \
+        $$quote($$BASEDIR/assets/res/xiami.png)
 }
 
 config_pri_source_group1 {

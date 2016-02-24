@@ -1,5 +1,5 @@
 1
-66
+67
 ArticleItemTemplate.qml
 Common.qml
 Detail-EssayView.qml
@@ -60,6 +60,7 @@ res/movie_play.png
 res/music_cover.png
 res/music_tone.png
 res/nav_title.png
+res/xiami.png
 SearchPictureTemplate.qml
 SingleEssayView.qml
 SingleHomepageView.qml
