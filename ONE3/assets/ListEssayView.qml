@@ -95,7 +95,7 @@ Page {
             orientation: LayoutOrientation.LeftToRight
             headerMode: ListHeaderMode.None
         }
-        verticalAlignment: VerticalAlignment.Fill
+
         property int width: di.pixelSize.width
         function showEssay(essayid) {
             // 显示短篇
@@ -121,7 +121,7 @@ Page {
                 type: ""
                 SingleEssayView {
                     id: shv
-                    verticalAlignment: VerticalAlignment.Fill
+                    preferredHeight: Infinity
                     preferredWidth: shv.ListItem.view.width
                     // Set property
                     essay_title: ListItemData.essay.hp_title
