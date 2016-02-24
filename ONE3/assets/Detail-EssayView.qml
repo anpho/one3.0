@@ -133,7 +133,6 @@ Page {
             previousEnabled: false
             repeatMode: RepeatMode.Unsupported
             shuffleMode: ShuffleMode.Unsupported
-            deviceMode: DeviceMode.Playback
             onPause: {
                 mp.pause()
             }
