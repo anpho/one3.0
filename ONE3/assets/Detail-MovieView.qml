@@ -1,6 +1,5 @@
 import bb.cascades 1.4
 import cn.anpho 1.0
-import bb.multimedia 1.4
 import bb.system 1.2
 import bb.device 1.3
 Page {

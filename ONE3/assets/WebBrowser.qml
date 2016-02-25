@@ -2,9 +2,14 @@ import bb.cascades 1.4
 
 Page {
     actionBarAutoHideBehavior: ActionBarAutoHideBehavior.HideOnScroll
+    property bool hidebackbutton: false
+    function setCSS(loc){
+        webv.settings.userStyleSheetLocation = loc
+    }
     function setActive() {
         web_scrollview.scrollRole = ScrollRole.Main
     }
+
     actions: [
         ActionItem {
             ActionBar.placement: ActionBarPlacement.Signature
@@ -16,7 +21,7 @@ Page {
             }
         }
     ]
-    actionBarVisibility: ChromeVisibility.Compact
+    actionBarVisibility: hidebackbutton ? ChromeVisibility.Hidden : ChromeVisibility.Compact
     property variant nav
     property alias uri: webv.url
     ScrollView {

@@ -1,5 +1,5 @@
 1
-67
+69
 ArticleItemTemplate.qml
 Common.qml
 Detail-EssayView.qml
@@ -18,6 +18,7 @@ icon/ic_doctype_video.png
 icon/ic_edit_bookmarks.png
 icon/ic_email_dk.png
 icon/ic_help.png
+icon/ic_history.png
 icon/ic_home.png
 icon/ic_info.png
 icon/ic_microphone.png
@@ -67,3 +68,4 @@ SingleHomepageView.qml
 SingleMovieEntryView.qml
 SingleMusicView.qml
 WebBrowser.qml
+xiami.css

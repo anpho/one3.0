@@ -3,7 +3,7 @@ import cn.anpho 1.0
 import bb.multimedia 1.4
 import bb.system 1.2
 Page {
-    property variant nav
+    property NavigationPane nav
 
     property string essayid
     property string endpoint: "http://v3.wufazhuce.com:8000/api/essay/%1"
@@ -62,11 +62,7 @@ Page {
     property string author_weibo
     // AUDIO
     property string audio_url
-    onAudio_urlChanged: {
-        if (audio_url.trim().length > 0) {
-            mp.sourceUrl = audio_url
-        }
-    }
+
     // CONTENT
     property string c_title
     property string c_subtitle
@@ -102,44 +98,6 @@ Page {
             }, [], false)
     }
     attachedObjects: [
-        MediaPlayer {
-            id: mp
-            property bool isPlaying: false
-            onMediaStateChanged: {
-                if (mediaState == MediaState.Started) {
-                    isPlaying = true
-                    npc.acquire()
-                    npc.mediaState = MediaState.Started
-                } else {
-                    isPlaying = false
-                    npc.revoke()
-                }
-            }
-        },
-        NowPlayingConnection {
-            connectionName: "mpconn"
-            id: npc
-            iconUrl: "asset:///res/nav_title.png"
-            onAcquired: {
-                var metadata = {
-                    "track": c_title,
-                    "artist": author_name
-                };
-                npc.mediaState = MediaState.Started;
-                npc.setMetaData(metadata);
-            }
-            overlayStyle: OverlayStyle.Fancy
-            nextEnabled: false
-            previousEnabled: false
-            repeatMode: RepeatMode.Unsupported
-            shuffleMode: ShuffleMode.Unsupported
-            onPause: {
-                mp.pause()
-            }
-            onPlay: {
-                mp.play()
-            }
-        },
         Common {
             id: co
         },
@@ -163,6 +121,24 @@ Page {
     function setActive() {
         scrollview.scrollRole = ScrollRole.Main
     }
+    function checkstate() {
+        var nowstate = nav.audiomgr.mediaState;
+        var playingurl = nav.audiomgr.cur;
+        if (audio_url == playingurl) {
+            // is playing current audio
+            if (nowstate == MediaState.Started) {
+                return 1; // started
+            } else if (nowstate == MediaState.Stopped) {
+                return 0;
+            } else if (nowstate == MediaState.Paused) {
+                return 2;
+            } else {
+                return -1;
+            }
+        } else {
+            return 0;
+        }
+    }
     titleBar: TitleBar {
         title: qsTr("Essay")
         dismissAction: ActionItem {
@@ -171,18 +147,36 @@ Page {
                 nav.pop();
             }
         }
-        acceptAction: ActionItem {
-            imageSource: mp.isPlaying ? "asset:///icon/ic_pause.png" : "asset:///icon/ic_play.png"
-            title: mp.isPlaying ? "暂停" : "收听"
-            onTriggered: {
-                if (mp.isPlaying) {
-                    mp.pause();
-                } else {
-                    mp.play();
+        acceptAction: checkstate() == -1 ? bufferingbutton : checkstate() == 1 ? pausebutton : playbutton
+        attachedObjects: [
+            ActionItem {
+                id: pausebutton
+                imageSource: "asset:///icon/ic_pause.png"
+                title: qsTr("PAUSE")
+                onTriggered: {
+                    nav.audiomgr.pause();
                 }
+                enabled: audio_url.length > 0
+            },
+            ActionItem {
+                id: playbutton
+                imageSource: "asset:///icon/ic_play.png"
+                title: qsTr("PLAY")
+                onTriggered: {
+                    nav.audiomgr.play(audio_url, {
+                            "title": c_title,
+                            "author": author_name
+                        });
+                }
+                enabled: audio_url.length > 0
+            },
+            ActionItem {
+                id: bufferingbutton
+                imageSource: "asset:///icon/ic_history.png"
+                title: qsTr("...")
+                enabled: false
             }
-            enabled: audio_url.length > 0
-        }
+        ]
     }
     actionBarVisibility: ChromeVisibility.Compact
     actionBarAutoHideBehavior: ActionBarAutoHideBehavior.HideOnScroll

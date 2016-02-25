@@ -78,6 +78,7 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/icon/ic_edit_bookmarks.png) \
         $$quote($$BASEDIR/assets/icon/ic_email_dk.png) \
         $$quote($$BASEDIR/assets/icon/ic_help.png) \
+        $$quote($$BASEDIR/assets/icon/ic_history.png) \
         $$quote($$BASEDIR/assets/icon/ic_home.png) \
         $$quote($$BASEDIR/assets/icon/ic_info.png) \
         $$quote($$BASEDIR/assets/icon/ic_microphone.png) \
@@ -102,7 +103,8 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/res/music_cover.png) \
         $$quote($$BASEDIR/assets/res/music_tone.png) \
         $$quote($$BASEDIR/assets/res/nav_title.png) \
-        $$quote($$BASEDIR/assets/res/xiami.png)
+        $$quote($$BASEDIR/assets/res/xiami.png) \
+        $$quote($$BASEDIR/assets/xiami.css)
 }
 
 config_pri_source_group1 {

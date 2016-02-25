@@ -65,7 +65,7 @@ void WebImageView::setUrl(QUrl url)
      * deal with "asset://" and relative image path
      */
     if (url.scheme() != "http") {
-        resetImage();
+//        resetImage();
         setImageSource(url);
         return;
     }
@@ -131,6 +131,7 @@ void WebImageView::imageLoaded()
              * extract data from it, I'd like to keep imageData in Memory for future use.
              * this is why I use global variant instead of local one.
              */
+            resetImage();
             setImage(Image(imageData));
         }
     }

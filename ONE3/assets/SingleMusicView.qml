@@ -4,11 +4,15 @@ import bb.device 1.4
 ScrollView {
     id: scrollviewroot
     signal requestWebView(string uri)
-    signal requestDirectPlay(string uri)
+    signal requestDirectPlay(string uri, variant meta)
     signal requestDirectPause()
     function setActive() {
         scrollRole = ScrollRole.Main
     }
+    function checkstate() {
+        return scrollviewroot.ListItem.view.checkstate(music_url)
+    }
+
     function html2text(story) {
         return scrollviewroot.ListItem.view.html2text(story)
     }
@@ -30,7 +34,6 @@ ScrollView {
             cover_img.url = music_cover
         }
     }
-    property bool isPlaying: false
     property string music_lyric
     property string music_info
     property string related_to
@@ -140,17 +143,22 @@ ScrollView {
                     imageSource: "asset:///res/xiami.png"
                     scalingMethod: ScalingMethod.AspectFit
                     visible: music_url.indexOf("http://") < 0
+                    gestureHandlers: TapHandler {
+                        onTapped: {
+                            requestWebView(web_url)
+                        }
+                    }
                 }
                 ImageView {
-                    imageSource: isPlaying ? "asset:///icon/ic_pause.png" : "asset:///icon/ic_play.png"
+                    visible: music_url.indexOf("http://") == 0
+                    imageSource: checkstate() == 1 ? "asset:///icon/ic_pause.png" : "asset:///icon/ic_play.png"
                     filterColor: Color.create("#ff00a4ff")
                     gestureHandlers: TapHandler {
                         onTapped: {
-                            if (music_url.indexOf("http://") == 0) {
-                                isPlaying ? requestDirectPause() : requestDirectPlay(music_url)
-                            } else {
-                                requestWebView(web_url);
-                            }
+                            checkstate() == 1 ? requestDirectPause() : requestDirectPlay(music_url, {
+                                    "title": music_title,
+                                    "author": author_name
+                                })
                         }
                     }
                 }
@@ -173,15 +181,15 @@ ScrollView {
             id: togglecontrol
             options: [
                 Option {
-                    text: "音乐故事"
+                    text: qsTr("STORY")
                     id: tstory
                 },
                 Option {
-                    text: "歌词"
+                    text: qsTr("LYRICS")
                     id: tlyric
                 },
                 Option {
-                    text: "歌曲信息"
+                    text: qsTr("INFO")
                     id: tinfo
                 }
             ]

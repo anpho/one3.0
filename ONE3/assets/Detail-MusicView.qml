@@ -11,39 +11,6 @@ Page {
     attachedObjects: [
         SystemToast {
             id: sst
-        },
-        NowPlayingConnection {
-            connectionName: "mpconnMusic"
-            id: npc
-            iconUrl: "asset:///res/nav_title.png"
-            onAcquired: {
-                var metadata = {
-                    "track": "",
-                    "artist": ""
-                };
-                npc.mediaState = MediaState.Started;
-                npc.setMetaData(metadata);
-            }
-            nextEnabled: false
-            previousEnabled: false
-            repeatMode: RepeatMode.Unsupported
-            shuffleMode: ShuffleMode.Unsupported
-            onPause: {
-                mp.pause()
-            }
-            onPlay: {
-                mp.play()
-            }
-        },
-        MediaPlayer {
-            id: mp
-            onMediaStateChanged: {
-                if (mediaState == MediaState.Started) {
-                    npc.acquire()
-                } else {
-                    npc.revoke()
-                }
-            }
         }
     ]
     actionBarVisibility: ChromeVisibility.Compact
@@ -51,6 +18,8 @@ Page {
         var webpage = Qt.createComponent("WebBrowser.qml").createObject(nav);
         webpage.nav = nav
         webpage.uri = url;
+        webpage.setCSS("asset:///xiami.css");
+        webpage.hidebackbutton=true;
         nav.push(webpage)
     }
     function html2text(story) {
@@ -60,17 +29,35 @@ Page {
     SingleMusicView {
         id: shv
         onRequestWebView: {
+            nav.audiomgr.stop();
             showweb(uri)
         }
         onRequestDirectPlay: {
-            isPlaying = true
-            mp.reset()
-            mp.sourceUrl = uri;
-            mp.play();
+            nav.audiomgr.play(uri, meta);
         }
         onRequestDirectPause: {
-            isPlaying = false;
-            mp.stop();
+            nav.audiomgr.pause();
+        }
+        function checkstate() {
+            return checkPlayerstate(music_url)
+        }
+        function checkPlayerstate(audio_url) {
+            var nowstate = nav.audiomgr.mediaState;
+            var playingurl = nav.audiomgr.cur;
+            if (audio_url == playingurl) {
+                // is playing current audio
+                if (nowstate == MediaState.Started) {
+                    return 1; // started
+                } else if (nowstate == MediaState.Stopped) {
+                    return 0;
+                } else if (nowstate == MediaState.Paused) {
+                    return 2;
+                } else {
+                    return -1;
+                }
+            } else {
+                return 0;
+            }
         }
         function html2text(str) {
             return _app.html2text(str)

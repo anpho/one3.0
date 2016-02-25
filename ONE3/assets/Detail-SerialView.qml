@@ -1,6 +1,5 @@
 import bb.cascades 1.4
 import cn.anpho 1.0
-import bb.multimedia 1.4
 import bb.system 1.2
 Page {
     property variant nav
@@ -34,7 +33,6 @@ Page {
                         c_title = d.title
                         c_time = d.maketime
 
-                        audio_url = d.audio
                     } catch (e) {
                         sst.body = qsTr("Error: %1").arg(JSON.stringify(e))
                         sst.show();
@@ -45,7 +43,7 @@ Page {
                     sst.show();
                 }
                 loadRelated()
-            }, [], false,true )
+            }, [], false, true)
     }
     // AUTHOR
     property string author_img
@@ -60,11 +58,6 @@ Page {
     property string author_weibo
     // AUDIO
     property string audio_url
-    onAudio_urlChanged: {
-        if (audio_url.trim().length > 0) {
-            mp.sourceUrl = audio_url
-        }
-    }
     // CONTENT
     property string c_title
     property string c_subtitle
@@ -99,17 +92,6 @@ Page {
             }, [], false)
     }
     attachedObjects: [
-        MediaPlayer {
-            id: mp
-            property bool isPlaying: false
-            onMediaStateChanged: {
-                if (mediaState == MediaState.Started) {
-                    isPlaying = true
-                } else {
-                    isPlaying = false
-                }
-            }
-        },
         Common {
             id: co
         },
@@ -141,18 +123,6 @@ Page {
             onTriggered: {
                 nav.pop();
             }
-        }
-        acceptAction: ActionItem {
-            imageSource: mp.isPlaying ? "asset:///icon/ic_pause.png" : "asset:///icon/ic_play.png"
-            title: mp.isPlaying ? "暂停" : "收听"
-            onTriggered: {
-                if (mp.isPlaying) {
-                    mp.pause();
-                } else {
-                    mp.play();
-                }
-            }
-            enabled: audio_url.length > 0
         }
     }
     actionBarVisibility: ChromeVisibility.Compact

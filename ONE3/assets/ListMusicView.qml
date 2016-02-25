@@ -83,39 +83,6 @@ Page {
                         page.setActive();
                     }
                 }
-            },
-            NowPlayingConnection {
-                connectionName: "mpconnMusic"
-                id: npc
-                iconUrl: "asset:///res/nav_title.png"
-                onAcquired: {
-                    var metadata = {
-                        "track": "",
-                        "artist": ""
-                    };
-                    npc.mediaState = MediaState.Started;
-                    npc.setMetaData(metadata);
-                }
-                nextEnabled: false
-                previousEnabled: false
-                repeatMode: RepeatMode.Unsupported
-                shuffleMode: ShuffleMode.Unsupported
-                onPause: {
-                    mp.pause()
-                }
-                onPlay: {
-                    mp.play()
-                }
-            },
-            MediaPlayer {
-                id: mp
-                onMediaStateChanged: {
-                    if (mediaState == MediaState.Started) {
-                        npc.acquire()
-                    } else {
-                        npc.revoke()
-                    }
-                }
             }
         ]
         dataModel: ArrayDataModel {
@@ -142,29 +109,46 @@ Page {
                         shv.ListItem.view.showweb(uri)
                     }
                     onRequestDirectPlay: {
-                        shv.ListItem.view.doplay(uri);
-                        isPlaying = true;
+                        shv.ListItem.view.doplay(uri, meta);
                     }
                     onRequestDirectPause: {
                         shv.ListItem.view.dopause()
-                        isPlaying = false;
                     }
                 }
             }
         ]
-        function doplay(uri) {
-            mp.reset()
-            mp.sourceUrl = uri;
-            mp.play();
+        function doplay(uri, meta) {
+            nav.audiomgr.play(uri, meta);
         }
         function dopause() {
-            mp.pause();
+            nav.audiomgr.pause();
         }
         function showweb(url) {
+            nav.audiomgr.stop();
             var webpage = Qt.createComponent("WebBrowser.qml").createObject(nav);
             webpage.nav = nav
             webpage.uri = url;
+            webpage.setCSS("asset:///xiami.css");
+            webpage.hidebackbutton=true;
             nav.push(webpage)
+        }
+        function checkstate(audio_url) {
+            var nowstate = nav.audiomgr.mediaState;
+            var playingurl = nav.audiomgr.cur;
+            if (audio_url == playingurl) {
+                // is playing current audio
+                if (nowstate == MediaState.Started) {
+                    return 1; // started
+                } else if (nowstate == MediaState.Stopped) {
+                    return 0;
+                } else if (nowstate == MediaState.Paused) {
+                    return 2;
+                } else {
+                    return -1;
+                }
+            } else {
+                return 0;
+            }
         }
         function html2text(story) {
             return _app.html2text(story);

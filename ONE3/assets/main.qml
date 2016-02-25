@@ -15,6 +15,7 @@
  */
 
 import bb.cascades 1.4
+import bb.multimedia 1.4
 TabbedPane {
     Menu.definition: MenuDefinition {
         helpAction: HelpActionItem {
@@ -70,6 +71,7 @@ TabbedPane {
         property alias nav: nav_hp
         NavigationPane {
             id: nav_hp
+            property variant audiomgr: mpcontroller
             onPopTransitionEnded: co.onPopTransitionEnded(page, nav_hp)
             onPushTransitionEnded: co.onPushTransitionEnded(page, nav_hp)
             ListHomepageView {
@@ -83,6 +85,7 @@ TabbedPane {
         property alias nav: nav_essay
         NavigationPane {
             id: nav_essay
+            property variant audiomgr: mpcontroller
             onPopTransitionEnded: co.onPopTransitionEnded(page, nav_essay)
             onPushTransitionEnded: co.onPushTransitionEnded(page, nav_essay)
             ListEssayView {
@@ -101,6 +104,7 @@ TabbedPane {
             ListMusicView {
                 nav: nav_music
             }
+            property variant audiomgr: mpcontroller
         }
     }
     Tab { //电影 tab
@@ -109,6 +113,7 @@ TabbedPane {
         property alias nav: nav_movie
         NavigationPane {
             id: nav_movie
+            property variant audiomgr: mpcontroller
             onPopTransitionEnded: co.onPopTransitionEnded(page, nav_movie)
             onPushTransitionEnded: co.onPushTransitionEnded(page, nav_movie)
             ListMovieView {
@@ -119,6 +124,68 @@ TabbedPane {
     attachedObjects: [
         Common {
             id: co
+        },
+        MediaPlayer {
+            id: mp
+            onMediaStateChanged: {
+                if (mediaState == MediaState.Started) {
+                    npc.acquire()
+                    npc.mediaState = MediaState.Started
+                } else if (mediaState == MediaState.Stopped) {
+                    npc.mediaState = MediaState.Stopped
+                    npc.revoke();
+                } else if (mediaState == MediaState.Paused) {
+                    npc.mediaState = MediaState.Paused
+                }
+            }
+            onMetaDataChanged: {
+                console.log(JSON.stringify(metaData))
+            }
+        },
+        NowPlayingConnection {
+            id: npc
+            repeatMode: RepeatMode.Unsupported
+            shuffleMode: ShuffleMode.Unsupported
+            connectionName: "onenpc"
+            iconUrl: "asset:///res/nav_title.png"
+            nextEnabled: false
+            previousEnabled: false
+            onPlay: {
+                mp.play()
+            }
+            onPause: {
+                mp.pause()
+            }
+            onAcquired: {
+                
+            }
+            overlayStyle: OverlayStyle.Fancy
+        },
+        QtObject {
+            id: mpcontroller
+            property string cur: ""
+            function play(uri, meta) {
+                cur = uri; //MARK CURRENT URL
+                mp.sourceUrl = uri;
+                mp.play();
+                var metadata = {
+                    "track": meta.title,
+                    "artist": meta.author
+                };
+                npc.setMetaData(metadata)
+            }
+            function pause() {
+                mp.pause()
+            }
+            function stop() {
+                mp.stop()
+            }
+            function reset() {
+                mp.reset();
+            }
+            property variant mediaState: mp.mediaState
+            property variant mplayer: mp
+            property variant nowplayconnection: npc
         }
     ]
 }

@@ -14,17 +14,32 @@
         <translation>错误信息：%1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="167"/>
+        <location filename="../assets/Detail-EssayView.qml" line="143"/>
         <source>Essay</source>
         <translation>短篇</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="169"/>
+        <location filename="../assets/Detail-EssayView.qml" line="145"/>
         <source>Back</source>
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="282"/>
+        <location filename="../assets/Detail-EssayView.qml" line="155"/>
+        <source>PAUSE</source>
+        <translation>暂停</translation>
+    </message>
+    <message>
+        <location filename="../assets/Detail-EssayView.qml" line="164"/>
+        <source>PLAY</source>
+        <translation>收听</translation>
+    </message>
+    <message>
+        <location filename="../assets/Detail-EssayView.qml" line="176"/>
+        <source>...</source>
+        <translation>稍候</translation>
+    </message>
+    <message>
+        <location filename="../assets/Detail-EssayView.qml" line="276"/>
         <source>RELATED ARTICLES</source>
         <translation>相关作品</translation>
     </message>
@@ -45,39 +60,39 @@
 <context>
     <name>Detail-MovieView</name>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="44"/>
+        <location filename="../assets/Detail-MovieView.qml" line="43"/>
         <source>Back</source>
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="79"/>
-        <location filename="../assets/Detail-MovieView.qml" line="99"/>
+        <location filename="../assets/Detail-MovieView.qml" line="78"/>
+        <location filename="../assets/Detail-MovieView.qml" line="98"/>
         <source>Error: %1</source>
         <translation>错误信息：%1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="85"/>
-        <location filename="../assets/Detail-MovieView.qml" line="104"/>
+        <location filename="../assets/Detail-MovieView.qml" line="84"/>
+        <location filename="../assets/Detail-MovieView.qml" line="103"/>
         <source>Error : %1</source>
         <translation>错误信息：%1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="149"/>
+        <location filename="../assets/Detail-MovieView.qml" line="148"/>
         <source>Trailer</source>
         <translation>播放预告片</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="179"/>
+        <location filename="../assets/Detail-MovieView.qml" line="178"/>
         <source>Intro</source>
         <translation>电影简介</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="196"/>
+        <location filename="../assets/Detail-MovieView.qml" line="195"/>
         <source>Staff</source>
         <translation>演职员</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="214"/>
+        <location filename="../assets/Detail-MovieView.qml" line="213"/>
         <source>Story</source>
         <translation>电影故事</translation>
     </message>
@@ -85,27 +100,27 @@
 <context>
     <name>Detail-QAView</name>
     <message>
-        <location filename="../assets/Detail-QAView.qml" line="28"/>
+        <location filename="../assets/Detail-QAView.qml" line="27"/>
         <source>Error: %1</source>
         <translation>错误信息：%1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-QAView.qml" line="33"/>
+        <location filename="../assets/Detail-QAView.qml" line="32"/>
         <source>Error : %1</source>
         <translation>错误信息：%1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-QAView.qml" line="95"/>
+        <location filename="../assets/Detail-QAView.qml" line="94"/>
         <source>Q&amp;A</source>
         <translation>问答</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-QAView.qml" line="97"/>
+        <location filename="../assets/Detail-QAView.qml" line="96"/>
         <source>Back</source>
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-QAView.qml" line="171"/>
+        <location filename="../assets/Detail-QAView.qml" line="170"/>
         <source>RELATED ARTICLES</source>
         <translation>相关作品</translation>
     </message>
@@ -113,27 +128,27 @@
 <context>
     <name>Detail-SerialView</name>
     <message>
-        <location filename="../assets/Detail-SerialView.qml" line="39"/>
+        <location filename="../assets/Detail-SerialView.qml" line="37"/>
         <source>Error: %1</source>
         <translation>错误信息：%1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-SerialView.qml" line="44"/>
+        <location filename="../assets/Detail-SerialView.qml" line="42"/>
         <source>Error : %1</source>
         <translation>错误信息：%1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-SerialView.qml" line="138"/>
+        <location filename="../assets/Detail-SerialView.qml" line="120"/>
         <source>Serials</source>
         <translation>连载</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-SerialView.qml" line="140"/>
+        <location filename="../assets/Detail-SerialView.qml" line="122"/>
         <source>Back</source>
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-SerialView.qml" line="253"/>
+        <location filename="../assets/Detail-SerialView.qml" line="223"/>
         <source>RELATED ARTICLES</source>
         <translation>相关作品</translation>
     </message>
@@ -652,12 +667,27 @@
 <context>
     <name>SingleMusicView</name>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="16"/>
+        <location filename="../assets/SingleMusicView.qml" line="20"/>
         <source>Error : %1</source>
         <translation>错误信息：%1</translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="247"/>
+        <location filename="../assets/SingleMusicView.qml" line="184"/>
+        <source>STORY</source>
+        <translation>音乐故事</translation>
+    </message>
+    <message>
+        <location filename="../assets/SingleMusicView.qml" line="188"/>
+        <source>LYRICS</source>
+        <translation>歌词</translation>
+    </message>
+    <message>
+        <location filename="../assets/SingleMusicView.qml" line="192"/>
+        <source>INFO</source>
+        <translation>相关信息</translation>
+    </message>
+    <message>
+        <location filename="../assets/SingleMusicView.qml" line="255"/>
         <source>RELATED MUSIC</source>
         <translation>相关作品</translation>
     </message>
@@ -665,7 +695,7 @@
 <context>
     <name>WebBrowser</name>
     <message>
-        <location filename="../assets/WebBrowser.qml" line="11"/>
+        <location filename="../assets/WebBrowser.qml" line="16"/>
         <source>Back</source>
         <translation>返回</translation>
     </message>
@@ -673,7 +703,7 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../assets/main.qml" line="68"/>
+        <location filename="../assets/main.qml" line="69"/>
         <source>Home</source>
         <translation>主页</translation>
     </message>
@@ -690,27 +720,27 @@
         <translation type="obsolete">问答</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="38"/>
+        <location filename="../assets/main.qml" line="39"/>
         <source>Sponsors</source>
         <translation>致谢</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="50"/>
+        <location filename="../assets/main.qml" line="51"/>
         <source>Review</source>
         <translation>评论</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="81"/>
+        <location filename="../assets/main.qml" line="83"/>
         <source>Articles</source>
         <translation>阅读</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="94"/>
+        <location filename="../assets/main.qml" line="97"/>
         <source>Music</source>
         <translation>音乐</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="107"/>
+        <location filename="../assets/main.qml" line="111"/>
         <source>Movie</source>
         <translation>电影</translation>
     </message>
