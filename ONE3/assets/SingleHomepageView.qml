@@ -90,7 +90,7 @@ ScrollView {
             }
             implicitLayoutAnimationsEnabled: false
             Label {
-                textStyle.fontSize: FontSize.XXSmall
+                textStyle.fontSize: FontSize.XSmall
                 textStyle.fontWeight: FontWeight.W100
                 opacity: 0.6
                 text: vol
@@ -101,7 +101,7 @@ ScrollView {
                 implicitLayoutAnimationsEnabled: false
             }
             Label {
-                textStyle.fontSize: FontSize.XXSmall
+                textStyle.fontSize: FontSize.XSmall
                 textStyle.fontWeight: FontWeight.W100
                 opacity: 0.6
                 text: author
@@ -148,12 +148,13 @@ ScrollView {
                     ]
                 }
             ]
+            textStyle.fontSize: FontSize.Medium
         }
         Label {
             horizontalAlignment: HorizontalAlignment.Fill
             textStyle.textAlign: TextAlign.Right
             text: datestring
-            textStyle.fontSize: FontSize.XXSmall
+            textStyle.fontSize: FontSize.XSmall
             opacity: 0.6
             implicitLayoutAnimationsEnabled: false
         }
