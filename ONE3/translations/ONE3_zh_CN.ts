@@ -14,32 +14,32 @@
         <translation>错误信息：%1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="143"/>
+        <location filename="../assets/Detail-EssayView.qml" line="144"/>
         <source>Essay</source>
         <translation>短篇</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="145"/>
+        <location filename="../assets/Detail-EssayView.qml" line="146"/>
         <source>Back</source>
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="155"/>
+        <location filename="../assets/Detail-EssayView.qml" line="156"/>
         <source>PAUSE</source>
         <translation>暂停</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="164"/>
+        <location filename="../assets/Detail-EssayView.qml" line="165"/>
         <source>PLAY</source>
         <translation>收听</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="176"/>
+        <location filename="../assets/Detail-EssayView.qml" line="177"/>
         <source>...</source>
         <translation>稍候</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="276"/>
+        <location filename="../assets/Detail-EssayView.qml" line="277"/>
         <source>RELATED ARTICLES</source>
         <translation>相关作品</translation>
     </message>
@@ -110,17 +110,17 @@
         <translation>错误信息：%1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-QAView.qml" line="94"/>
+        <location filename="../assets/Detail-QAView.qml" line="95"/>
         <source>Q&amp;A</source>
         <translation>问答</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-QAView.qml" line="96"/>
+        <location filename="../assets/Detail-QAView.qml" line="97"/>
         <source>Back</source>
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-QAView.qml" line="170"/>
+        <location filename="../assets/Detail-QAView.qml" line="171"/>
         <source>RELATED ARTICLES</source>
         <translation>相关作品</translation>
     </message>
@@ -138,17 +138,17 @@
         <translation>错误信息：%1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-SerialView.qml" line="120"/>
+        <location filename="../assets/Detail-SerialView.qml" line="121"/>
         <source>Serials</source>
         <translation>连载</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-SerialView.qml" line="122"/>
+        <location filename="../assets/Detail-SerialView.qml" line="123"/>
         <source>Back</source>
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-SerialView.qml" line="223"/>
+        <location filename="../assets/Detail-SerialView.qml" line="224"/>
         <source>RELATED ARTICLES</source>
         <translation>相关作品</translation>
     </message>
@@ -524,67 +524,82 @@
         <translation>切换到此模式以节省OLED屏幕设备的电源。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="64"/>
+        <location filename="../assets/Page-Settings.qml" line="73"/>
+        <source>Show Back Button</source>
+        <translation>显示 返回 按钮</translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Settings.qml" line="92"/>
+        <source>Use this to hide the back button at the bottom left corner.</source>
+        <translation>设置此项来控制左下角 返回 按钮的显示。</translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Settings.qml" line="98"/>
+        <source>*restart required.</source>
+        <translation>*需要重新启动应用。</translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Settings.qml" line="105"/>
         <source>CONTENT CACHE(EXPERIMENTAL)</source>
         <translation>内容缓存（实验性功能）</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="65"/>
+        <location filename="../assets/Page-Settings.qml" line="106"/>
         <source>WARNING</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="73"/>
+        <location filename="../assets/Page-Settings.qml" line="114"/>
         <source>Enable this feature will increase the storage usage, while decreases network traffic.</source>
         <translation>启用本功能将在减少网络流量的同时，增加应用程序空间占用。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="83"/>
+        <location filename="../assets/Page-Settings.qml" line="124"/>
         <source>Use Network Cache</source>
         <translation>使用网络缓存</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="98"/>
+        <location filename="../assets/Page-Settings.qml" line="139"/>
         <source>RESET APPLICATION</source>
         <translation>重置应用程序</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="106"/>
+        <location filename="../assets/Page-Settings.qml" line="147"/>
         <source>If anything wrong happens, please use this button to RESET all application settings. This will erease all cached content too.</source>
         <translation>如果发生任何异常，请使用下面的按钮来清空应用程序的全部缓存和设置。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="114"/>
+        <location filename="../assets/Page-Settings.qml" line="155"/>
         <source>RESET</source>
         <translation>重置应用程序</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="119"/>
+        <location filename="../assets/Page-Settings.qml" line="160"/>
         <source>Settings Reseted</source>
         <translation>设置已重置</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="124"/>
+        <location filename="../assets/Page-Settings.qml" line="165"/>
         <source>IMAGE CACHE</source>
         <translation>图像缓存</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="132"/>
+        <location filename="../assets/Page-Settings.qml" line="173"/>
         <source>This app will store as top as 100MBytes image cache on device, which will improve the application performance. Make sure you know what you&apos;re doing before you press the button below.</source>
         <translation>本应用会缓存至多100M的图片数据，以减少网络流量、提高应用性能。清空图片缓存将导致全部图片重新下载。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="141"/>
+        <location filename="../assets/Page-Settings.qml" line="182"/>
         <source>CLEAR CACHE</source>
         <translation>清空缓存</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="144"/>
+        <location filename="../assets/Page-Settings.qml" line="185"/>
         <source>Cache Cleared</source>
         <translation>缓存已清空</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="150"/>
+        <location filename="../assets/Page-Settings.qml" line="191"/>
         <source>-- end --</source>
         <translation></translation>
     </message>
@@ -610,6 +625,11 @@
         <location filename="../assets/Page-Sponsor.qml" line="64"/>
         <source>I&apos;ve received many donations during development, thank you all for your support ! </source>
         <translation>在《一个 3.0》的开发过程中，得到了以下莓友的大力支持，在此向您致谢！</translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Sponsor.qml" line="78"/>
+        <source>Loading</source>
+        <translation>加载中</translation>
     </message>
 </context>
 <context>
@@ -672,8 +692,12 @@
         <translation>错误信息：%1</translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="22"/>
         <source>Here&apos;s %1&apos;s %2, please enjoy: %3</source>
+        <translation type="obsolete">这是 %1 的 《%2》，请欣赏： %3 来自《一个》</translation>
+    </message>
+    <message>
+        <location filename="../assets/SingleMusicView.qml" line="22"/>
+        <source>Here&apos;s %1&apos;s &lt;%2&gt;, please enjoy: %3</source>
         <translation>这是 %1 的 《%2》，请欣赏： %3 来自《一个》</translation>
     </message>
     <message>
@@ -708,7 +732,7 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../assets/main.qml" line="69"/>
+        <location filename="../assets/main.qml" line="70"/>
         <source>Home</source>
         <translation>主页</translation>
     </message>
@@ -735,17 +759,17 @@
         <translation>评论</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="83"/>
+        <location filename="../assets/main.qml" line="85"/>
         <source>Articles</source>
         <translation>阅读</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="97"/>
+        <location filename="../assets/main.qml" line="100"/>
         <source>Music</source>
         <translation>音乐</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="111"/>
+        <location filename="../assets/main.qml" line="115"/>
         <source>Movie</source>
         <translation>电影</translation>
     </message>

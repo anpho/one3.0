@@ -14,32 +14,32 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="143"/>
+        <location filename="../assets/Detail-EssayView.qml" line="144"/>
         <source>Essay</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="145"/>
+        <location filename="../assets/Detail-EssayView.qml" line="146"/>
         <source>Back</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="155"/>
+        <location filename="../assets/Detail-EssayView.qml" line="156"/>
         <source>PAUSE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="164"/>
+        <location filename="../assets/Detail-EssayView.qml" line="165"/>
         <source>PLAY</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="176"/>
+        <location filename="../assets/Detail-EssayView.qml" line="177"/>
         <source>...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="276"/>
+        <location filename="../assets/Detail-EssayView.qml" line="277"/>
         <source>RELATED ARTICLES</source>
         <translation type="unfinished"></translation>
     </message>
@@ -110,17 +110,17 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-QAView.qml" line="94"/>
+        <location filename="../assets/Detail-QAView.qml" line="95"/>
         <source>Q&amp;A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-QAView.qml" line="96"/>
+        <location filename="../assets/Detail-QAView.qml" line="97"/>
         <source>Back</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-QAView.qml" line="170"/>
+        <location filename="../assets/Detail-QAView.qml" line="171"/>
         <source>RELATED ARTICLES</source>
         <translation type="unfinished"></translation>
     </message>
@@ -138,17 +138,17 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-SerialView.qml" line="120"/>
+        <location filename="../assets/Detail-SerialView.qml" line="121"/>
         <source>Serials</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-SerialView.qml" line="122"/>
+        <location filename="../assets/Detail-SerialView.qml" line="123"/>
         <source>Back</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-SerialView.qml" line="223"/>
+        <location filename="../assets/Detail-SerialView.qml" line="224"/>
         <source>RELATED ARTICLES</source>
         <translation type="unfinished"></translation>
     </message>
@@ -509,67 +509,82 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="64"/>
-        <source>CONTENT CACHE(EXPERIMENTAL)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../assets/Page-Settings.qml" line="65"/>
-        <source>WARNING</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../assets/Page-Settings.qml" line="73"/>
-        <source>Enable this feature will increase the storage usage, while decreases network traffic.</source>
+        <source>Show Back Button</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="83"/>
-        <source>Use Network Cache</source>
+        <location filename="../assets/Page-Settings.qml" line="92"/>
+        <source>Use this to hide the back button at the bottom left corner.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../assets/Page-Settings.qml" line="98"/>
-        <source>RESET APPLICATION</source>
+        <source>*restart required.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Settings.qml" line="105"/>
+        <source>CONTENT CACHE(EXPERIMENTAL)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../assets/Page-Settings.qml" line="106"/>
-        <source>If anything wrong happens, please use this button to RESET all application settings. This will erease all cached content too.</source>
+        <source>WARNING</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../assets/Page-Settings.qml" line="114"/>
-        <source>RESET</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../assets/Page-Settings.qml" line="119"/>
-        <source>Settings Reseted</source>
+        <source>Enable this feature will increase the storage usage, while decreases network traffic.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../assets/Page-Settings.qml" line="124"/>
+        <source>Use Network Cache</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Settings.qml" line="139"/>
+        <source>RESET APPLICATION</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Settings.qml" line="147"/>
+        <source>If anything wrong happens, please use this button to RESET all application settings. This will erease all cached content too.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Settings.qml" line="155"/>
+        <source>RESET</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Settings.qml" line="160"/>
+        <source>Settings Reseted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Settings.qml" line="165"/>
         <source>IMAGE CACHE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="132"/>
+        <location filename="../assets/Page-Settings.qml" line="173"/>
         <source>This app will store as top as 100MBytes image cache on device, which will improve the application performance. Make sure you know what you&apos;re doing before you press the button below.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="141"/>
+        <location filename="../assets/Page-Settings.qml" line="182"/>
         <source>CLEAR CACHE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="144"/>
+        <location filename="../assets/Page-Settings.qml" line="185"/>
         <source>Cache Cleared</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="150"/>
+        <location filename="../assets/Page-Settings.qml" line="191"/>
         <source>-- end --</source>
         <translation type="unfinished"></translation>
     </message>
@@ -594,6 +609,11 @@
     <message>
         <location filename="../assets/Page-Sponsor.qml" line="64"/>
         <source>I&apos;ve received many donations during development, thank you all for your support ! </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Sponsor.qml" line="78"/>
+        <source>Loading</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -648,27 +668,32 @@
 <context>
     <name>SingleMusicView</name>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="20"/>
+        <location filename="../assets/SingleMusicView.qml" line="21"/>
         <source>Error : %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="184"/>
+        <location filename="../assets/SingleMusicView.qml" line="22"/>
+        <source>Here&apos;s %1&apos;s &lt;%2&gt;, please enjoy: %3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/SingleMusicView.qml" line="198"/>
         <source>STORY</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="188"/>
+        <location filename="../assets/SingleMusicView.qml" line="202"/>
         <source>LYRICS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="192"/>
+        <location filename="../assets/SingleMusicView.qml" line="206"/>
         <source>INFO</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="255"/>
+        <location filename="../assets/SingleMusicView.qml" line="269"/>
         <source>RELATED MUSIC</source>
         <translation type="unfinished"></translation>
     </message>
@@ -694,22 +719,22 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="69"/>
+        <location filename="../assets/main.qml" line="70"/>
         <source>Home</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="83"/>
+        <location filename="../assets/main.qml" line="85"/>
         <source>Articles</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="97"/>
+        <location filename="../assets/main.qml" line="100"/>
         <source>Music</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="111"/>
+        <location filename="../assets/main.qml" line="115"/>
         <source>Movie</source>
         <translation type="unfinished"></translation>
     </message>
