@@ -87,7 +87,7 @@ Page {
                         }
                     }
                     ToggleButton {
-                        checked: _app.getv("ncache", "false") == "true"
+                        checked: _app.getv("ncache", "true") == "true"
                         onCheckedChanged: {
                             _app.setv("ncache", checked)
                         }
