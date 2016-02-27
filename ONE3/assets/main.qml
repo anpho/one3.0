@@ -64,6 +64,7 @@ TabbedPane {
     }
     id: tabroot
     property variant currentNav: activeTab.nav
+    property bool showBackButton: _app.getv("backbutton", "true") == "true"
     showTabsOnActionBar: false
     Tab { //主页
         title: qsTr("Home") + Retranslate.onLocaleOrLanguageChanged
@@ -74,6 +75,7 @@ TabbedPane {
             property variant audiomgr: mpcontroller
             onPopTransitionEnded: co.onPopTransitionEnded(page, nav_hp)
             onPushTransitionEnded: co.onPushTransitionEnded(page, nav_hp)
+            backButtonsVisible: tabroot.showBackButton
             ListHomepageView {
                 nav: nav_hp
             }
@@ -88,6 +90,7 @@ TabbedPane {
             property variant audiomgr: mpcontroller
             onPopTransitionEnded: co.onPopTransitionEnded(page, nav_essay)
             onPushTransitionEnded: co.onPushTransitionEnded(page, nav_essay)
+            backButtonsVisible:  tabroot.showBackButton
             ListEssayView {
                 nav: nav_essay
             }
@@ -101,6 +104,7 @@ TabbedPane {
             id: nav_music
             onPopTransitionEnded: co.onPopTransitionEnded(page, nav_music)
             onPushTransitionEnded: co.onPushTransitionEnded(page, nav_music)
+            backButtonsVisible:  tabroot.showBackButton
             ListMusicView {
                 nav: nav_music
             }
@@ -116,6 +120,7 @@ TabbedPane {
             property variant audiomgr: mpcontroller
             onPopTransitionEnded: co.onPopTransitionEnded(page, nav_movie)
             onPushTransitionEnded: co.onPushTransitionEnded(page, nav_movie)
+            backButtonsVisible:  tabroot.showBackButton
             ListMovieView {
                 nav: nav_movie
             }
@@ -157,7 +162,7 @@ TabbedPane {
                 mp.pause()
             }
             onAcquired: {
-                
+
             }
             overlayStyle: OverlayStyle.Fancy
         },

@@ -60,6 +60,47 @@ Page {
 
                 }
             }
+            Container {
+                layout: StackLayout {
+                    orientation: LayoutOrientation.LeftToRight
+
+                }
+                topPadding: 20.0
+                leftPadding: 20.0
+                rightPadding: 20.0
+                bottomPadding: 20.0
+                Label {
+                    text: qsTr("Show Back Button")
+                    verticalAlignment: VerticalAlignment.Center
+                    layoutProperties: StackLayoutProperties {
+                        spaceQuota: 1.0
+                    }
+                }
+                ToggleButton {
+                    checked: _app.getv("backbutton", "true") == "true"
+                    onCheckedChanged: {
+                        _app.setv("backbutton", checked)
+                    }
+                }
+            }
+            Container {
+                leftPadding: 20.0
+                rightPadding: 20.0
+                bottomPadding: 20.0
+                Label {
+                    multiline: true
+                    text: qsTr("Use this to hide the back button at the bottom left corner.")
+                    textStyle.fontWeight: FontWeight.W100
+                    textStyle.fontSize: FontSize.XSmall
+                }
+                Label {
+                    multiline: true
+                    text: qsTr("*restart required.")
+                    textStyle.fontWeight: FontWeight.W100
+                    textStyle.fontSize: FontSize.XSmall
+                    textStyle.color: Color.Red
+                }
+            }
             Header {
                 title: qsTr("CONTENT CACHE(EXPERIMENTAL)")
                 subtitle: qsTr("WARNING")
