@@ -4,6 +4,7 @@ import bb.device 1.4
 ScrollView {
     id: scrollviewroot
     signal requestWebView(string uri)
+    signal requestShare(string uri)
     signal requestDirectPlay(string uri, variant meta)
     signal requestDirectPause()
     function setActive() {
@@ -18,7 +19,7 @@ ScrollView {
     }
     property string endpoint: "http://v3.wufazhuce.com:8000/api/music/detail/%1"
     property string errmsg: qsTr("Error : %1")
-
+    property string sharemsg: qsTr("Here's %1's <%2>, please enjoy: %3")
     property variant ajaxdata
 
     // MUSIC INFO
@@ -140,9 +141,22 @@ ScrollView {
                     }
                 }
                 ImageView {
+                    imageSource: "asset:///icon/ic_share.png"
+                    scalingMethod: ScalingMethod.AspectFit
+                    filterColor: Color.create("#6A6D90")
+                    rotationZ: 90.0
+                    gestureHandlers: TapHandler {
+                        onTapped: {
+                            var sharetext = sharemsg.arg(author_name).arg(music_title).arg(web_url)
+                            requestShare(sharetext);
+                        }
+                    }
+                    visible: web_url.length > 0
+                }
+                ImageView {
                     imageSource: "asset:///res/xiami.png"
                     scalingMethod: ScalingMethod.AspectFit
-                    visible: music_url.indexOf("http://") < 0
+                    visible: music_url.length > 0 && music_url.indexOf("http://") < 0
                     gestureHandlers: TapHandler {
                         onTapped: {
                             requestWebView(web_url)

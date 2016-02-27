@@ -114,11 +114,17 @@ Page {
                     onRequestDirectPause: {
                         shv.ListItem.view.dopause()
                     }
+                    onRequestShare: {
+                        shv.ListItem.view.doshare(uri)
+                    }
                 }
             }
         ]
         function doplay(uri, meta) {
             nav.audiomgr.play(uri, meta);
+        }
+        function doshare(uri) {
+            _app.shareText(uri);
         }
         function dopause() {
             nav.audiomgr.pause();
@@ -129,7 +135,7 @@ Page {
             webpage.nav = nav
             webpage.uri = url;
             webpage.setCSS("asset:///xiami.css");
-            webpage.hidebackbutton=true;
+            webpage.hidebackbutton = true;
             nav.push(webpage)
         }
         function checkstate(audio_url) {

@@ -19,7 +19,7 @@ Page {
         webpage.nav = nav
         webpage.uri = url;
         webpage.setCSS("asset:///xiami.css");
-        webpage.hidebackbutton=true;
+        webpage.hidebackbutton = true;
         nav.push(webpage)
     }
     function html2text(story) {
@@ -37,6 +37,9 @@ Page {
         }
         onRequestDirectPause: {
             nav.audiomgr.pause();
+        }
+        onRequestShare: {
+            _app.shareText(uri);
         }
         function checkstate() {
             return checkPlayerstate(music_url)

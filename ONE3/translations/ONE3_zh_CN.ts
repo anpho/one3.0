@@ -667,27 +667,32 @@
 <context>
     <name>SingleMusicView</name>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="20"/>
+        <location filename="../assets/SingleMusicView.qml" line="21"/>
         <source>Error : %1</source>
         <translation>错误信息：%1</translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="184"/>
+        <location filename="../assets/SingleMusicView.qml" line="22"/>
+        <source>Here&apos;s %1&apos;s %2, please enjoy: %3</source>
+        <translation>这是 %1 的 《%2》，请欣赏： %3 来自《一个》</translation>
+    </message>
+    <message>
+        <location filename="../assets/SingleMusicView.qml" line="198"/>
         <source>STORY</source>
         <translation>音乐故事</translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="188"/>
+        <location filename="../assets/SingleMusicView.qml" line="202"/>
         <source>LYRICS</source>
         <translation>歌词</translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="192"/>
+        <location filename="../assets/SingleMusicView.qml" line="206"/>
         <source>INFO</source>
         <translation>相关信息</translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="255"/>
+        <location filename="../assets/SingleMusicView.qml" line="269"/>
         <source>RELATED MUSIC</source>
         <translation>相关作品</translation>
     </message>
