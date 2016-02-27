@@ -76,6 +76,7 @@ Page {
     property string related_endpoint: "http://v3.wufazhuce.com:8000/api/related/essay/%1"
     function loadRelated() {
         var endp = related_endpoint.arg(essayid)
+        relatedArticles.removeAll()
         co.ajax("GET", endp, [], function(b, d) {
                 if (b) {
                     try {
@@ -270,10 +271,13 @@ Page {
                 textStyle.textAlign: TextAlign.Right
             }
             Container {
-                id: relatedArticles
                 visible: related_content_count > 0
+                horizontalAlignment: HorizontalAlignment.Fill
                 Header {
                     title: qsTr("RELATED ARTICLES")
+                }
+                Container {
+                    id: relatedArticles
                 }
             }
         }

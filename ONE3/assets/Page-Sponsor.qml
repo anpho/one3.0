@@ -74,6 +74,11 @@ Page {
                 Container {
                     id: sponsors
                     horizontalAlignment: HorizontalAlignment.Fill
+                    Label {
+                        text: qsTr("Loading")
+                        horizontalAlignment: HorizontalAlignment.Fill
+                        textStyle.textAlign: TextAlign.Center
+                    }
                 }
             }
         }
