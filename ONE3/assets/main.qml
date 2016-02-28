@@ -76,6 +76,9 @@ TabbedPane {
             onPopTransitionEnded: co.onPopTransitionEnded(page, nav_hp)
             onPushTransitionEnded: co.onPushTransitionEnded(page, nav_hp)
             backButtonsVisible: tabroot.showBackButton
+            function notifySettingsReload(){
+                tabroot.showBackButton = _app.getv("backbutton", "true") == "true"
+            }
             ListHomepageView {
                 nav: nav_hp
             }
@@ -91,6 +94,9 @@ TabbedPane {
             onPopTransitionEnded: co.onPopTransitionEnded(page, nav_essay)
             onPushTransitionEnded: co.onPushTransitionEnded(page, nav_essay)
             backButtonsVisible:  tabroot.showBackButton
+            function notifySettingsReload(){
+                tabroot.showBackButton = _app.getv("backbutton", "true") == "true"
+            }
             ListEssayView {
                 nav: nav_essay
             }
@@ -105,6 +111,9 @@ TabbedPane {
             onPopTransitionEnded: co.onPopTransitionEnded(page, nav_music)
             onPushTransitionEnded: co.onPushTransitionEnded(page, nav_music)
             backButtonsVisible:  tabroot.showBackButton
+            function notifySettingsReload(){
+                tabroot.showBackButton = _app.getv("backbutton", "true") == "true"
+            }
             ListMusicView {
                 nav: nav_music
             }
@@ -115,6 +124,9 @@ TabbedPane {
         title: qsTr("Movie") + Retranslate.onLocaleOrLanguageChanged
         imageSource: "asset:///icon/ic_doctype_video.png"
         property alias nav: nav_movie
+        function notifySettingsReload(){
+            tabroot.showBackButton = _app.getv("backbutton", "true") == "true"
+        }
         NavigationPane {
             id: nav_movie
             property variant audiomgr: mpcontroller

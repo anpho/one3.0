@@ -5,7 +5,7 @@ Page {
     titleBar: TitleBar {
         title: qsTr("Settings")
     }
-    property variant nav
+    property NavigationPane nav
     attachedObjects: [
         WebImageView {
             id: wiv
@@ -30,6 +30,7 @@ Page {
                 leftPadding: 20.0
                 rightPadding: 20.0
                 bottomPadding: 20.0
+
                 Label {
                     text: qsTr("Use Dark Theme")
                     verticalAlignment: VerticalAlignment.Center
@@ -80,6 +81,7 @@ Page {
                     checked: _app.getv("backbutton", "true") == "true"
                     onCheckedChanged: {
                         _app.setv("backbutton", checked)
+                        nav.notifySettingsReload();
                     }
                 }
             }
@@ -92,13 +94,6 @@ Page {
                     text: qsTr("Use this to hide the back button at the bottom left corner.")
                     textStyle.fontWeight: FontWeight.W100
                     textStyle.fontSize: FontSize.XSmall
-                }
-                Label {
-                    multiline: true
-                    text: qsTr("*restart required.")
-                    textStyle.fontWeight: FontWeight.W100
-                    textStyle.fontSize: FontSize.XSmall
-                    textStyle.color: Color.Red
                 }
             }
             Header {
