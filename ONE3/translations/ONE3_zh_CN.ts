@@ -548,77 +548,77 @@
         <translation>使用下方的滑块来调整正文字体大小。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="115"/>
+        <location filename="../assets/Page-Settings.qml" line="114"/>
         <source>If you want to adjust the overall text size of this app, please use System Settings / Display Settings / Font Size.</source>
         <translation>如果你需要调整全局字体大小，请前往系统设置 / 显示屏 / 字体大小 处进行设置。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="158"/>
+        <location filename="../assets/Page-Settings.qml" line="156"/>
         <source>DEFAULT</source>
         <translation>恢复默认值</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="166"/>
+        <location filename="../assets/Page-Settings.qml" line="164"/>
         <source>CONTENT CACHE(EXPERIMENTAL)</source>
         <translation>内容缓存（实验性功能）</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="167"/>
+        <location filename="../assets/Page-Settings.qml" line="165"/>
         <source>WARNING</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="175"/>
+        <location filename="../assets/Page-Settings.qml" line="173"/>
         <source>Enable this feature will increase the storage usage, while decreases network traffic.</source>
         <translation>启用本功能将在减少网络流量的同时，增加应用程序空间占用。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="185"/>
+        <location filename="../assets/Page-Settings.qml" line="183"/>
         <source>Use Network Cache</source>
         <translation>使用网络缓存</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="200"/>
+        <location filename="../assets/Page-Settings.qml" line="198"/>
         <source>RESET APPLICATION</source>
         <translation>重置应用程序</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="208"/>
+        <location filename="../assets/Page-Settings.qml" line="206"/>
         <source>If anything wrong happens, please use this button to RESET all application settings. This will erease all cached content too.</source>
         <translation>如果发生任何异常，请使用下面的按钮来清空应用程序的全部缓存和设置。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="216"/>
+        <location filename="../assets/Page-Settings.qml" line="214"/>
         <source>RESET</source>
         <translation>重置应用程序</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="221"/>
+        <location filename="../assets/Page-Settings.qml" line="219"/>
         <source>Settings Reseted</source>
         <translation>设置已重置</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="226"/>
+        <location filename="../assets/Page-Settings.qml" line="224"/>
         <source>IMAGE CACHE</source>
         <translation>图像缓存</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="234"/>
+        <location filename="../assets/Page-Settings.qml" line="232"/>
         <source>This app will store as top as 100MBytes image cache on device, which will improve the application performance. Make sure you know what you&apos;re doing before you press the button below.</source>
         <translation>本应用会缓存至多100M的图片数据，以减少网络流量、提高应用性能。清空图片缓存将导致全部图片重新下载。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="243"/>
+        <location filename="../assets/Page-Settings.qml" line="241"/>
         <source>CLEAR CACHE</source>
         <translation>清空缓存</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="246"/>
+        <location filename="../assets/Page-Settings.qml" line="244"/>
         <source>Cache Cleared</source>
         <translation>缓存已清空</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="252"/>
+        <location filename="../assets/Page-Settings.qml" line="250"/>
         <source>-- end --</source>
         <translation></translation>
     </message>
