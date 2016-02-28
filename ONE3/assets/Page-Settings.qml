@@ -96,15 +96,70 @@ Page {
                     textStyle.fontSize: FontSize.XSmall
                 }
             }
+            Header {
+                title: qsTr("FONT SIZE")
+            }
             Container {
                 leftPadding: 20.0
                 rightPadding: 20.0
+                topPadding: 20
                 bottomPadding: 20.0
                 Label {
                     multiline: true
-                    text: qsTr("Use this to hide the back button at the bottom left corner.")
+                    text: qsTr("Adjust the font size of display text.")
                     textStyle.fontWeight: FontWeight.W100
                     textStyle.fontSize: FontSize.XSmall
+                }
+                Label {
+                    multiline: true
+                    text: qsTr("If you want to adjust the overall text size of this app, please use System Settings / Display Settings / Font Size.")
+                    textStyle.fontWeight: FontWeight.W100
+                    textStyle.fontSize: FontSize.XSmall
+                }
+            }
+            Container {
+                leftPadding: 20.0
+
+                rightPadding: 20.0
+                topPadding: 20.0
+                bottomPadding: 20.0
+                Container {
+                    background: ui.palette.plainBase
+                    topPadding: 20.0
+                    leftPadding: 20.0
+                    bottomPadding: 20.0
+                    rightPadding: 20.0
+                    horizontalAlignment: HorizontalAlignment.Fill
+                    Label {
+                        text: "信任这种东西有时候挺奇怪的，就是那种你在我背后开了一枪，我依然觉得是枪走了火的感觉。by 暖小团"
+                        multiline: true
+                        textFormat: TextFormat.Plain
+                        textStyle.fontSize: FontSize.PercentageValue
+                        textStyle.fontSizeValue: textslider.value
+                        horizontalAlignment: HorizontalAlignment.Fill
+                        textFit.mode: LabelTextFitMode.FitToBounds
+                        textStyle.textAlign: TextAlign.Center
+                        textStyle.color: ui.palette.primary
+                    }
+                }
+                Slider {
+                    horizontalAlignment: HorizontalAlignment.Center
+                    fromValue: 80
+                    toValue: 200
+                    value: _app.getv("fontsize", "100")
+                    id: textslider
+                    onValueChanged: {
+                        _app.setv("fontsize", Math.round(value))
+                        nav.notifySettingsReload();
+                    }
+                }
+                Button {
+                    horizontalAlignment: HorizontalAlignment.Center
+                    text: qsTr("DEFAULT")
+                    appearance: ControlAppearance.Default
+                    onClicked: {
+                        textslider.value = 100;
+                    }
                 }
             }
             Header {

@@ -65,6 +65,7 @@ TabbedPane {
     id: tabroot
     property variant currentNav: activeTab.nav
     property bool showBackButton: _app.getv("backbutton", "true") == "true"
+    property int fontsize: parseInt(_app.getv("fontsize", "100"))
     showTabsOnActionBar: false
     Tab { //主页
         title: qsTr("Home") + Retranslate.onLocaleOrLanguageChanged
@@ -76,8 +77,10 @@ TabbedPane {
             onPopTransitionEnded: co.onPopTransitionEnded(page, nav_hp)
             onPushTransitionEnded: co.onPushTransitionEnded(page, nav_hp)
             backButtonsVisible: tabroot.showBackButton
-            function notifySettingsReload(){
+            property alias fontsize: tabroot.fontsize
+            function notifySettingsReload() {
                 tabroot.showBackButton = _app.getv("backbutton", "true") == "true"
+                tabroot.fontsize = parseInt(_app.getv("fontsize", "100"))
             }
             ListHomepageView {
                 nav: nav_hp
@@ -93,9 +96,11 @@ TabbedPane {
             property variant audiomgr: mpcontroller
             onPopTransitionEnded: co.onPopTransitionEnded(page, nav_essay)
             onPushTransitionEnded: co.onPushTransitionEnded(page, nav_essay)
-            backButtonsVisible:  tabroot.showBackButton
-            function notifySettingsReload(){
+            backButtonsVisible: tabroot.showBackButton
+            property alias fontsize: tabroot.fontsize
+            function notifySettingsReload() {
                 tabroot.showBackButton = _app.getv("backbutton", "true") == "true"
+                tabroot.fontsize = parseInt(_app.getv("fontsize", "100"))
             }
             ListEssayView {
                 nav: nav_essay
@@ -110,9 +115,11 @@ TabbedPane {
             id: nav_music
             onPopTransitionEnded: co.onPopTransitionEnded(page, nav_music)
             onPushTransitionEnded: co.onPushTransitionEnded(page, nav_music)
-            backButtonsVisible:  tabroot.showBackButton
-            function notifySettingsReload(){
+            backButtonsVisible: tabroot.showBackButton
+            property alias fontsize: tabroot.fontsize
+            function notifySettingsReload() {
                 tabroot.showBackButton = _app.getv("backbutton", "true") == "true"
+                tabroot.fontsize = parseInt(_app.getv("fontsize", "100"))
             }
             ListMusicView {
                 nav: nav_music
@@ -124,15 +131,17 @@ TabbedPane {
         title: qsTr("Movie") + Retranslate.onLocaleOrLanguageChanged
         imageSource: "asset:///icon/ic_doctype_video.png"
         property alias nav: nav_movie
-        function notifySettingsReload(){
-            tabroot.showBackButton = _app.getv("backbutton", "true") == "true"
-        }
         NavigationPane {
             id: nav_movie
             property variant audiomgr: mpcontroller
             onPopTransitionEnded: co.onPopTransitionEnded(page, nav_movie)
             onPushTransitionEnded: co.onPushTransitionEnded(page, nav_movie)
-            backButtonsVisible:  tabroot.showBackButton
+            backButtonsVisible: tabroot.showBackButton
+            property alias fontsize: tabroot.fontsize
+            function notifySettingsReload() {
+                tabroot.showBackButton = _app.getv("backbutton", "true") == "true"
+                tabroot.fontsize = parseInt(_app.getv("fontsize", "100"))
+            }
             ListMovieView {
                 nav: nav_movie
             }

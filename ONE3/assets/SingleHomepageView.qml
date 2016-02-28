@@ -18,6 +18,7 @@ ScrollView {
     property string hpid
     property string hid
 
+    property int fontsize : 100
     onHidChanged: {
         if (hid.trim().length > 0)
             loadByID(hid);
@@ -148,7 +149,8 @@ ScrollView {
                     ]
                 }
             ]
-            textStyle.fontSize: FontSize.Medium
+            textStyle.fontSize: FontSize.PercentageValue
+            textStyle.fontSizeValue: fontsize
         }
         Label {
             horizontalAlignment: HorizontalAlignment.Fill

@@ -8,7 +8,7 @@ Container {
     property string tweibo
     property string tintro
     property variant rawdata
-    
+    property int font_size : 100
     signal reqDetail(string tid)
     signal reqWeibo(string weibo)
     
@@ -40,8 +40,8 @@ Container {
         rightPadding: 10.0
         Label {
             text: ttitle
-            textStyle.fontSize: FontSize.Large
-            
+            textStyle.fontSize: FontSize.PercentageValue
+            textStyle.fontSizeValue: font_size * 1.2
             multiline: true
         }
         Divider {
@@ -90,6 +90,8 @@ Container {
             multiline: true
             text: tintro
             visible: text.length>0
+            textStyle.fontSize: FontSize.PercentageValue
+            textStyle.fontSizeValue: font_size
         }
     }
 }

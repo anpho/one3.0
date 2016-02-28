@@ -90,11 +90,13 @@ Page {
             function requestView(hid) {
                 showMovie(hid)
             }
+            property int fontsize:nav.fontsize
             listItemComponents: [
                 ListItemComponent {
                     type: ""
                     SearchPictureTemplate {
                         id: spt
+                        font_size: spt.ListItem.view.fontsize
                         onRequestView: {
                             spt.ListItem.view.requestView(hid)
                         }

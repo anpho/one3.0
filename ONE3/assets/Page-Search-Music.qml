@@ -90,6 +90,7 @@ Page {
             function requestView(hid) {
                 showMusic(hid)
             }
+            property int fontsize : nav.fontsize
             listItemComponents: [
                 ListItemComponent {
                     type: ""
@@ -98,6 +99,7 @@ Page {
                         onRequestView: {
                             spt.ListItem.view.requestView(hid)
                         }
+                        font_size: spt.ListItem.view.fontsize
                         hid: ListItemData.id
                         image_url: ListItemData.cover
                         author: ListItemData.title

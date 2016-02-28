@@ -125,7 +125,8 @@ Page {
                 verticalAlignment: VerticalAlignment.Top
                 horizontalAlignment: HorizontalAlignment.Fill
                 multiline: true
-                textStyle.fontSize: FontSize.Small
+                textStyle.fontSize: FontSize.PercentageValue
+                textStyle.fontSizeValue: nav.fontsize
                 textStyle.textAlign: TextAlign.Left
                 implicitLayoutAnimationsEnabled: false
                 textStyle.fontWeight: FontWeight.W100
@@ -149,7 +150,8 @@ Page {
                 verticalAlignment: VerticalAlignment.Top
                 horizontalAlignment: HorizontalAlignment.Fill
                 multiline: true
-                textStyle.fontSize: FontSize.Medium
+                textStyle.fontSize: FontSize.PercentageValue
+                textStyle.fontSizeValue: nav.fontsize
                 textStyle.textAlign: TextAlign.Left
                 implicitLayoutAnimationsEnabled: false
                 textStyle.fontWeight: FontWeight.W100

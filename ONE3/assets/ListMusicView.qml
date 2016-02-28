@@ -97,12 +97,14 @@ Page {
         }
         verticalAlignment: VerticalAlignment.Fill
         property int width: di.pixelSize.width
+        property int fontsize : nav.fontsize
         listItemComponents: [
             ListItemComponent {
                 type: ""
                 SingleMusicView {
                     music_id: ListItemData.id
                     id: shv
+                    fontsize: shv.ListItem.view.fontsize
                     verticalAlignment: VerticalAlignment.Fill
                     preferredWidth: shv.ListItem.view.width
                     onRequestWebView: {

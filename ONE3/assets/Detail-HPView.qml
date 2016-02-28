@@ -30,6 +30,7 @@ Page {
     SingleHomepageView {
         id: shv
         verticalAlignment: VerticalAlignment.Fill
+        fontsize: nav.fontsize
         onRequestAuthorView: {
             invokeAuthorView(authorid)
         }

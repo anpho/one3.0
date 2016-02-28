@@ -59,10 +59,13 @@ Page {
                 hpview.essayid = cur.content_id;
                 nav.push(hpview)
             }
+            property int fontsize: nav.fontsize
             listItemComponents: [
                 ListItemComponent {
                     type: ""
                     ArticleItemTemplate {
+                        id: shv
+                        font_size: shv.ListItem.view.fontsize
                         tid: ListItemData.content_id
                         ttitle: ListItemData.hp_title
                         tintro: ListItemData.guide_word

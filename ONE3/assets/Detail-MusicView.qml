@@ -28,6 +28,7 @@ Page {
     }
     SingleMusicView {
         id: shv
+        fontsize: nav.fontsize
         onRequestWebView: {
             nav.audiomgr.stop();
             showweb(uri)

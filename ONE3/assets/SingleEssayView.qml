@@ -1,6 +1,7 @@
 import bb.cascades 1.4
 import cn.anpho 1.0
 ScrollView {
+    property int fontsize : 100
     // =====signals=====
     signal requestEssay(string essayid)
     signal requestSerial(string serialid)
@@ -39,6 +40,7 @@ ScrollView {
             onReqWeibo: {
                 requestWeibo(weibo)
             }
+            font_size: fontsize
             tid: essay_id
             tauthor: essay_author
             timgurl: essay_imgurl
@@ -53,6 +55,7 @@ ScrollView {
             tid: serial_id
             leftImage: "asset:///icon/ic_notes.png"
             ttitle: serial_title
+            font_size: fontsize
             timgurl: serial_imgurl
             tauthor: serial_author
             tintro: serial_intro
@@ -62,6 +65,7 @@ ScrollView {
                 requestQA(q_id)
             }
             leftImage: "asset:///icon/ic_help.png"
+            font_size: fontsize
             ttitle: q_title
             tintro: q_intro
         }

@@ -187,7 +187,8 @@ Page {
                 Label {
                     text: officialstory
                     multiline: true
-                    textStyle.fontSize: FontSize.Medium
+                    textStyle.fontSize: FontSize.PercentageValue
+                    textStyle.fontSizeValue: nav.fontsize
                     textFit.mode: LabelTextFitMode.FitToBounds
                 }
             }
@@ -204,7 +205,8 @@ Page {
                 Label {
                     text: info
                     multiline: true
-                    textStyle.fontSize: FontSize.Medium
+                    textStyle.fontSize: FontSize.PercentageValue
+                    textStyle.fontSizeValue: nav.fontsize
                     textFit.mode: LabelTextFitMode.FitToBounds
                     textFormat: TextFormat.Html
                 }
@@ -228,7 +230,8 @@ Page {
                 Label {
                     text: s_content
                     multiline: true
-                    textStyle.fontSize: FontSize.Medium
+                    textStyle.fontSize: FontSize.PercentageValue
+                    textStyle.fontSizeValue: nav.fontsize
                     textFit.mode: LabelTextFitMode.FitToBounds
                     textFormat: TextFormat.Html
                 }

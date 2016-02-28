@@ -59,10 +59,13 @@ Page {
                 hpview.serialid = cur.id;
                 nav.push(hpview)
             }
+            property int fontsize: nav.fontsize
             listItemComponents: [
                 ListItemComponent {
                     type: ""
                     ArticleItemTemplate {
+                        id: shv
+                        font_size: shv.ListItem.view.fontsize
                         tid: ListItemData.id
                         ttitle: ListItemData.title
                         tintro: ListItemData.excerpt

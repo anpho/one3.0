@@ -59,10 +59,13 @@ Page {
                 hpview.qid = cur.question_id;
                 nav.push(hpview)
             }
+            property int fontsize: nav.fontsize
             listItemComponents: [
                 ListItemComponent {
                     type: ""
                     ArticleItemTemplate {
+                        id: shv
+                        font_size: shv.ListItem.view.fontsize
                         tid: ListItemData.question_id
                         ttitle: ListItemData.question_title
                         tintro: ListItemData.answer_title

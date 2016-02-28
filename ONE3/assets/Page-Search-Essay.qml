@@ -121,6 +121,7 @@ Page {
                 qaview.nav = nav;
                 nav.push(qaview)
             }
+            property int fontsize : nav.fontsize
             listItemComponents: [
                 ListItemComponent {
                     type: "essay"
@@ -128,6 +129,7 @@ Page {
                         id: ate
                         tid: ListItemData.id
                         ttitle: ListItemData.title
+                        font_size: ate.ListItem.view.fontsize
                         onReqDetail: {
                             ate.ListItem.view.showEssay(ListItemData.id)
                         }
@@ -139,6 +141,7 @@ Page {
                         id: atq
                         tid: ListItemData.id
                         ttitle: ListItemData.title
+                        font_size: atq.ListItem.view.fontsize
                         leftImage: "asset:///icon/ic_help.png"
                         onReqDetail: {
                             atq.ListItem.view.showQA(ListItemData.id);
@@ -151,6 +154,7 @@ Page {
                         id: ats
                         tid: ListItemData.id
                         ttitle: ListItemData.title
+                        font_size: ats.ListItem.view.fontsize
                         leftImage: "asset:///icon/ic_notes.png"
                         onReqDetail: {
                             ats.ListItem.view.showSerial(ListItemData.id)

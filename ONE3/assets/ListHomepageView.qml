@@ -93,6 +93,7 @@ Page {
         }
         verticalAlignment: VerticalAlignment.Fill
         property int width: di.pixelSize.width
+        property int fontsize : nav.fontsize
         listItemComponents: [
             ListItemComponent {
                 type: ""
@@ -101,6 +102,7 @@ Page {
                     id: shv
                     verticalAlignment: VerticalAlignment.Fill
                     preferredWidth: shv.ListItem.view.width
+                    fontsize: shv.ListItem.view.fontsize
                     onRequestAuthorView: {
                         shv.ListItem.view.invokeAuthorView(authorid)
                     }

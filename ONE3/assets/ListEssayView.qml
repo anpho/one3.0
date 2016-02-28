@@ -97,6 +97,7 @@ Page {
         }
 
         property int width: di.pixelSize.width
+        property int fontsize: nav.fontsize
         function showEssay(essayid) {
             // 显示短篇
             var essayview = Qt.createComponent("Detail-EssayView.qml").createObject(nav);
@@ -123,6 +124,7 @@ Page {
                     id: shv
                     preferredHeight: Infinity
                     preferredWidth: shv.ListItem.view.width
+                    fontsize: shv.ListItem.view.fontsize
                     // Set property
                     essay_title: ListItemData.essay.hp_title
                     essay_author: ListItemData.essay.author[0].user_name

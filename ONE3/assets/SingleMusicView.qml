@@ -17,6 +17,7 @@ ScrollView {
     function html2text(story) {
         return scrollviewroot.ListItem.view.html2text(story)
     }
+    property int fontsize: 100
     property string endpoint: "http://v3.wufazhuce.com:8000/api/music/detail/%1"
     property string errmsg: qsTr("Error : %1")
     property string sharemsg: qsTr("Here's %1's <%2>, please enjoy: %3")
@@ -232,7 +233,8 @@ ScrollView {
                 textFormat: TextFormat.Html
                 horizontalAlignment: HorizontalAlignment.Fill
                 textStyle.textAlign: TextAlign.Justify
-                textStyle.fontSize: FontSize.Medium
+                textStyle.fontSize: FontSize.PercentageValue
+                textStyle.fontSizeValue: fontsize
             }
         }
         Container {
@@ -244,7 +246,8 @@ ScrollView {
                 text: music_lyric
                 multiline: true
                 textFormat: TextFormat.Html
-                textStyle.fontSize: FontSize.Medium
+                textStyle.fontSize: FontSize.PercentageValue
+                textStyle.fontSizeValue: fontsize
             }
         }
         Container {
@@ -256,7 +259,8 @@ ScrollView {
                 text: music_info
                 multiline: true
                 textFormat: TextFormat.Html
-                textStyle.fontSize: FontSize.Medium
+                textStyle.fontSize: FontSize.PercentageValue
+                textStyle.fontSizeValue: fontsize
             }
         }
         Container {

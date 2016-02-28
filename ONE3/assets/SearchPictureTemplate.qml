@@ -8,6 +8,8 @@ Container {
             requestView(hid)
         }
     }
+    property int font_size: 100
+
     property string hid
     property string image_url
     onImage_urlChanged: {
@@ -48,7 +50,8 @@ Container {
         Label {
             multiline: true
             text: hpcontent
-            textStyle.fontSize: FontSize.Small
+            textStyle.fontSize: FontSize.PercentageValue
+            textStyle.fontSizeValue: font_size
             autoSize.maxLineCount: 2
         }
     }

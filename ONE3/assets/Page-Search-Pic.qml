@@ -91,6 +91,7 @@ Page {
             function requestView(hid) {
                 showHP(hid)
             }
+            property int fontsize: nav.fontsize
             listItemComponents: [
                 ListItemComponent {
                     type: ""
@@ -99,6 +100,7 @@ Page {
                         onRequestView: {
                             spt.ListItem.view.requestView(hid)
                         }
+                        font_size: spt.ListItem.view.fontsize
                         hid: ListItemData.hpcontent_id
                         image_url: ListItemData.hp_img_url
                         author: ListItemData.hp_author
