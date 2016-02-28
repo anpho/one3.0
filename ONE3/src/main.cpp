@@ -32,7 +32,7 @@ Q_DECL_EXPORT int main(int argc, char **argv)
         qputenv("CASCADES_THEME", (settings.value("use_dark_theme").toString()+"?primaryColor=0x6A6D90&amp;primaryBase=0xB8BECA").toUtf8());
     }
     qmlRegisterType<WebImageView>("cn.anpho", 1, 0, "WebImageView");
-
+    sleep(1);
     Application app(argc, argv);
 
     // Create the Application UI object, this is where the main.qml file
