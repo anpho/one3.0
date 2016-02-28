@@ -499,92 +499,88 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="34"/>
+        <location filename="../assets/Page-Settings.qml" line="35"/>
         <source>Use Dark Theme</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="57"/>
+        <location filename="../assets/Page-Settings.qml" line="58"/>
         <source>Turn this on to save battery on OLED screen devices.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="73"/>
+        <location filename="../assets/Page-Settings.qml" line="74"/>
         <source>Show Back Button</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="92"/>
+        <location filename="../assets/Page-Settings.qml" line="94"/>
+        <location filename="../assets/Page-Settings.qml" line="105"/>
         <source>Use this to hide the back button at the bottom left corner.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="98"/>
-        <source>*restart required.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../assets/Page-Settings.qml" line="105"/>
+        <location filename="../assets/Page-Settings.qml" line="111"/>
         <source>CONTENT CACHE(EXPERIMENTAL)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="106"/>
+        <location filename="../assets/Page-Settings.qml" line="112"/>
         <source>WARNING</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="114"/>
+        <location filename="../assets/Page-Settings.qml" line="120"/>
         <source>Enable this feature will increase the storage usage, while decreases network traffic.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="124"/>
+        <location filename="../assets/Page-Settings.qml" line="130"/>
         <source>Use Network Cache</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="139"/>
+        <location filename="../assets/Page-Settings.qml" line="145"/>
         <source>RESET APPLICATION</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="147"/>
+        <location filename="../assets/Page-Settings.qml" line="153"/>
         <source>If anything wrong happens, please use this button to RESET all application settings. This will erease all cached content too.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="155"/>
+        <location filename="../assets/Page-Settings.qml" line="161"/>
         <source>RESET</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="160"/>
+        <location filename="../assets/Page-Settings.qml" line="166"/>
         <source>Settings Reseted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="165"/>
+        <location filename="../assets/Page-Settings.qml" line="171"/>
         <source>IMAGE CACHE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="173"/>
+        <location filename="../assets/Page-Settings.qml" line="179"/>
         <source>This app will store as top as 100MBytes image cache on device, which will improve the application performance. Make sure you know what you&apos;re doing before you press the button below.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="182"/>
+        <location filename="../assets/Page-Settings.qml" line="188"/>
         <source>CLEAR CACHE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="185"/>
+        <location filename="../assets/Page-Settings.qml" line="191"/>
         <source>Cache Cleared</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="191"/>
+        <location filename="../assets/Page-Settings.qml" line="197"/>
         <source>-- end --</source>
         <translation type="unfinished"></translation>
     </message>
@@ -724,17 +720,17 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="85"/>
+        <location filename="../assets/main.qml" line="88"/>
         <source>Articles</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="100"/>
+        <location filename="../assets/main.qml" line="106"/>
         <source>Music</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="115"/>
+        <location filename="../assets/main.qml" line="124"/>
         <source>Movie</source>
         <translation type="unfinished"></translation>
     </message>

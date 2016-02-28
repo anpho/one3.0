@@ -514,92 +514,92 @@
         <translation>视觉效果设置</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="34"/>
+        <location filename="../assets/Page-Settings.qml" line="35"/>
         <source>Use Dark Theme</source>
         <translation>使用暗调主题</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="57"/>
+        <location filename="../assets/Page-Settings.qml" line="58"/>
         <source>Turn this on to save battery on OLED screen devices.</source>
         <translation>切换到此模式以节省OLED屏幕设备的电源。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="73"/>
+        <location filename="../assets/Page-Settings.qml" line="74"/>
         <source>Show Back Button</source>
         <translation>显示 返回 按钮</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="92"/>
+        <location filename="../assets/Page-Settings.qml" line="94"/>
+        <location filename="../assets/Page-Settings.qml" line="105"/>
         <source>Use this to hide the back button at the bottom left corner.</source>
         <translation>设置此项来控制左下角 返回 按钮的显示。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="98"/>
         <source>*restart required.</source>
-        <translation>*需要重新启动应用。</translation>
+        <translation type="obsolete">*需要重新启动应用。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="105"/>
+        <location filename="../assets/Page-Settings.qml" line="111"/>
         <source>CONTENT CACHE(EXPERIMENTAL)</source>
         <translation>内容缓存（实验性功能）</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="106"/>
+        <location filename="../assets/Page-Settings.qml" line="112"/>
         <source>WARNING</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="114"/>
+        <location filename="../assets/Page-Settings.qml" line="120"/>
         <source>Enable this feature will increase the storage usage, while decreases network traffic.</source>
         <translation>启用本功能将在减少网络流量的同时，增加应用程序空间占用。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="124"/>
+        <location filename="../assets/Page-Settings.qml" line="130"/>
         <source>Use Network Cache</source>
         <translation>使用网络缓存</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="139"/>
+        <location filename="../assets/Page-Settings.qml" line="145"/>
         <source>RESET APPLICATION</source>
         <translation>重置应用程序</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="147"/>
+        <location filename="../assets/Page-Settings.qml" line="153"/>
         <source>If anything wrong happens, please use this button to RESET all application settings. This will erease all cached content too.</source>
         <translation>如果发生任何异常，请使用下面的按钮来清空应用程序的全部缓存和设置。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="155"/>
+        <location filename="../assets/Page-Settings.qml" line="161"/>
         <source>RESET</source>
         <translation>重置应用程序</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="160"/>
+        <location filename="../assets/Page-Settings.qml" line="166"/>
         <source>Settings Reseted</source>
         <translation>设置已重置</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="165"/>
+        <location filename="../assets/Page-Settings.qml" line="171"/>
         <source>IMAGE CACHE</source>
         <translation>图像缓存</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="173"/>
+        <location filename="../assets/Page-Settings.qml" line="179"/>
         <source>This app will store as top as 100MBytes image cache on device, which will improve the application performance. Make sure you know what you&apos;re doing before you press the button below.</source>
         <translation>本应用会缓存至多100M的图片数据，以减少网络流量、提高应用性能。清空图片缓存将导致全部图片重新下载。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="182"/>
+        <location filename="../assets/Page-Settings.qml" line="188"/>
         <source>CLEAR CACHE</source>
         <translation>清空缓存</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="185"/>
+        <location filename="../assets/Page-Settings.qml" line="191"/>
         <source>Cache Cleared</source>
         <translation>缓存已清空</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="191"/>
+        <location filename="../assets/Page-Settings.qml" line="197"/>
         <source>-- end --</source>
         <translation></translation>
     </message>
@@ -759,17 +759,17 @@
         <translation>评论</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="85"/>
+        <location filename="../assets/main.qml" line="88"/>
         <source>Articles</source>
         <translation>阅读</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="100"/>
+        <location filename="../assets/main.qml" line="106"/>
         <source>Music</source>
         <translation>音乐</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="115"/>
+        <location filename="../assets/main.qml" line="124"/>
         <source>Movie</source>
         <translation>电影</translation>
     </message>

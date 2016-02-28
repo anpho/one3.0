@@ -96,6 +96,17 @@ Page {
                     textStyle.fontSize: FontSize.XSmall
                 }
             }
+            Container {
+                leftPadding: 20.0
+                rightPadding: 20.0
+                bottomPadding: 20.0
+                Label {
+                    multiline: true
+                    text: qsTr("Use this to hide the back button at the bottom left corner.")
+                    textStyle.fontWeight: FontWeight.W100
+                    textStyle.fontSize: FontSize.XSmall
+                }
+            }
             Header {
                 title: qsTr("CONTENT CACHE(EXPERIMENTAL)")
                 subtitle: qsTr("WARNING")
