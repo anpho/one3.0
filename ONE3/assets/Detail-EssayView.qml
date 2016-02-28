@@ -32,7 +32,7 @@ Page {
                         c_content = d.hp_content
                         console.log(c_content.length)
                         c_intro = d.guide_word
-                        c_subtitle = d.sub_title
+                        c_subtitle = co.valueOrEmpty(d.sub_title)
                         c_title = d.hp_title
                         c_time = d.hp_makettime
 
