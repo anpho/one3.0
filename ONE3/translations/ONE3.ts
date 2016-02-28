@@ -39,7 +39,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="278"/>
+        <location filename="../assets/Detail-EssayView.qml" line="283"/>
         <source>RELATED ARTICLES</source>
         <translation type="unfinished"></translation>
     </message>
@@ -77,22 +77,22 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="148"/>
+        <location filename="../assets/Detail-MovieView.qml" line="154"/>
         <source>Trailer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="178"/>
+        <location filename="../assets/Detail-MovieView.qml" line="184"/>
         <source>Intro</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="196"/>
+        <location filename="../assets/Detail-MovieView.qml" line="202"/>
         <source>Staff</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="215"/>
+        <location filename="../assets/Detail-MovieView.qml" line="221"/>
         <source>Story</source>
         <translation type="unfinished"></translation>
     </message>
@@ -120,7 +120,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-QAView.qml" line="173"/>
+        <location filename="../assets/Detail-QAView.qml" line="178"/>
         <source>RELATED ARTICLES</source>
         <translation type="unfinished"></translation>
     </message>
@@ -148,7 +148,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-SerialView.qml" line="225"/>
+        <location filename="../assets/Detail-SerialView.qml" line="230"/>
         <source>RELATED ARTICLES</source>
         <translation type="unfinished"></translation>
     </message>
@@ -683,32 +683,32 @@
 <context>
     <name>SingleMusicView</name>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="22"/>
+        <location filename="../assets/SingleMusicView.qml" line="27"/>
         <source>Error : %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="23"/>
+        <location filename="../assets/SingleMusicView.qml" line="28"/>
         <source>Here&apos;s %1&apos;s &lt;%2&gt;, please enjoy: %3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="199"/>
+        <location filename="../assets/SingleMusicView.qml" line="204"/>
         <source>STORY</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="203"/>
+        <location filename="../assets/SingleMusicView.qml" line="208"/>
         <source>LYRICS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="207"/>
+        <location filename="../assets/SingleMusicView.qml" line="212"/>
         <source>INFO</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="273"/>
+        <location filename="../assets/SingleMusicView.qml" line="278"/>
         <source>RELATED MUSIC</source>
         <translation type="unfinished"></translation>
     </message>

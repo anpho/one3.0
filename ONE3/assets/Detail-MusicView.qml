@@ -27,6 +27,12 @@ Page {
         return _app.html2text(story);
     }
     SingleMusicView {
+        
+        gestureHandlers: DoubleTapHandler {
+            onDoubleTapped: {
+                shv.scrollToPoint(0, 0)
+            }
+        }
         id: shv
         fontsize: nav.fontsize
         onRequestWebView: {

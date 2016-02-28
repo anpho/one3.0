@@ -130,6 +130,11 @@ Page {
     actionBarAutoHideBehavior: ActionBarAutoHideBehavior.HideOnScroll
     ScrollView {
         id: scrollview
+        gestureHandlers: DoubleTapHandler {
+            onDoubleTapped: {
+                scrollview.scrollToPoint(0, 0)
+            }
+        }
         Container {
             leftPadding: 20.0
             topPadding: 20.0

@@ -108,13 +108,11 @@ Page {
                     multiline: true
                     text: qsTr("Adjust the font size of display text.")
                     textStyle.fontWeight: FontWeight.W100
-                    textStyle.fontSize: FontSize.XSmall
                 }
                 Label {
                     multiline: true
                     text: qsTr("If you want to adjust the overall text size of this app, please use System Settings / Display Settings / Font Size.")
                     textStyle.fontWeight: FontWeight.W100
-                    textStyle.fontSize: FontSize.XSmall
                 }
             }
             Container {

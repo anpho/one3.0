@@ -29,6 +29,11 @@ Page {
     actionBarVisibility: ChromeVisibility.Compact
     SingleHomepageView {
         id: shv
+        gestureHandlers: DoubleTapHandler {
+            onDoubleTapped: {
+                shv.scrollToPoint(0, 0)
+            }
+        }
         verticalAlignment: VerticalAlignment.Fill
         fontsize: nav.fontsize
         onRequestAuthorView: {

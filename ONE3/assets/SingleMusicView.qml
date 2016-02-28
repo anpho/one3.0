@@ -3,6 +3,11 @@ import cn.anpho 1.0
 import bb.device 1.4
 ScrollView {
     id: scrollviewroot
+    gestureHandlers: DoubleTapHandler {
+        onDoubleTapped: {
+            scrollviewroot.scrollToPoint(0, 0)
+        }
+    }
     signal requestWebView(string uri)
     signal requestShare(string uri)
     signal requestDirectPlay(string uri, variant meta)

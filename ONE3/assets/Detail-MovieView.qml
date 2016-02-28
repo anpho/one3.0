@@ -108,6 +108,12 @@ Page {
 
     }
     ScrollView {
+        id: scrollview
+        gestureHandlers: DoubleTapHandler {
+            onDoubleTapped: {
+                scrollview.scrollToPoint(0, 0)
+            }
+        }
         Container {
             horizontalAlignment: HorizontalAlignment.Fill
             bottomPadding: 100.0

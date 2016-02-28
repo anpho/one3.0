@@ -1,6 +1,14 @@
 import bb.cascades 1.4
 import cn.anpho 1.0
 ScrollView {
+    id: scrollview
+    gestureHandlers: DoubleTapHandler {
+        onDoubleTapped: {
+            scrollview.scrollToPoint(0, 0)
+        }
+    }
+    
+    
     property int fontsize : 100
     // =====signals=====
     signal requestEssay(string essayid)
