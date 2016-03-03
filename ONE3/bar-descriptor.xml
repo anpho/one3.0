@@ -50,6 +50,7 @@
     <name>
        ONE
        <text xml:lang="zh-CN">&#x4e00;&#x4e2a;</text>
+       <text xml:lang="zh-TW">&#x58f9;&#x500b;</text>
     </name>
 
     <!-- A string value of the format <0-999>.<0-999>.<0-999> that represents application version which can be used to check for application upgrade.
@@ -59,7 +60,7 @@
 
     <!-- Fourth digit segment of the package version. First three segments are taken from the
          <versionNumber> element.  Must be an integer from 0 to 2^16-1 -->
-    <packageLocale>zh-CN</packageLocale>
+    <packageLocale>zh-CN,zh-TW</packageLocale>
 
     <!-- A string value (such as "v1", "2.5", or "Alpha 1") that represents the version of the application, as it should be shown to users. Optional. -->
     <!-- <versionLabel></versionLabel> -->
@@ -69,6 +70,7 @@
     <description>
        The ONE 3.0
        <text xml:lang="zh-CN">&#x300a;&#x4e00;&#x4e2a;&#x300b;&#x5168;&#x65b0;3.0&#x7248;&#xff0c;&#x4f60;&#x7684;&#x6587;&#x827a;&#x751f;&#x6d3b;</text>
+       <text xml:lang="zh-TW">&#x4e0d;&#x8ffd;&#x71b1;&#x9ede;&#xff0c;&#x4e0d;&#x95dc;&#x6642;&#x653f;&#xff0c;&#x4e0d;&#x8981;&#x55a7;&#x5629;&#xff0c;&#x4e0d;&#x60f9;&#x7d1b;&#x722d;&#x3002;</text>
     </description>
 
     <!-- Copyright information. Optional. -->
