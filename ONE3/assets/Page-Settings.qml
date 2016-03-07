@@ -4,6 +4,7 @@ import bb.system 1.2
 Page {
     titleBar: TitleBar {
         title: qsTr("Settings")
+        scrollBehavior: TitleBarScrollBehavior.NonSticky
     }
     property NavigationPane nav
     attachedObjects: [

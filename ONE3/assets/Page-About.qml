@@ -32,6 +32,11 @@ Page {
         }
     ]
     actionBarVisibility: ChromeVisibility.Compact
+    titleBar: TitleBar {
+        title: qsTr("ABOUT")
+        scrollBehavior: TitleBarScrollBehavior.NonSticky
+
+    }
     ScrollView {
         id: about_scrollview
         horizontalAlignment: HorizontalAlignment.Fill

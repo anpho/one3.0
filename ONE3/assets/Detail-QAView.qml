@@ -99,6 +99,7 @@ Page {
                 nav.pop();
             }
         }
+        scrollBehavior: TitleBarScrollBehavior.NonSticky
     }
     actionBarVisibility: ChromeVisibility.Compact
     actionBarAutoHideBehavior: ActionBarAutoHideBehavior.HideOnScroll

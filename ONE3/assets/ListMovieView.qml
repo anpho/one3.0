@@ -68,7 +68,7 @@ Page {
             }
 
         }
-        scrollBehavior: TitleBarScrollBehavior.Sticky
+        scrollBehavior: TitleBarScrollBehavior.NonSticky
 
     }
     ListView {

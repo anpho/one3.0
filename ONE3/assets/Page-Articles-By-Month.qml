@@ -11,6 +11,7 @@ Page {
                 nav.pop()
             }
         }
+        scrollBehavior: TitleBarScrollBehavior.NonSticky
 
     }
     // override this function

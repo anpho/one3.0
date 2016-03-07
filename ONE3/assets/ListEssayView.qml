@@ -59,7 +59,7 @@ Page {
             }
 
         }
-        scrollBehavior: TitleBarScrollBehavior.Sticky
+        scrollBehavior: TitleBarScrollBehavior.NonSticky
 
     }
     actionBarAutoHideBehavior: ActionBarAutoHideBehavior.HideOnScroll

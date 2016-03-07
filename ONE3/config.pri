@@ -151,4 +151,5 @@ lupdate_inclusion {
 }
 
 TRANSLATIONS = $$quote($${TARGET}_zh_CN.ts) \
+    $$quote($${TARGET}_zh_TW.ts) \
     $$quote($${TARGET}.ts)
