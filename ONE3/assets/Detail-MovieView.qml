@@ -42,6 +42,7 @@ Page {
             }
             title: qsTr("Back")
         }
+        scrollBehavior: TitleBarScrollBehavior.NonSticky
 
     }
     attachedObjects: [

@@ -39,7 +39,7 @@
         <translation>稍候</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="283"/>
+        <location filename="../assets/Detail-EssayView.qml" line="286"/>
         <source>RELATED ARTICLES</source>
         <translation>相關作品</translation>
     </message>
@@ -65,34 +65,34 @@
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="78"/>
-        <location filename="../assets/Detail-MovieView.qml" line="98"/>
+        <location filename="../assets/Detail-MovieView.qml" line="79"/>
+        <location filename="../assets/Detail-MovieView.qml" line="99"/>
         <source>Error: %1</source>
         <translation>錯誤： %1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="84"/>
-        <location filename="../assets/Detail-MovieView.qml" line="103"/>
+        <location filename="../assets/Detail-MovieView.qml" line="85"/>
+        <location filename="../assets/Detail-MovieView.qml" line="104"/>
         <source>Error : %1</source>
         <translation>錯誤： %1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="154"/>
+        <location filename="../assets/Detail-MovieView.qml" line="155"/>
         <source>Trailer</source>
         <translation>播放預告片</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="184"/>
+        <location filename="../assets/Detail-MovieView.qml" line="185"/>
         <source>Intro</source>
         <translation>電影簡介</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="202"/>
+        <location filename="../assets/Detail-MovieView.qml" line="203"/>
         <source>Staff</source>
         <translation>演職員</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="221"/>
+        <location filename="../assets/Detail-MovieView.qml" line="222"/>
         <source>Story</source>
         <translation>電影故事</translation>
     </message>
@@ -120,7 +120,7 @@
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-QAView.qml" line="178"/>
+        <location filename="../assets/Detail-QAView.qml" line="179"/>
         <source>RELATED ARTICLES</source>
         <translation>相關作品</translation>
     </message>
@@ -148,7 +148,7 @@
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-SerialView.qml" line="230"/>
+        <location filename="../assets/Detail-SerialView.qml" line="231"/>
         <source>RELATED ARTICLES</source>
         <translation>相關作品</translation>
     </message>
@@ -249,6 +249,13 @@
     </message>
 </context>
 <context>
+    <name>PTR</name>
+    <message>
+        <source>Loading</source>
+        <translation type="obsolete">加載中</translation>
+    </message>
+</context>
+<context>
     <name>Page-About</name>
     <message>
         <location filename="../assets/Page-About.qml" line="14"/>
@@ -256,77 +263,82 @@
         <translation>版權說明</translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="40"/>
+        <location filename="../assets/Page-About.qml" line="36"/>
+        <source>ABOUT</source>
+        <translation>關於</translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-About.qml" line="45"/>
         <source>ABOUT THIS APP</source>
         <translation>關於這個應用程式</translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="41"/>
+        <location filename="../assets/Page-About.qml" line="46"/>
         <source>UNOFFICIAL ONE</source>
         <translation>非官方版本</translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="51"/>
+        <location filename="../assets/Page-About.qml" line="56"/>
         <source>one for BlackBerry 10, </source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="68"/>
+        <location filename="../assets/Page-About.qml" line="73"/>
         <source>ABOUT PROJECT ONE3.0</source>
         <translation>關於 ONE 3.0 項目</translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="76"/>
+        <location filename="../assets/Page-About.qml" line="81"/>
         <source>Project ONE 3.0 is my 1st BlackBerry 10 project in 2016, it&apos;s FREE and offers a similar UI for ONE readers from other platforms. The complete project is open-sourced on Github, you&apos;re always welcomed to send me pull requests.</source>
         <translation>ONE 3.0 項目是我2016年的第一個BlackBerry 10應用程式，免費，並提供了與其他平台的 ONE 相近的界面。本項目原始碼已全部開源在Github上，誠摯歡迎您來提交pull request。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="85"/>
+        <location filename="../assets/Page-About.qml" line="90"/>
         <source>Source Code on Github</source>
         <translation>Github上的項目網頁</translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="99"/>
+        <location filename="../assets/Page-About.qml" line="104"/>
         <source>Please use the button below to submit issues, including bugs, feature requests, etc.</source>
         <translation>請使用下面的按鈕來提交Bug、提出功能申請等等，請勿直接發郵件給我。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="108"/>
+        <location filename="../assets/Page-About.qml" line="113"/>
         <source>Submit Issues</source>
         <translation>提交問題</translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="117"/>
+        <location filename="../assets/Page-About.qml" line="122"/>
         <source>ABOUT THE DEVELOPER TEAM</source>
         <translation>關於開發組</translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="128"/>
+        <location filename="../assets/Page-About.qml" line="133"/>
         <source>http://twitter.com/anpho</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="139"/>
+        <location filename="../assets/Page-About.qml" line="144"/>
         <source>Merrick Zhang</source>
         <translation>獅子頭SAMA</translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="149"/>
+        <location filename="../assets/Page-About.qml" line="154"/>
         <source>Designer, UI, Developer, i18n</source>
         <translation>架構設計，界面設計，界面翻譯，代碼開發</translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="154"/>
+        <location filename="../assets/Page-About.qml" line="159"/>
         <source>My BlackBerry 10 Apps</source>
         <translation>我的BlackBerry 10應用程序</translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="175"/>
+        <location filename="../assets/Page-About.qml" line="180"/>
         <source>Tester, Github Issues Maintainer</source>
         <translation>測試，Github維護</translation>
     </message>
     <message>
-        <location filename="../assets/Page-About.qml" line="179"/>
+        <location filename="../assets/Page-About.qml" line="184"/>
         <source>-- end --</source>
         <translation></translation>
     </message>
@@ -344,34 +356,34 @@
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Articles-By-Month.qml" line="45"/>
+        <location filename="../assets/Page-Articles-By-Month.qml" line="46"/>
         <source>Catagory</source>
         <translation>分類</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Articles-By-Month.qml" line="48"/>
+        <location filename="../assets/Page-Articles-By-Month.qml" line="49"/>
         <source>Choose a catagory to browse</source>
         <translation>請選擇要瀏覽的分類</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Articles-By-Month.qml" line="89"/>
-        <location filename="../assets/Page-Articles-By-Month.qml" line="94"/>
+        <location filename="../assets/Page-Articles-By-Month.qml" line="90"/>
+        <location filename="../assets/Page-Articles-By-Month.qml" line="95"/>
         <source>Essay</source>
         <translation>短篇</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Articles-By-Month.qml" line="90"/>
-        <location filename="../assets/Page-Articles-By-Month.qml" line="95"/>
+        <location filename="../assets/Page-Articles-By-Month.qml" line="91"/>
+        <location filename="../assets/Page-Articles-By-Month.qml" line="96"/>
         <source>Q&amp;A</source>
         <translation>問答</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Articles-By-Month.qml" line="91"/>
+        <location filename="../assets/Page-Articles-By-Month.qml" line="92"/>
         <source>Serials</source>
         <translation>連載</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Articles-By-Month.qml" line="105"/>
+        <location filename="../assets/Page-Articles-By-Month.qml" line="106"/>
         <source>Current Month</source>
         <translation>本月</translation>
     </message>
@@ -389,7 +401,7 @@
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="../assets/Page-By-Month.qml" line="54"/>
+        <location filename="../assets/Page-By-Month.qml" line="55"/>
         <source>Current Month</source>
         <translation>本月</translation>
     </message>
@@ -494,112 +506,112 @@
         <translation>設置</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="22"/>
+        <location filename="../assets/Page-Settings.qml" line="23"/>
         <source>VISUAL SETTINGS</source>
         <translation>視覺效果設置</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="35"/>
+        <location filename="../assets/Page-Settings.qml" line="36"/>
         <source>Use Dark Theme</source>
         <translation>使用暗諷主題</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="58"/>
+        <location filename="../assets/Page-Settings.qml" line="59"/>
         <source>Turn this on to save battery on OLED screen devices.</source>
         <translation>切換到此模式以節省OLED型屏幕設備的電源。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="74"/>
+        <location filename="../assets/Page-Settings.qml" line="75"/>
         <source>Show Back Button</source>
         <translation>顯示 返回 按鈕</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="94"/>
+        <location filename="../assets/Page-Settings.qml" line="95"/>
         <source>Use this to hide the back button at the bottom left corner.</source>
         <translation>設置此項來控制左下角 返回 按鈕的顯示。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="100"/>
+        <location filename="../assets/Page-Settings.qml" line="101"/>
         <source>FONT SIZE</source>
         <translation>正文字體大小設置</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="109"/>
+        <location filename="../assets/Page-Settings.qml" line="110"/>
         <source>Adjust the font size of display text.</source>
         <translation>使用下方的滑塊來調整正文字體大小。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="114"/>
+        <location filename="../assets/Page-Settings.qml" line="115"/>
         <source>If you want to adjust the overall text size of this app, please use System Settings / Display Settings / Font Size.</source>
         <translation>如果你需要調整全局字體大小，請前往系統設置 / 顯示屏 / 字體大小 處進行設置。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="156"/>
+        <location filename="../assets/Page-Settings.qml" line="157"/>
         <source>DEFAULT</source>
         <translation>恢復默認值</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="164"/>
+        <location filename="../assets/Page-Settings.qml" line="165"/>
         <source>CONTENT CACHE(EXPERIMENTAL)</source>
         <translation>內容緩存（實驗性功能）</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="165"/>
+        <location filename="../assets/Page-Settings.qml" line="166"/>
         <source>WARNING</source>
         <translation>注意</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="173"/>
+        <location filename="../assets/Page-Settings.qml" line="174"/>
         <source>Enable this feature will increase the storage usage, while decreases network traffic.</source>
         <translation>啟用本功能將減少網絡流量，但會稍微增加應用程式的空間佔用。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="183"/>
+        <location filename="../assets/Page-Settings.qml" line="184"/>
         <source>Use Network Cache</source>
         <translation>啟用網絡緩存</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="198"/>
+        <location filename="../assets/Page-Settings.qml" line="199"/>
         <source>RESET APPLICATION</source>
         <translation>重置應用程式</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="206"/>
+        <location filename="../assets/Page-Settings.qml" line="207"/>
         <source>If anything wrong happens, please use this button to RESET all application settings. This will erease all cached content too.</source>
         <translation>如果發生任何異常，請使用下面的按鈕來清空應用程式的全部緩存和設置。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="214"/>
+        <location filename="../assets/Page-Settings.qml" line="215"/>
         <source>RESET</source>
         <translation>重置應用程式</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="219"/>
+        <location filename="../assets/Page-Settings.qml" line="220"/>
         <source>Settings Reseted</source>
         <translation>設置已重置</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="224"/>
+        <location filename="../assets/Page-Settings.qml" line="225"/>
         <source>IMAGE CACHE</source>
         <translation>圖像緩存</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="232"/>
+        <location filename="../assets/Page-Settings.qml" line="233"/>
         <source>This app will store as top as 100MBytes image cache on device, which will improve the application performance. Make sure you know what you&apos;re doing before you press the button below.</source>
         <translation>本應用會緩存至多100M的圖片數據，以減少網絡流量、提高應用性能。清空圖片緩存將導致全部圖片重新下載。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="241"/>
+        <location filename="../assets/Page-Settings.qml" line="242"/>
         <source>CLEAR CACHE</source>
         <translation>清空緩存</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="244"/>
+        <location filename="../assets/Page-Settings.qml" line="245"/>
         <source>Cache Cleared</source>
         <translation>緩存已清空</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="250"/>
+        <location filename="../assets/Page-Settings.qml" line="251"/>
         <source>-- end --</source>
         <translation></translation>
     </message>

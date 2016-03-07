@@ -120,7 +120,7 @@ Page {
         }
     ]
     function setActive() {
-        scrollview.scrollRole = ScrollRole.Main
+//        scrollview.scrollRole = ScrollRole.Main
     }
     function checkstate() {
         var nowstate = nav.audiomgr.mediaState;
@@ -178,6 +178,8 @@ Page {
                 enabled: false
             }
         ]
+        scrollBehavior: TitleBarScrollBehavior.NonSticky
+
     }
     actionBarVisibility: ChromeVisibility.Compact
     actionBarAutoHideBehavior: ActionBarAutoHideBehavior.HideOnScroll
@@ -188,6 +190,7 @@ Page {
                 scrollview.scrollToPoint(0, 0)
             }
         }
+        scrollRole: ScrollRole.Main
         Container {
             leftPadding: 20.0
             topPadding: 20.0
