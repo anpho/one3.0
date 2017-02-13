@@ -32,7 +32,7 @@ Page {
     ]
     onCreationCompleted: {
         sponsors.removeAll();
-        co.ajax("GET", "http://bbdev.cn/one3.spon", [], function(b, d) {
+        co.ajax("GET", "https://anpho.github.io/conf/one/one3.spon", [], function(b, d) {
                 if (b) {
                     try {
                         d = JSON.parse(d).data;
