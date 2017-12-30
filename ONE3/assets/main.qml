@@ -127,7 +127,7 @@ TabbedPane {
             property variant audiomgr: mpcontroller
         }
     }
-    Tab { //电影 tab
+/*    Tab { //电影 tab
         title: qsTr("Movie") + Retranslate.onLocaleOrLanguageChanged
         imageSource: "asset:///icon/ic_doctype_video.png"
         property alias nav: nav_movie
@@ -147,6 +147,7 @@ TabbedPane {
             }
         }
     }
+*/
     attachedObjects: [
         Common {
             id: co

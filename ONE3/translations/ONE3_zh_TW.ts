@@ -761,9 +761,8 @@
         <translation>音樂</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="131"/>
         <source>Movie</source>
-        <translation>電影</translation>
+        <translation type="obsolete">電影</translation>
     </message>
 </context>
 </TS>

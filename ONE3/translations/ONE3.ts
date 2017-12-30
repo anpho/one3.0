@@ -753,10 +753,5 @@
         <source>Music</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <location filename="../assets/main.qml" line="131"/>
-        <source>Movie</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 </TS>
