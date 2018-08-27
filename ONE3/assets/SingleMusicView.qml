@@ -63,35 +63,40 @@ ScrollView {
     property string story_title
     function load() {
         var endp = endpoint.arg(music_id);
-        co.ajax("GET", endp, [], function(b, d) {
-                if (b) {
-                    d = JSON.parse(d);
-                    if (d.data) {
-                        ajaxdata = d.data;
-                        music_cover = ajaxdata.cover;
-                        music_info = ajaxdata.info
-                        music_lyric = ajaxdata.lyric
-                        music_title = ajaxdata.title
-                        music_url = ajaxdata.music_id
-                        related_to = ajaxdata.related_to
-                        xiami_id = ajaxdata.music_id
-                        charge_edt = ajaxdata.charge_edt
-                        web_url = ajaxdata.web_url
-                        author_id = ajaxdata.author.user_id
-                        author_name = ajaxdata.author.user_name
-                        author_img = ajaxdata.author.web_url
-                        author_desc = ajaxdata.author.desc
-                        story = ajaxdata.story
-                        story_title = ajaxdata.story_title
-                        if (story.length > 0) {
-                            story_author_id = ajaxdata.story_author.user_id
-                            story_author_name = ajaxdata.story_author.user_name
-                        }
-                    }
-                } else {
-                    music_info = errmsg.arg(d)
+        var d;
+        try {
+            d = ListItem.view.fetch(endp);
+        } catch (e) {
+            d = _app.fetch(endp);
+        }
+        var b = d.length > 0;
+        if (b) {
+            d = JSON.parse(d);
+            if (d.data) {
+                ajaxdata = d.data;
+                music_cover = ajaxdata.cover;
+                music_info = ajaxdata.info
+                music_lyric = ajaxdata.lyric
+                music_title = ajaxdata.title
+                music_url = ajaxdata.music_id
+                related_to = ajaxdata.related_to
+                xiami_id = ajaxdata.music_id
+                charge_edt = ajaxdata.charge_edt
+                web_url = ajaxdata.web_url
+                author_id = ajaxdata.author.user_id
+                author_name = ajaxdata.author.user_name
+                author_img = ajaxdata.author.web_url
+                author_desc = ajaxdata.author.desc
+                story = ajaxdata.story
+                story_title = ajaxdata.story_title
+                if (story.length > 0) {
+                    story_author_id = ajaxdata.story_author.user_id
+                    story_author_name = ajaxdata.story_author.user_name
                 }
-            }, [], false, true);
+            }
+        } else {
+            music_info = errmsg.arg(d)
+        }
     }
     attachedObjects: [
         Common {

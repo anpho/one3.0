@@ -63,49 +63,50 @@ Page {
     }
     function load() {
         var endp = endpoint.arg(mid);
-        co.ajax("GET", endp, [], function(b, d) {
-                if (b) {
-                    try {
-                        d = JSON.parse(d).data;
-                        title = d.title
-                        cover = d.detailcover
-                        video_url = co.valueOrEmpty(d.video)
-                        score = co.valueOrEmpty(d.score)
-                        info = co.valueOrEmpty(d.info)
-                        officialstory = co.valueOrEmpty(d.officialstory)
-                        charge_edt = co.valueOrEmpty(d.charge_edt)
-                        photos = d.photo ? d.photo : []
-                    } catch (e) {
-                        sst.body = qsTr("Error: %1").arg(JSON.stringify(e))
-                        console.log(sst.body)
-                        sst.show();
-                    }
+        var d = _app.fetch(endp);
+        var b = d.length > 0;
+        if (b) {
+            try {
+                d = JSON.parse(d).data;
+                title = d.title
+                cover = d.detailcover
+                video_url = co.valueOrEmpty(d.video)
+                score = co.valueOrEmpty(d.score)
+                info = co.valueOrEmpty(d.info)
+                officialstory = co.valueOrEmpty(d.officialstory)
+                charge_edt = co.valueOrEmpty(d.charge_edt)
+                photos = d.photo ? d.photo : []
+            } catch (e) {
+                sst.body = qsTr("Error: %1").arg(JSON.stringify(e))
+                console.log(sst.body)
+                sst.show();
+            }
 
-                } else {
-                    sst.body = qsTr("Error : %1").arg(d)
-                    console.log(sst.body)
-                    sst.show();
-                }
-                var sendp = story_endpoint.arg(mid);
-                co.ajax("GET", sendp, [], function(b, d) {
-                        if (b) {
-                            try {
-                                d = JSON.parse(d);
-                                d = d.data.data[0];
-                                s_author = d.user.user_name
-                                s_content = d.content
-                                s_title = d.title
-                            } catch (e) {
-                                sst.body = qsTr("Error: %1").arg(JSON.stringify(e))
-                                sst.show();
-                            }
+        } else {
+            sst.body = qsTr("Error : %1").arg(d)
+            console.log(sst.body)
+            sst.show();
+        }
+        
+        var sendp = story_endpoint.arg(mid);
+        var d = _app.fetch(sendp);
+        var b = d.length > 0;
+        if (b) {
+            try {
+                d = JSON.parse(d);
+                d = d.data.data[0];
+                s_author = d.user.user_name
+                s_content = d.content
+                s_title = d.title
+            } catch (e) {
+                sst.body = qsTr("Error: %1").arg(JSON.stringify(e))
+                sst.show();
+            }
 
-                        } else {
-                            sst.body = qsTr("Error : %1").arg(d)
-                            sst.show();
-                        }
-                    }, [], false)
-            }, [], false,true )
+        } else {
+            sst.body = qsTr("Error : %1").arg(d)
+            sst.show();
+        }
 
     }
     ScrollView {
@@ -149,7 +150,7 @@ Page {
                             showvideo(video_url);
                         }
                     }
-                    visible: video_url.length>0
+                    visible: video_url.length > 0
                 }
                 Label {
                     text: qsTr("Trailer")
@@ -157,7 +158,7 @@ Page {
                     layoutProperties: StackLayoutProperties {
                         spaceQuota: 1.0
                     }
-                    visible: video_url.length>0
+                    visible: video_url.length > 0
                     gestureHandlers: TapHandler {
                         onTapped: {
                             showvideo(video_url);
@@ -167,7 +168,7 @@ Page {
                 Label {
                     text: score
                     textStyle.fontSize: FontSize.Medium
-                    visible: score.length>0
+                    visible: score.length > 0
                     textStyle.fontWeight: FontWeight.Default
                     textStyle.textAlign: TextAlign.Center
                     textStyle.color: Color.Red
@@ -183,10 +184,10 @@ Page {
             }
             Header {
                 title: qsTr("Intro")
-                visible: officialstory.length>0
+                visible: officialstory.length > 0
             }
             Container {
-                visible: officialstory.length>0
+                visible: officialstory.length > 0
                 leftPadding: 20.0
                 topPadding: 20.0
                 bottomPadding: 20.0
@@ -201,10 +202,10 @@ Page {
             }
             Header {
                 title: qsTr("Staff")
-                visible: info.length>0
+                visible: info.length > 0
             }
             Container {
-                visible: info.length>0
+                visible: info.length > 0
                 leftPadding: 20.0
                 topPadding: 20.0
                 bottomPadding: 20.0

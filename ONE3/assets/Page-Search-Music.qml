@@ -31,20 +31,20 @@ Page {
     function search_music(q) {
         var endp = search_music_url.arg(encodeURIComponent(q));
         act_music.running = true
-        co.ajax("GET", endp, [], function(b, d) {
-                act_music.running = false
-                if (b) {
-                    try {
-                        var d = JSON.parse(d).data;
-                        adm.clear()
-                        adm.append(d);
-                    } catch (e) {
-                        console.log(e)
-                    }
-                } else {
-                    console.log(d)
-                }
-            }, [])
+        var d = _app.fetch(endp);
+        var b = d.length > 0;
+        act_music.running = false
+        if (b) {
+            try {
+                var d = JSON.parse(d).data;
+                adm.clear()
+                adm.append(d);
+            } catch (e) {
+                console.log(e)
+            }
+        } else {
+            console.log(d)
+        }
     }
     function showMusic(hid) {
         var hpview = Qt.createComponent("Detail-MusicView.qml").createObject(nav);
@@ -90,7 +90,7 @@ Page {
             function requestView(hid) {
                 showMusic(hid)
             }
-            property int fontsize : nav.fontsize
+            property int fontsize: nav.fontsize
             listItemComponents: [
                 ListItemComponent {
                     type: ""

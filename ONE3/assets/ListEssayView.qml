@@ -98,6 +98,9 @@ Page {
 
         property int width: di.pixelSize.width
         property int fontsize: nav.fontsize
+        function fetch(u){
+            return _app.fetch(u)
+        }
         function showEssay(essayid) {
             // 显示短篇
             var essayview = Qt.createComponent("Detail-EssayView.qml").createObject(nav);
@@ -170,23 +173,23 @@ Page {
         }
 
         onCreationCompleted: {
-            co.ajax("GET", endpoint, [], function(b, d) {
-                    if (b) {
-                        d = JSON.parse(d);
-                        if (d.data) {
-                            for (var i = 0; i < d.data.essay.length; i ++) {
-                                adm.append({
-                                        "essay": d.data.essay[i],
-                                        "serial": d.data.serial[i],
-                                        "question": d.data.question[i]
-                                    })
-                            }
-                        }
-                    } else {
-                        sst.body = d;
-                        sst.show();
+            var d = _app.fetch(endpoint);
+            var b = d.length > 0;
+            if (b) {
+                d = JSON.parse(d);
+                if (d.data) {
+                    for (var i = 0; i < d.data.essay.length; i ++) {
+                        adm.append({
+                                "essay": d.data.essay[i],
+                                "serial": d.data.serial[i],
+                                "question": d.data.question[i]
+                            })
                     }
-                }, [], false)
+                }
+            } else {
+                sst.body = d;
+                sst.show();
+            }
         }
         builtInShortcutsEnabled: false
         scrollRole: ScrollRole.None

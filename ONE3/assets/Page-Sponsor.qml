@@ -32,20 +32,20 @@ Page {
     ]
     onCreationCompleted: {
         sponsors.removeAll();
-        co.ajax("GET", "https://anpho.github.io/conf/one/one3.spon", [], function(b, d) {
-                if (b) {
-                    try {
-                        d = JSON.parse(d).data;
-                        for (var i = 0; i < d.length; i ++) {
-                            var cur = lbl.createObject()
-                            cur.text = "%1 (%2)".arg(d[i].name).arg(d[i].via)
-                            sponsors.add(cur)
-                        }
-                    } catch (e) {
-
-                    }
+        var data = _app.fetch("https://anpho.github.io/conf/one/one3.spon");
+        var b = data.length > 0;
+        if (b) {
+            try {
+                var d = JSON.parse(data).data;
+                for (var i = 0; i < d.length; i ++) {
+                    var cur = lbl.createObject()
+                    cur.text = "%1 (%2)".arg(d[i].name).arg(d[i].via)
+                    sponsors.add(cur)
                 }
-            }, [], false, false);
+            } catch (e) {
+
+            }
+        }
     }
     actionBarAutoHideBehavior: ActionBarAutoHideBehavior.HideOnScroll
     actionBarVisibility: ChromeVisibility.Compact

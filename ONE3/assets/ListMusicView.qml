@@ -66,6 +66,9 @@ Page {
     ListView {
         id: mlistview
         property string endpoint: "http://v3.wufazhuce.com:8000/api/music/idlist/0"
+        function fetch(u){
+            return _app.fetch(u)
+        }
         attachedObjects: [
             DisplayInfo {
                 id: di
@@ -97,7 +100,7 @@ Page {
         }
         verticalAlignment: VerticalAlignment.Fill
         property int width: di.pixelSize.width
-        property int fontsize : nav.fontsize
+        property int fontsize: nav.fontsize
         listItemComponents: [
             ListItemComponent {
                 type: ""
@@ -162,21 +165,21 @@ Page {
             return _app.html2text(story);
         }
         onCreationCompleted: {
-            co.ajax("GET", endpoint, [], function(b, d) {
-                    if (b) {
-                        d = JSON.parse(d);
-                        if (d.data) {
-                            for (var i = 0; i < d.data.length; i ++) {
-                                adm.append({
-                                        "id": d.data[i]
-                                    })
-                            }
-                        }
-                    } else {
-                        sst.body = d;
-                        sst.show();
+            var d = _app.fetch(endpoint);
+            var b = d.length > 0;
+            if (b) {
+                d = JSON.parse(d);
+                if (d.data) {
+                    for (var i = 0; i < d.data.length; i ++) {
+                        adm.append({
+                                "id": d.data[i]
+                            })
                     }
-                }, [], false)
+                }
+            } else {
+                sst.body = d;
+                sst.show();
+            }
         }
         scrollRole: ScrollRole.None
         builtInShortcutsEnabled: false

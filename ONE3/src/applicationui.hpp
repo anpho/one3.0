@@ -25,6 +25,8 @@
 #include "clipboard/clipboard.h"
 #include <bb/cascades/InvokeQuery>
 #include <bb/cascades/Invocation>
+ #include <QNetworkAccessManager>
+
 namespace bb
 {
     namespace system
@@ -61,6 +63,7 @@ public:
     Q_INVOKABLE int setTextToClipboard(QString text);
     Q_INVOKABLE void remember(QString uri,QString title,QString text);
     Q_INVOKABLE void shareText(QString text);
+    Q_INVOKABLE QString fetch(QString uri);
 
 private slots:
     void onSystemLanguageChanged();
@@ -70,6 +73,8 @@ private:
     QTranslator* m_pTranslator;
     bb::cascades::LocaleHandler* m_pLocaleHandler;
     bb::system::InvokeManager* m_pInvokeManager;
+
+    QNetworkAccessManager* m_qnam;
 };
 
 #endif /* ApplicationUI_HPP_ */

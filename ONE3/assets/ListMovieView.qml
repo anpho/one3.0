@@ -102,25 +102,28 @@ Page {
 
             }
         ]
+        function fetch(u){
+            return _app.fetch(u)
+        }
         builtInShortcutsEnabled: true
         scrollRole: ScrollRole.Main
         onCreationCompleted: {
-            co.ajax("GET", endpoint, [], function(b, d) {
-                    if (b) {
-                        try {
-                            d = JSON.parse(d).data;
-                            adm.append(d)
-                        } catch (e) {
-                            sst.body = qsTr("Error : %1").arg(e)
-                            console.log(sst.body)
-                            sst.show()
-                        }
-                    } else {
-                        sst.body = qsTr("Error : %1").arg(d)
-                        console.log(sst.body)
-                        sst.show()
-                    }
-                }, [], false)
+            var d = _app.fetch(endpoint);
+            var b = d.length > 0;
+            if (b) {
+                try {
+                    d = JSON.parse(d).data;
+                    adm.append(d)
+                } catch (e) {
+                    sst.body = qsTr("Error : %1").arg(e)
+                    console.log(sst.body)
+                    sst.show()
+                }
+            } else {
+                sst.body = qsTr("Error : %1").arg(d)
+                console.log(sst.body)
+                sst.show()
+            }
         }
     }
 }

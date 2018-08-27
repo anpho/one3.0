@@ -21,6 +21,8 @@
 #include <bb/cascades/AbstractPane>
 #include <bb/cascades/LocaleHandler>
 #include <qt4/QtGui/qtextdocument.h>
+#include <QNetworkReply>
+#include <QSsl>
 using namespace bb::cascades;
 using namespace bb::system;
 
@@ -31,6 +33,7 @@ ApplicationUI::ApplicationUI() :
     m_pTranslator = new QTranslator(this);
     m_pLocaleHandler = new LocaleHandler(this);
     m_pInvokeManager = new InvokeManager(this);
+    m_qnam = new QNetworkAccessManager(this);
 
     bool res = QObject::connect(m_pLocaleHandler, SIGNAL(systemLanguageChanged()), this,
             SLOT(onSystemLanguageChanged()));
@@ -174,4 +177,31 @@ void ApplicationUI::onFinished()
 {
     Invocation *invocation = qobject_cast<Invocation *>(sender());
     invocation->deleteLater();
+}
+
+QString ApplicationUI::fetch(QString uri)
+{
+
+    const QUrl url = QUrl::fromUserInput(uri);
+    QNetworkRequest qnr(url);
+
+    if (uri.toLower().startsWith("https")) {
+        qDebug() << "HTTPS";
+        QSslConfiguration config = QSslConfiguration::defaultConfiguration();
+        config.setProtocol(QSsl::AnyProtocol);
+        qnr.setSslConfiguration(config);
+    }
+
+    qnr.setRawHeader(QString("User-Agent").toLatin1(), QString("curl/7").toLatin1());
+    QNetworkReply* reply = m_qnam->get(qnr);
+
+    QEventLoop eventLoop;
+    connect(reply, SIGNAL(finished()), &eventLoop, SLOT(quit()));
+    eventLoop.exec(QEventLoop::ExcludeUserInputEvents);
+
+    QString data = QString::fromLocal8Bit(reply->readAll());
+    qDebug() << data;
+
+    reply->deleteLater();
+    return data;
 }

@@ -93,7 +93,7 @@ Page {
         }
         verticalAlignment: VerticalAlignment.Fill
         property int width: di.pixelSize.width
-        property int fontsize : nav.fontsize
+        property int fontsize: nav.fontsize
         listItemComponents: [
             ListItemComponent {
                 type: ""
@@ -136,22 +136,25 @@ Page {
         function invokeImageViewer(imgsrc) {
             _app.viewimage(imgsrc)
         }
+        function fetch(u){
+            return _app.fetch(u)
+        }
         onCreationCompleted: {
-            co.ajax("GET", endpoint, [], function(b, d) {
-                    if (b) {
-                        d = JSON.parse(d);
-                        if (d.data) {
-                            for (var i = 0; i < d.data.length; i ++) {
-                                adm.append({
-                                        "id": d.data[i]
-                                    })
-                            }
-                        }
-                    } else {
-                        sst.body = d;
-                        sst.show();
+            var d = _app.fetch(endpoint);
+            var b = d.length > 0;
+            if (b) {
+                d = JSON.parse(d);
+                if (d.data) {
+                    for (var i = 0; i < d.data.length; i ++) {
+                        adm.append({
+                                "id": d.data[i]
+                            })
                     }
-                }, [], false)
+                }
+            } else {
+                sst.body = d;
+                sst.show();
+            }
         }
         builtInShortcutsEnabled: false
         scrollRole: ScrollRole.None

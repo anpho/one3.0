@@ -4,42 +4,42 @@
 <context>
     <name>Detail-EssayView</name>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="41"/>
+        <location filename="../assets/Detail-EssayView.qml" line="44"/>
         <source>Error: %1</source>
         <translation>错误信息：%1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="46"/>
+        <location filename="../assets/Detail-EssayView.qml" line="49"/>
         <source>Error : %1</source>
         <translation>错误信息：%1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="144"/>
+        <location filename="../assets/Detail-EssayView.qml" line="147"/>
         <source>Essay</source>
         <translation>短篇</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="146"/>
+        <location filename="../assets/Detail-EssayView.qml" line="149"/>
         <source>Back</source>
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="156"/>
+        <location filename="../assets/Detail-EssayView.qml" line="159"/>
         <source>PAUSE</source>
         <translation>暂停</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="165"/>
+        <location filename="../assets/Detail-EssayView.qml" line="168"/>
         <source>PLAY</source>
         <translation>收听</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="177"/>
+        <location filename="../assets/Detail-EssayView.qml" line="180"/>
         <source>...</source>
         <translation>稍候</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="286"/>
+        <location filename="../assets/Detail-EssayView.qml" line="289"/>
         <source>RELATED ARTICLES</source>
         <translation>相关作品</translation>
     </message>
@@ -65,34 +65,34 @@
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="79"/>
-        <location filename="../assets/Detail-MovieView.qml" line="99"/>
+        <location filename="../assets/Detail-MovieView.qml" line="80"/>
+        <location filename="../assets/Detail-MovieView.qml" line="102"/>
         <source>Error: %1</source>
         <translation>错误信息：%1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="85"/>
-        <location filename="../assets/Detail-MovieView.qml" line="104"/>
+        <location filename="../assets/Detail-MovieView.qml" line="86"/>
+        <location filename="../assets/Detail-MovieView.qml" line="107"/>
         <source>Error : %1</source>
         <translation>错误信息：%1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="155"/>
+        <location filename="../assets/Detail-MovieView.qml" line="156"/>
         <source>Trailer</source>
         <translation>播放预告片</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="185"/>
+        <location filename="../assets/Detail-MovieView.qml" line="186"/>
         <source>Intro</source>
         <translation>电影简介</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="203"/>
+        <location filename="../assets/Detail-MovieView.qml" line="204"/>
         <source>Staff</source>
         <translation>演职员</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="222"/>
+        <location filename="../assets/Detail-MovieView.qml" line="223"/>
         <source>Story</source>
         <translation>电影故事</translation>
     </message>
@@ -100,12 +100,12 @@
 <context>
     <name>Detail-QAView</name>
     <message>
-        <location filename="../assets/Detail-QAView.qml" line="27"/>
+        <location filename="../assets/Detail-QAView.qml" line="28"/>
         <source>Error: %1</source>
         <translation>错误信息：%1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-QAView.qml" line="32"/>
+        <location filename="../assets/Detail-QAView.qml" line="33"/>
         <source>Error : %1</source>
         <translation>错误信息：%1</translation>
     </message>
@@ -128,12 +128,12 @@
 <context>
     <name>Detail-SerialView</name>
     <message>
-        <location filename="../assets/Detail-SerialView.qml" line="37"/>
+        <location filename="../assets/Detail-SerialView.qml" line="38"/>
         <source>Error: %1</source>
         <translation>错误信息：%1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-SerialView.qml" line="42"/>
+        <location filename="../assets/Detail-SerialView.qml" line="43"/>
         <source>Error : %1</source>
         <translation>错误信息：%1</translation>
     </message>
@@ -182,8 +182,8 @@
         <translation>电影</translation>
     </message>
     <message>
-        <location filename="../assets/ListMovieView.qml" line="114"/>
-        <location filename="../assets/ListMovieView.qml" line="119"/>
+        <location filename="../assets/ListMovieView.qml" line="118"/>
+        <location filename="../assets/ListMovieView.qml" line="123"/>
         <source>Error : %1</source>
         <translation>错误信息：%1</translation>
     </message>
@@ -591,46 +591,51 @@
     </message>
     <message>
         <location filename="../assets/Page-Settings.qml" line="199"/>
+        <source>*This feature is now disabled.</source>
+        <translation>*此功能在本版本中已禁用</translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Settings.qml" line="206"/>
         <source>RESET APPLICATION</source>
         <translation>重置应用程序</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="207"/>
+        <location filename="../assets/Page-Settings.qml" line="214"/>
         <source>If anything wrong happens, please use this button to RESET all application settings. This will erease all cached content too.</source>
         <translation>如果发生任何异常，请使用下面的按钮来清空应用程序的全部缓存和设置。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="215"/>
+        <location filename="../assets/Page-Settings.qml" line="222"/>
         <source>RESET</source>
         <translation>重置应用程序</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="220"/>
+        <location filename="../assets/Page-Settings.qml" line="227"/>
         <source>Settings Reseted</source>
         <translation>设置已重置</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="225"/>
+        <location filename="../assets/Page-Settings.qml" line="232"/>
         <source>IMAGE CACHE</source>
         <translation>图像缓存</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="233"/>
+        <location filename="../assets/Page-Settings.qml" line="240"/>
         <source>This app will store as top as 100MBytes image cache on device, which will improve the application performance. Make sure you know what you&apos;re doing before you press the button below.</source>
         <translation>本应用会缓存至多100M的图片数据，以减少网络流量、提高应用性能。清空图片缓存将导致全部图片重新下载。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="242"/>
+        <location filename="../assets/Page-Settings.qml" line="249"/>
         <source>CLEAR CACHE</source>
         <translation>清空缓存</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="245"/>
+        <location filename="../assets/Page-Settings.qml" line="252"/>
         <source>Cache Cleared</source>
         <translation>缓存已清空</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="251"/>
+        <location filename="../assets/Page-Settings.qml" line="258"/>
         <source>-- end --</source>
         <translation></translation>
     </message>
@@ -704,13 +709,13 @@
         <translation>错误信息：%1</translation>
     </message>
     <message>
-        <location filename="../assets/SingleHomepageView.qml" line="131"/>
-        <location filename="../assets/SingleHomepageView.qml" line="142"/>
+        <location filename="../assets/SingleHomepageView.qml" line="137"/>
+        <location filename="../assets/SingleHomepageView.qml" line="148"/>
         <source>Share</source>
         <translation>分享</translation>
     </message>
     <message>
-        <location filename="../assets/SingleHomepageView.qml" line="134"/>
+        <location filename="../assets/SingleHomepageView.qml" line="140"/>
         <source>Copy</source>
         <translation>复制</translation>
     </message>
@@ -732,22 +737,22 @@
         <translation>这是 %1 的 《%2》，请欣赏： %3 来自《一个》</translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="204"/>
+        <location filename="../assets/SingleMusicView.qml" line="209"/>
         <source>STORY</source>
         <translation>音乐故事</translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="208"/>
+        <location filename="../assets/SingleMusicView.qml" line="213"/>
         <source>LYRICS</source>
         <translation>歌词</translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="212"/>
+        <location filename="../assets/SingleMusicView.qml" line="217"/>
         <source>INFO</source>
         <translation>相关信息</translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="278"/>
+        <location filename="../assets/SingleMusicView.qml" line="283"/>
         <source>RELATED MUSIC</source>
         <translation>相关作品</translation>
     </message>
@@ -763,7 +768,7 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../assets/main.qml" line="71"/>
+        <location filename="../assets/main.qml" line="72"/>
         <source>Home</source>
         <translation>主页</translation>
     </message>
@@ -785,17 +790,17 @@
         <translation>致谢</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="51"/>
+        <location filename="../assets/main.qml" line="52"/>
         <source>Review</source>
         <translation>评论</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="91"/>
+        <location filename="../assets/main.qml" line="92"/>
         <source>Articles</source>
         <translation>阅读</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="111"/>
+        <location filename="../assets/main.qml" line="112"/>
         <source>Music</source>
         <translation>音乐</translation>
     </message>

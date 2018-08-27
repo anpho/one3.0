@@ -18,7 +18,7 @@ ScrollView {
     property string hpid
     property string hid
 
-    property int fontsize : 100
+    property int fontsize: 100
     onHidChanged: {
         if (hid.trim().length > 0)
             loadByID(hid);
@@ -26,23 +26,29 @@ ScrollView {
     function loadByID(_id) {
         hpid = _id;
         var endp = endpoint.arg(hpid);
-        co.ajax("GET", endp, [], function(b, d) {
-                if (b) {
-                    d = JSON.parse(d);
-                    if (d.data) {
-                        nest = d.data;
-                        imageurl = nest.hp_img_original_url;
-                        vol = nest.hp_title;
-                        author = nest.hp_author;
-                        hpcontent = nest.hp_content;
-                        datestring = nest.hp_makettime;
-                        ipadimage = co.valueOrEmpty(nest.ipad_url);
-                        authorid = nest.author_id;
-                    }
-                } else {
-                    hpcontent = errmsg.arg(d)
-                }
-            }, [], false, true);
+
+        var d;
+        try {
+            d = ListItem.view.fetch(endp);
+        } catch (e) {
+            d = _app.fetch(endp);
+        }
+        var b = d.length > 0;
+        if (b) {
+            d = JSON.parse(d);
+            if (d.data) {
+                nest = d.data;
+                imageurl = nest.hp_img_original_url;
+                vol = nest.hp_title;
+                author = nest.hp_author;
+                hpcontent = nest.hp_content;
+                datestring = nest.hp_makettime;
+                ipadimage = co.valueOrEmpty(nest.ipad_url);
+                authorid = nest.author_id;
+            }
+        } else {
+            hpcontent = errmsg.arg(d)
+        }
     }
     property string imageurl
     property string vol

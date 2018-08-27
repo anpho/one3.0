@@ -4,44 +4,44 @@
 <context>
     <name>Detail-EssayView</name>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="41"/>
+        <location filename="../assets/Detail-EssayView.qml" line="44"/>
         <source>Error: %1</source>
-        <translation>錯誤： %1</translation>
+        <translation type="unfinished">錯誤： %1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="46"/>
+        <location filename="../assets/Detail-EssayView.qml" line="49"/>
         <source>Error : %1</source>
-        <translation>錯誤： %1</translation>
+        <translation type="unfinished">錯誤： %1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="144"/>
+        <location filename="../assets/Detail-EssayView.qml" line="147"/>
         <source>Essay</source>
-        <translation>短篇</translation>
+        <translation type="unfinished">短篇</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="146"/>
+        <location filename="../assets/Detail-EssayView.qml" line="149"/>
         <source>Back</source>
-        <translation>返回</translation>
+        <translation type="unfinished">返回</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="156"/>
+        <location filename="../assets/Detail-EssayView.qml" line="159"/>
         <source>PAUSE</source>
-        <translation>暫停</translation>
+        <translation type="unfinished">暫停</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="165"/>
+        <location filename="../assets/Detail-EssayView.qml" line="168"/>
         <source>PLAY</source>
-        <translation>收聽</translation>
+        <translation type="unfinished">收聽</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="177"/>
+        <location filename="../assets/Detail-EssayView.qml" line="180"/>
         <source>...</source>
-        <translation>稍候</translation>
+        <translation type="unfinished">稍候</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="286"/>
+        <location filename="../assets/Detail-EssayView.qml" line="289"/>
         <source>RELATED ARTICLES</source>
-        <translation>相關作品</translation>
+        <translation type="unfinished">相關作品</translation>
     </message>
 </context>
 <context>
@@ -62,95 +62,95 @@
     <message>
         <location filename="../assets/Detail-MovieView.qml" line="43"/>
         <source>Back</source>
-        <translation>返回</translation>
+        <translation type="unfinished">返回</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="79"/>
-        <location filename="../assets/Detail-MovieView.qml" line="99"/>
+        <location filename="../assets/Detail-MovieView.qml" line="80"/>
+        <location filename="../assets/Detail-MovieView.qml" line="102"/>
         <source>Error: %1</source>
-        <translation>錯誤： %1</translation>
+        <translation type="unfinished">錯誤： %1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="85"/>
-        <location filename="../assets/Detail-MovieView.qml" line="104"/>
+        <location filename="../assets/Detail-MovieView.qml" line="86"/>
+        <location filename="../assets/Detail-MovieView.qml" line="107"/>
         <source>Error : %1</source>
-        <translation>錯誤： %1</translation>
+        <translation type="unfinished">錯誤： %1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="155"/>
+        <location filename="../assets/Detail-MovieView.qml" line="156"/>
         <source>Trailer</source>
-        <translation>播放預告片</translation>
+        <translation type="unfinished">播放預告片</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="185"/>
+        <location filename="../assets/Detail-MovieView.qml" line="186"/>
         <source>Intro</source>
-        <translation>電影簡介</translation>
+        <translation type="unfinished">電影簡介</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="203"/>
+        <location filename="../assets/Detail-MovieView.qml" line="204"/>
         <source>Staff</source>
-        <translation>演職員</translation>
+        <translation type="unfinished">演職員</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="222"/>
+        <location filename="../assets/Detail-MovieView.qml" line="223"/>
         <source>Story</source>
-        <translation>電影故事</translation>
+        <translation type="unfinished">電影故事</translation>
     </message>
 </context>
 <context>
     <name>Detail-QAView</name>
     <message>
-        <location filename="../assets/Detail-QAView.qml" line="27"/>
+        <location filename="../assets/Detail-QAView.qml" line="28"/>
         <source>Error: %1</source>
-        <translation>錯誤： %1</translation>
+        <translation type="unfinished">錯誤： %1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-QAView.qml" line="32"/>
+        <location filename="../assets/Detail-QAView.qml" line="33"/>
         <source>Error : %1</source>
-        <translation>錯誤： %1</translation>
+        <translation type="unfinished">錯誤： %1</translation>
     </message>
     <message>
         <location filename="../assets/Detail-QAView.qml" line="95"/>
         <source>Q&amp;A</source>
-        <translation>問答</translation>
+        <translation type="unfinished">問答</translation>
     </message>
     <message>
         <location filename="../assets/Detail-QAView.qml" line="97"/>
         <source>Back</source>
-        <translation>返回</translation>
+        <translation type="unfinished">返回</translation>
     </message>
     <message>
         <location filename="../assets/Detail-QAView.qml" line="179"/>
         <source>RELATED ARTICLES</source>
-        <translation>相關作品</translation>
+        <translation type="unfinished">相關作品</translation>
     </message>
 </context>
 <context>
     <name>Detail-SerialView</name>
     <message>
-        <location filename="../assets/Detail-SerialView.qml" line="37"/>
+        <location filename="../assets/Detail-SerialView.qml" line="38"/>
         <source>Error: %1</source>
-        <translation>錯誤： %1</translation>
+        <translation type="unfinished">錯誤： %1</translation>
     </message>
     <message>
-        <location filename="../assets/Detail-SerialView.qml" line="42"/>
+        <location filename="../assets/Detail-SerialView.qml" line="43"/>
         <source>Error : %1</source>
-        <translation>錯誤： %1</translation>
+        <translation type="unfinished">錯誤： %1</translation>
     </message>
     <message>
         <location filename="../assets/Detail-SerialView.qml" line="121"/>
         <source>Serials</source>
-        <translation>連載</translation>
+        <translation type="unfinished">連載</translation>
     </message>
     <message>
         <location filename="../assets/Detail-SerialView.qml" line="123"/>
         <source>Back</source>
-        <translation>返回</translation>
+        <translation type="unfinished">返回</translation>
     </message>
     <message>
         <location filename="../assets/Detail-SerialView.qml" line="231"/>
         <source>RELATED ARTICLES</source>
-        <translation>相關作品</translation>
+        <translation type="unfinished">相關作品</translation>
     </message>
 </context>
 <context>
@@ -158,7 +158,7 @@
     <message>
         <location filename="../assets/ListEssayView.qml" line="33"/>
         <source>Articles</source>
-        <translation>閱讀</translation>
+        <translation type="unfinished">閱讀</translation>
     </message>
 </context>
 <context>
@@ -166,12 +166,12 @@
     <message>
         <location filename="../assets/ListHomepageView.qml" line="127"/>
         <source>Copied to Clipboard</source>
-        <translation>已複製</translation>
+        <translation type="unfinished">已複製</translation>
     </message>
     <message>
         <location filename="../assets/ListHomepageView.qml" line="129"/>
         <source>ERROR</source>
-        <translation>複製出錯</translation>
+        <translation type="unfinished">複製出錯</translation>
     </message>
 </context>
 <context>
@@ -179,13 +179,13 @@
     <message>
         <location filename="../assets/ListMovieView.qml" line="42"/>
         <source>Movie</source>
-        <translation>電影</translation>
+        <translation type="unfinished">電影</translation>
     </message>
     <message>
-        <location filename="../assets/ListMovieView.qml" line="114"/>
-        <location filename="../assets/ListMovieView.qml" line="119"/>
+        <location filename="../assets/ListMovieView.qml" line="118"/>
+        <location filename="../assets/ListMovieView.qml" line="123"/>
         <source>Error : %1</source>
-        <translation>錯誤： %1</translation>
+        <translation type="unfinished">錯誤： %1</translation>
     </message>
 </context>
 <context>
@@ -193,7 +193,7 @@
     <message>
         <location filename="../assets/ListMusicView.qml" line="32"/>
         <source>Music</source>
-        <translation>音樂</translation>
+        <translation type="unfinished">音樂</translation>
     </message>
 </context>
 <context>
@@ -201,12 +201,12 @@
     <message>
         <location filename="../assets/Month-Essay-ListView.qml" line="33"/>
         <source>Back</source>
-        <translation>返回</translation>
+        <translation type="unfinished">返回</translation>
     </message>
     <message>
         <location filename="../assets/Month-Essay-ListView.qml" line="38"/>
         <source>Month View</source>
-        <translation>往期內容</translation>
+        <translation type="unfinished">往期內容</translation>
     </message>
 </context>
 <context>
@@ -214,12 +214,12 @@
     <message>
         <location filename="../assets/Month-HP-ListView.qml" line="33"/>
         <source>Back</source>
-        <translation>返回</translation>
+        <translation type="unfinished">返回</translation>
     </message>
     <message>
         <location filename="../assets/Month-HP-ListView.qml" line="38"/>
         <source>Month View</source>
-        <translation>往期內容</translation>
+        <translation type="unfinished">往期內容</translation>
     </message>
 </context>
 <context>
@@ -227,12 +227,12 @@
     <message>
         <location filename="../assets/Month-QA-ListView.qml" line="33"/>
         <source>Back</source>
-        <translation>返回</translation>
+        <translation type="unfinished">返回</translation>
     </message>
     <message>
         <location filename="../assets/Month-QA-ListView.qml" line="38"/>
         <source>Month View</source>
-        <translation>往期內容</translation>
+        <translation type="unfinished">往期內容</translation>
     </message>
 </context>
 <context>
@@ -240,12 +240,12 @@
     <message>
         <location filename="../assets/Month-Serials-ListView.qml" line="33"/>
         <source>Back</source>
-        <translation>返回</translation>
+        <translation type="unfinished">返回</translation>
     </message>
     <message>
         <location filename="../assets/Month-Serials-ListView.qml" line="38"/>
         <source>Month View</source>
-        <translation>往期內容</translation>
+        <translation type="unfinished">往期內容</translation>
     </message>
 </context>
 <context>
@@ -348,44 +348,44 @@
     <message>
         <location filename="../assets/Page-Articles-By-Month.qml" line="7"/>
         <source>Browse By Month</source>
-        <translation>往期內容</translation>
+        <translation type="unfinished">往期內容</translation>
     </message>
     <message>
         <location filename="../assets/Page-Articles-By-Month.qml" line="9"/>
         <source>Back</source>
-        <translation>返回</translation>
+        <translation type="unfinished">返回</translation>
     </message>
     <message>
         <location filename="../assets/Page-Articles-By-Month.qml" line="46"/>
         <source>Catagory</source>
-        <translation>分類</translation>
+        <translation type="unfinished">分類</translation>
     </message>
     <message>
         <location filename="../assets/Page-Articles-By-Month.qml" line="49"/>
         <source>Choose a catagory to browse</source>
-        <translation>請選擇要瀏覽的分類</translation>
+        <translation type="unfinished">請選擇要瀏覽的分類</translation>
     </message>
     <message>
         <location filename="../assets/Page-Articles-By-Month.qml" line="90"/>
         <location filename="../assets/Page-Articles-By-Month.qml" line="95"/>
         <source>Essay</source>
-        <translation>短篇</translation>
+        <translation type="unfinished">短篇</translation>
     </message>
     <message>
         <location filename="../assets/Page-Articles-By-Month.qml" line="91"/>
         <location filename="../assets/Page-Articles-By-Month.qml" line="96"/>
         <source>Q&amp;A</source>
-        <translation>問答</translation>
+        <translation type="unfinished">問答</translation>
     </message>
     <message>
         <location filename="../assets/Page-Articles-By-Month.qml" line="92"/>
         <source>Serials</source>
-        <translation>連載</translation>
+        <translation type="unfinished">連載</translation>
     </message>
     <message>
         <location filename="../assets/Page-Articles-By-Month.qml" line="106"/>
         <source>Current Month</source>
-        <translation>本月</translation>
+        <translation type="unfinished">本月</translation>
     </message>
 </context>
 <context>
@@ -393,17 +393,17 @@
     <message>
         <location filename="../assets/Page-By-Month.qml" line="7"/>
         <source>Browse By Month</source>
-        <translation>往期內容</translation>
+        <translation type="unfinished">往期內容</translation>
     </message>
     <message>
         <location filename="../assets/Page-By-Month.qml" line="9"/>
         <source>Back</source>
-        <translation>返回</translation>
+        <translation type="unfinished">返回</translation>
     </message>
     <message>
         <location filename="../assets/Page-By-Month.qml" line="55"/>
         <source>Current Month</source>
-        <translation>本月</translation>
+        <translation type="unfinished">本月</translation>
     </message>
 </context>
 <context>
@@ -411,22 +411,22 @@
     <message>
         <location filename="../assets/Page-Search-Essay.qml" line="16"/>
         <source>Search in Articles</source>
-        <translation>搜索短篇、連載及問答</translation>
+        <translation type="unfinished">搜索短篇、連載及問答</translation>
     </message>
     <message>
         <location filename="../assets/Page-Search-Essay.qml" line="77"/>
         <source>Articles</source>
-        <translation>文章</translation>
+        <translation type="unfinished">文章</translation>
     </message>
     <message>
         <location filename="../assets/Page-Search-Essay.qml" line="85"/>
         <source>Nothing Here</source>
-        <translation>什麼也沒有</translation>
+        <translation type="unfinished">什麼也沒有</translation>
     </message>
     <message>
         <location filename="../assets/Page-Search-Essay.qml" line="94"/>
         <source> results</source>
-        <translation> 個結果</translation>
+        <translation type="unfinished"> 個結果</translation>
     </message>
 </context>
 <context>
@@ -434,22 +434,22 @@
     <message>
         <location filename="../assets/Page-Search-Movie.qml" line="16"/>
         <source>Search in Movies</source>
-        <translation>搜索電影資料</translation>
+        <translation type="unfinished">搜索電影資料</translation>
     </message>
     <message>
         <location filename="../assets/Page-Search-Movie.qml" line="65"/>
         <source>Movies</source>
-        <translation>電影</translation>
+        <translation type="unfinished">電影</translation>
     </message>
     <message>
         <location filename="../assets/Page-Search-Movie.qml" line="73"/>
         <source>Nothing Here</source>
-        <translation>什麼也沒有</translation>
+        <translation type="unfinished">什麼也沒有</translation>
     </message>
     <message>
         <location filename="../assets/Page-Search-Movie.qml" line="82"/>
         <source> results</source>
-        <translation> 個結果</translation>
+        <translation type="unfinished"> 個結果</translation>
     </message>
 </context>
 <context>
@@ -457,22 +457,22 @@
     <message>
         <location filename="../assets/Page-Search-Music.qml" line="16"/>
         <source>Search in Musics</source>
-        <translation>搜索音樂</translation>
+        <translation type="unfinished">搜索音樂</translation>
     </message>
     <message>
         <location filename="../assets/Page-Search-Music.qml" line="65"/>
         <source>Musics</source>
-        <translation>音樂</translation>
+        <translation type="unfinished">音樂</translation>
     </message>
     <message>
         <location filename="../assets/Page-Search-Music.qml" line="73"/>
         <source>Nothing Here</source>
-        <translation>什麼也沒有</translation>
+        <translation type="unfinished">什麼也沒有</translation>
     </message>
     <message>
         <location filename="../assets/Page-Search-Music.qml" line="82"/>
         <source> results</source>
-        <translation> 個結果</translation>
+        <translation type="unfinished"> 個結果</translation>
     </message>
 </context>
 <context>
@@ -480,22 +480,22 @@
     <message>
         <location filename="../assets/Page-Search-Pic.qml" line="16"/>
         <source>Search in Pictures</source>
-        <translation>搜索圖片</translation>
+        <translation type="unfinished">搜索圖片</translation>
     </message>
     <message>
         <location filename="../assets/Page-Search-Pic.qml" line="66"/>
         <source>Pictures</source>
-        <translation>圖片</translation>
+        <translation type="unfinished">圖片</translation>
     </message>
     <message>
         <location filename="../assets/Page-Search-Pic.qml" line="74"/>
         <source>Nothing Here</source>
-        <translation>什麼也沒有</translation>
+        <translation type="unfinished">什麼也沒有</translation>
     </message>
     <message>
         <location filename="../assets/Page-Search-Pic.qml" line="83"/>
         <source> results</source>
-        <translation> 個結果</translation>
+        <translation type="unfinished"> 個結果</translation>
     </message>
 </context>
 <context>
@@ -572,46 +572,51 @@
     </message>
     <message>
         <location filename="../assets/Page-Settings.qml" line="199"/>
+        <source>*This feature is now disabled.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Settings.qml" line="206"/>
         <source>RESET APPLICATION</source>
         <translation>重置應用程式</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="207"/>
+        <location filename="../assets/Page-Settings.qml" line="214"/>
         <source>If anything wrong happens, please use this button to RESET all application settings. This will erease all cached content too.</source>
         <translation>如果發生任何異常，請使用下面的按鈕來清空應用程式的全部緩存和設置。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="215"/>
+        <location filename="../assets/Page-Settings.qml" line="222"/>
         <source>RESET</source>
         <translation>重置應用程式</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="220"/>
+        <location filename="../assets/Page-Settings.qml" line="227"/>
         <source>Settings Reseted</source>
         <translation>設置已重置</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="225"/>
+        <location filename="../assets/Page-Settings.qml" line="232"/>
         <source>IMAGE CACHE</source>
         <translation>圖像緩存</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="233"/>
+        <location filename="../assets/Page-Settings.qml" line="240"/>
         <source>This app will store as top as 100MBytes image cache on device, which will improve the application performance. Make sure you know what you&apos;re doing before you press the button below.</source>
         <translation>本應用會緩存至多100M的圖片數據，以減少網絡流量、提高應用性能。清空圖片緩存將導致全部圖片重新下載。</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="242"/>
+        <location filename="../assets/Page-Settings.qml" line="249"/>
         <source>CLEAR CACHE</source>
         <translation>清空緩存</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="245"/>
+        <location filename="../assets/Page-Settings.qml" line="252"/>
         <source>Cache Cleared</source>
         <translation>緩存已清空</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="251"/>
+        <location filename="../assets/Page-Settings.qml" line="258"/>
         <source>-- end --</source>
         <translation></translation>
     </message>
@@ -621,27 +626,27 @@
     <message>
         <location filename="../assets/Page-Sponsor.qml" line="6"/>
         <source>Sponsors</source>
-        <translation>致謝</translation>
+        <translation type="unfinished">致謝</translation>
     </message>
     <message>
         <location filename="../assets/Page-Sponsor.qml" line="8"/>
         <source>Back</source>
-        <translation>返回</translation>
+        <translation type="unfinished">返回</translation>
     </message>
     <message>
         <location filename="../assets/Page-Sponsor.qml" line="55"/>
         <source>Thanks!</source>
-        <translation>感謝！</translation>
+        <translation type="unfinished">感謝！</translation>
     </message>
     <message>
         <location filename="../assets/Page-Sponsor.qml" line="64"/>
         <source>I&apos;ve received many donations during development, thank you all for your support ! </source>
-        <translation>在《壹個 3.0》的開發過程中，得到了以下莓友的大力支持，在此向您致謝！</translation>
+        <translation type="unfinished">在《壹個 3.0》的開發過程中，得到了以下莓友的大力支持，在此向您致謝！</translation>
     </message>
     <message>
         <location filename="../assets/Page-Sponsor.qml" line="78"/>
         <source>Loading</source>
-        <translation>加載中</translation>
+        <translation type="unfinished">加載中</translation>
     </message>
 </context>
 <context>
@@ -678,18 +683,18 @@
     <message>
         <location filename="../assets/SingleHomepageView.qml" line="15"/>
         <source>Error : %1</source>
-        <translation>錯誤： %1</translation>
+        <translation type="unfinished">錯誤： %1</translation>
     </message>
     <message>
-        <location filename="../assets/SingleHomepageView.qml" line="131"/>
-        <location filename="../assets/SingleHomepageView.qml" line="142"/>
+        <location filename="../assets/SingleHomepageView.qml" line="137"/>
+        <location filename="../assets/SingleHomepageView.qml" line="148"/>
         <source>Share</source>
-        <translation>分享</translation>
+        <translation type="unfinished">分享</translation>
     </message>
     <message>
-        <location filename="../assets/SingleHomepageView.qml" line="134"/>
+        <location filename="../assets/SingleHomepageView.qml" line="140"/>
         <source>Copy</source>
-        <translation>複製</translation>
+        <translation type="unfinished">複製</translation>
     </message>
 </context>
 <context>
@@ -697,32 +702,32 @@
     <message>
         <location filename="../assets/SingleMusicView.qml" line="27"/>
         <source>Error : %1</source>
-        <translation>錯誤： %1</translation>
+        <translation type="unfinished">錯誤： %1</translation>
     </message>
     <message>
         <location filename="../assets/SingleMusicView.qml" line="28"/>
         <source>Here&apos;s %1&apos;s &lt;%2&gt;, please enjoy: %3</source>
-        <translation>這是 %1 的 《%2》，請欣賞： %3 來自《壹個》</translation>
+        <translation type="unfinished">這是 %1 的 《%2》，請欣賞： %3 來自《壹個》</translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="204"/>
+        <location filename="../assets/SingleMusicView.qml" line="209"/>
         <source>STORY</source>
-        <translation>音樂故事</translation>
+        <translation type="unfinished">音樂故事</translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="208"/>
+        <location filename="../assets/SingleMusicView.qml" line="213"/>
         <source>LYRICS</source>
-        <translation>歌詞</translation>
+        <translation type="unfinished">歌詞</translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="212"/>
+        <location filename="../assets/SingleMusicView.qml" line="217"/>
         <source>INFO</source>
-        <translation>相關信息</translation>
+        <translation type="unfinished">相關信息</translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="278"/>
+        <location filename="../assets/SingleMusicView.qml" line="283"/>
         <source>RELATED MUSIC</source>
-        <translation>相關作品</translation>
+        <translation type="unfinished">相關作品</translation>
     </message>
 </context>
 <context>
@@ -738,27 +743,27 @@
     <message>
         <location filename="../assets/main.qml" line="39"/>
         <source>Sponsors</source>
-        <translation>致謝</translation>
+        <translation type="unfinished">致謝</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="51"/>
+        <location filename="../assets/main.qml" line="52"/>
         <source>Review</source>
-        <translation>評論</translation>
+        <translation type="unfinished">評論</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="71"/>
+        <location filename="../assets/main.qml" line="72"/>
         <source>Home</source>
-        <translation>主頁</translation>
+        <translation type="unfinished">主頁</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="91"/>
+        <location filename="../assets/main.qml" line="92"/>
         <source>Articles</source>
-        <translation>閱讀</translation>
+        <translation type="unfinished">閱讀</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="111"/>
+        <location filename="../assets/main.qml" line="112"/>
         <source>Music</source>
-        <translation>音樂</translation>
+        <translation type="unfinished">音樂</translation>
     </message>
     <message>
         <source>Movie</source>

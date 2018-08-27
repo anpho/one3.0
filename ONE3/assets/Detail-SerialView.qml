@@ -16,34 +16,34 @@ Page {
     }
     function load() {
         var endp = endpoint.arg(serialid);
-        co.ajax("GET", endp, [], function(b, d) {
-                if (b) {
-                    try {
-                        d = JSON.parse(d).data;
+        var d = _app.fetch(endp);
+        var b = d.length > 0;
+        if (b) {
+            try {
+                d = JSON.parse(d).data;
 
-                        author_id = d.author.user_id
-                        author_img = d.author.web_url
-                        author_introduce = d.charge_edt
-                        author_name = d.author.user_name
+                author_id = d.author.user_id
+                author_img = d.author.web_url
+                author_introduce = d.charge_edt
+                author_name = d.author.user_name
 
-                        c_content = d.content
-                        console.log(c_content.length)
-                        c_intro = d.excerpt
-                        c_subtitle = d.number
-                        c_title = d.title
-                        c_time = d.maketime
+                c_content = d.content
+                console.log(c_content.length)
+                c_intro = d.excerpt
+                c_subtitle = d.number
+                c_title = d.title
+                c_time = d.maketime
 
-                    } catch (e) {
-                        sst.body = qsTr("Error: %1").arg(JSON.stringify(e))
-                        sst.show();
-                    }
+            } catch (e) {
+                sst.body = qsTr("Error: %1").arg(JSON.stringify(e))
+                sst.show();
+            }
 
-                } else {
-                    sst.body = qsTr("Error : %1").arg(d)
-                    sst.show();
-                }
-                loadRelated()
-            }, [], false, true)
+        } else {
+            sst.body = qsTr("Error : %1").arg(d)
+            sst.show();
+        }
+        loadRelated()
     }
     // AUTHOR
     property string author_img
@@ -72,25 +72,25 @@ Page {
     function loadRelated() {
         var endp = related_endpoint.arg(serialid)
         relatedArticles.removeAll()
-        co.ajax("GET", endp, [], function(b, d) {
-                if (b) {
-                    try {
-                        d = JSON.parse(d).data;
-                        related_content_count = d.length;
-                        for (var i = 0; i < related_content_count; i ++) {
-                            var relContainer = relatedArticle.createObject(nav);
-                            relContainer.ttitle = d[i].title;
-                            relContainer.tid = d[i].id;
-                            relContainer.tintro = d[i].excerpt;
-                            relContainer.timgurl = d[i].author.web_url;
-                            relContainer.tauthor = d[i].author.user_name;
-                            relatedArticles.add(relContainer)
-                        }
-                    } catch (e) {
-
-                    }
+        var data = _app.fetch(endp);
+        var b = data.length > 0;
+        if (b) {
+            try {
+                var d = JSON.parse(data).data;
+                related_content_count = d.length;
+                for (var i = 0; i < related_content_count; i ++) {
+                    var relContainer = relatedArticle.createObject(nav);
+                    relContainer.ttitle = d[i].title;
+                    relContainer.tid = d[i].id;
+                    relContainer.tintro = d[i].excerpt;
+                    relContainer.timgurl = d[i].author.web_url;
+                    relContainer.tauthor = d[i].author.user_name;
+                    relatedArticles.add(relContainer)
                 }
-            }, [], false)
+            } catch (e) {
+
+            }
+        }
     }
     attachedObjects: [
         Common {

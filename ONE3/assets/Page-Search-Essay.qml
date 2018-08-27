@@ -31,20 +31,20 @@ Page {
     function search_articles(q) {
         var endp = search_articles_url.arg(encodeURIComponent(q));
         act_pic.running = true
-        co.ajax("GET", endp, [], function(b, d) {
-                act_pic.running = false
-                if (b) {
-                    try {
-                        var d = JSON.parse(d).data;
-                        adm.clear()
-                        adm.append(d);
-                    } catch (e) {
-                        console.log(e)
-                    }
-                } else {
-                    console.log(d)
-                }
-            }, [])
+        var d = _app.fetch(endp);
+        var b = d.length > 0;
+        act_pic.running = false
+        if (b) {
+            try {
+                var d = JSON.parse(d).data;
+                adm.clear()
+                adm.append(d);
+            } catch (e) {
+                console.log(e)
+            }
+        } else {
+            console.log(d)
+        }
     }
     function showEssay(hid) {
         var hpview = Qt.createComponent("Detail-EssayView.qml").createObject(nav);
@@ -121,7 +121,7 @@ Page {
                 qaview.nav = nav;
                 nav.push(qaview)
             }
-            property int fontsize : nav.fontsize
+            property int fontsize: nav.fontsize
             listItemComponents: [
                 ListItemComponent {
                     type: "essay"

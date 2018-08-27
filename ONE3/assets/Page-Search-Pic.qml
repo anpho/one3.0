@@ -32,20 +32,20 @@ Page {
     function search_pic(q) {
         var endp = search_pic_url.arg(encodeURIComponent(q));
         act_pic.running = true
-        co.ajax("GET", endp, [], function(b, d) {
-                act_pic.running = false
-                if (b) {
-                    try {
-                        var d = JSON.parse(d).data;
-                        adm.clear()
-                        adm.append(d);
-                    } catch (e) {
-                        console.log(e)
-                    }
-                } else {
-                    console.log(d)
-                }
-            }, [])
+        var d = _app.fetch(endp);
+        var b = d.length > 0;
+        act_pic.running = false
+        if (b) {
+            try {
+                var d = JSON.parse(d).data;
+                adm.clear()
+                adm.append(d);
+            } catch (e) {
+                console.log(e)
+            }
+        } else {
+            console.log(d)
+        }
     }
     function showHP(hid) {
         var hpview = Qt.createComponent("Detail-HPView.qml").createObject(nav);

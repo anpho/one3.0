@@ -4,42 +4,42 @@
 <context>
     <name>Detail-EssayView</name>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="41"/>
+        <location filename="../assets/Detail-EssayView.qml" line="44"/>
         <source>Error: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="46"/>
+        <location filename="../assets/Detail-EssayView.qml" line="49"/>
         <source>Error : %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="144"/>
+        <location filename="../assets/Detail-EssayView.qml" line="147"/>
         <source>Essay</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="146"/>
+        <location filename="../assets/Detail-EssayView.qml" line="149"/>
         <source>Back</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="156"/>
+        <location filename="../assets/Detail-EssayView.qml" line="159"/>
         <source>PAUSE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="165"/>
+        <location filename="../assets/Detail-EssayView.qml" line="168"/>
         <source>PLAY</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="177"/>
+        <location filename="../assets/Detail-EssayView.qml" line="180"/>
         <source>...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-EssayView.qml" line="286"/>
+        <location filename="../assets/Detail-EssayView.qml" line="289"/>
         <source>RELATED ARTICLES</source>
         <translation type="unfinished"></translation>
     </message>
@@ -65,34 +65,34 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="79"/>
-        <location filename="../assets/Detail-MovieView.qml" line="99"/>
+        <location filename="../assets/Detail-MovieView.qml" line="80"/>
+        <location filename="../assets/Detail-MovieView.qml" line="102"/>
         <source>Error: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="85"/>
-        <location filename="../assets/Detail-MovieView.qml" line="104"/>
+        <location filename="../assets/Detail-MovieView.qml" line="86"/>
+        <location filename="../assets/Detail-MovieView.qml" line="107"/>
         <source>Error : %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="155"/>
+        <location filename="../assets/Detail-MovieView.qml" line="156"/>
         <source>Trailer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="185"/>
+        <location filename="../assets/Detail-MovieView.qml" line="186"/>
         <source>Intro</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="203"/>
+        <location filename="../assets/Detail-MovieView.qml" line="204"/>
         <source>Staff</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-MovieView.qml" line="222"/>
+        <location filename="../assets/Detail-MovieView.qml" line="223"/>
         <source>Story</source>
         <translation type="unfinished"></translation>
     </message>
@@ -100,12 +100,12 @@
 <context>
     <name>Detail-QAView</name>
     <message>
-        <location filename="../assets/Detail-QAView.qml" line="27"/>
+        <location filename="../assets/Detail-QAView.qml" line="28"/>
         <source>Error: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-QAView.qml" line="32"/>
+        <location filename="../assets/Detail-QAView.qml" line="33"/>
         <source>Error : %1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -128,12 +128,12 @@
 <context>
     <name>Detail-SerialView</name>
     <message>
-        <location filename="../assets/Detail-SerialView.qml" line="37"/>
+        <location filename="../assets/Detail-SerialView.qml" line="38"/>
         <source>Error: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Detail-SerialView.qml" line="42"/>
+        <location filename="../assets/Detail-SerialView.qml" line="43"/>
         <source>Error : %1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -182,8 +182,8 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/ListMovieView.qml" line="114"/>
-        <location filename="../assets/ListMovieView.qml" line="119"/>
+        <location filename="../assets/ListMovieView.qml" line="118"/>
+        <location filename="../assets/ListMovieView.qml" line="123"/>
         <source>Error : %1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -481,13 +481,13 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Search-Pic.qml" line="83"/>
-        <source> results</source>
+        <location filename="../assets/Page-Search-Pic.qml" line="74"/>
+        <source>Nothing Here</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Search-Pic.qml" line="74"/>
-        <source>Nothing Here</source>
+        <location filename="../assets/Page-Search-Pic.qml" line="83"/>
+        <source> results</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -565,46 +565,51 @@
     </message>
     <message>
         <location filename="../assets/Page-Settings.qml" line="199"/>
+        <source>*This feature is now disabled.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Page-Settings.qml" line="206"/>
         <source>RESET APPLICATION</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="207"/>
+        <location filename="../assets/Page-Settings.qml" line="214"/>
         <source>If anything wrong happens, please use this button to RESET all application settings. This will erease all cached content too.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="215"/>
+        <location filename="../assets/Page-Settings.qml" line="222"/>
         <source>RESET</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="220"/>
+        <location filename="../assets/Page-Settings.qml" line="227"/>
         <source>Settings Reseted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="225"/>
+        <location filename="../assets/Page-Settings.qml" line="232"/>
         <source>IMAGE CACHE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="233"/>
+        <location filename="../assets/Page-Settings.qml" line="240"/>
         <source>This app will store as top as 100MBytes image cache on device, which will improve the application performance. Make sure you know what you&apos;re doing before you press the button below.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="242"/>
+        <location filename="../assets/Page-Settings.qml" line="249"/>
         <source>CLEAR CACHE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="245"/>
+        <location filename="../assets/Page-Settings.qml" line="252"/>
         <source>Cache Cleared</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/Page-Settings.qml" line="251"/>
+        <location filename="../assets/Page-Settings.qml" line="258"/>
         <source>-- end --</source>
         <translation type="unfinished"></translation>
     </message>
@@ -674,13 +679,13 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/SingleHomepageView.qml" line="131"/>
-        <location filename="../assets/SingleHomepageView.qml" line="142"/>
+        <location filename="../assets/SingleHomepageView.qml" line="137"/>
+        <location filename="../assets/SingleHomepageView.qml" line="148"/>
         <source>Share</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/SingleHomepageView.qml" line="134"/>
+        <location filename="../assets/SingleHomepageView.qml" line="140"/>
         <source>Copy</source>
         <translation type="unfinished"></translation>
     </message>
@@ -698,22 +703,22 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="204"/>
+        <location filename="../assets/SingleMusicView.qml" line="209"/>
         <source>STORY</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="208"/>
+        <location filename="../assets/SingleMusicView.qml" line="213"/>
         <source>LYRICS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="212"/>
+        <location filename="../assets/SingleMusicView.qml" line="217"/>
         <source>INFO</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/SingleMusicView.qml" line="278"/>
+        <location filename="../assets/SingleMusicView.qml" line="283"/>
         <source>RELATED MUSIC</source>
         <translation type="unfinished"></translation>
     </message>
@@ -734,22 +739,22 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="51"/>
+        <location filename="../assets/main.qml" line="52"/>
         <source>Review</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="71"/>
+        <location filename="../assets/main.qml" line="72"/>
         <source>Home</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="91"/>
+        <location filename="../assets/main.qml" line="92"/>
         <source>Articles</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="111"/>
+        <location filename="../assets/main.qml" line="112"/>
         <source>Music</source>
         <translation type="unfinished"></translation>
     </message>

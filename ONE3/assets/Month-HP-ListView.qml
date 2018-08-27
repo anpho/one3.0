@@ -12,20 +12,20 @@ Page {
             console.log(day)
             var endp = hpmonthview_url.arg(encodeURIComponent(day));
             adm.clear();
-            co.ajax("GET", endp, [], function(b, d) {
-                    if (b) {
-                        try {
-                            d = JSON.parse(d).data;
-                            adm.append(d);
-                        } catch (e) {
-                            sst.body = JSON.stringify(e);
-                            sst.show();
-                        }
-                    } else {
-                        sst.body = d;
-                        sst.show();
-                    }
-                }, [], false)
+            var d = _app.fetch(endp);
+            var b = d.length > 0;
+            if (b) {
+                try {
+                    d = JSON.parse(d).data;
+                    adm.append(d);
+                } catch (e) {
+                    sst.body = JSON.stringify(e);
+                    sst.show();
+                }
+            } else {
+                sst.body = d;
+                sst.show();
+            }
         }
     }
     titleBar: TitleBar {

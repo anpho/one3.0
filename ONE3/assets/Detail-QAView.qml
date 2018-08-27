@@ -13,27 +13,27 @@ Page {
     }
     function load() {
         var endp = endpoint.arg(qid);
-        co.ajax("GET", endp, [], function(b, d) {
-                if (b) {
-                    try {
-                        d = JSON.parse(d).data;
+        var d = _app.fetch(endp);
+        var b = d.length > 0;
+        if (b) {
+            try {
+                d = JSON.parse(d).data;
 
-                        q_title = d.question_title
-                        q_content = d.question_content
-                        a_title = d.answer_title
-                        a_content = d.answer_content
-                        charge_edt = d.charge_edt
-                    } catch (e) {
-                        sst.body = qsTr("Error: %1").arg(JSON.stringify(e))
-                        sst.show();
-                    }
+                q_title = d.question_title
+                q_content = d.question_content
+                a_title = d.answer_title
+                a_content = d.answer_content
+                charge_edt = d.charge_edt
+            } catch (e) {
+                sst.body = qsTr("Error: %1").arg(JSON.stringify(e))
+                sst.show();
+            }
 
-                } else {
-                    sst.body = qsTr("Error : %1").arg(d)
-                    sst.show();
-                }
-                loadRelated()
-            }, [], false,true )
+        } else {
+            sst.body = qsTr("Error : %1").arg(d)
+            sst.show();
+        }
+        loadRelated()
     }
 
     // CONTENT
@@ -49,23 +49,23 @@ Page {
     function loadRelated() {
         var endp = related_endpoint.arg(qid)
         relatedArticles.removeAll()
-        co.ajax("GET", endp, [], function(b, d) {
-                if (b) {
-                    try {
-                        d = JSON.parse(d).data;
-                        related_content_count = d.length;
-                        for (var i = 0; i < related_content_count; i ++) {
-                            var relContainer = relatedArticle.createObject(nav);
-                            relContainer.ttitle = d[i].question_title;
-                            relContainer.tid = d[i].question_id;
-                            relContainer.tintro = d[i].answer_title;
-                            relatedArticles.add(relContainer)
-                        }
-                    } catch (e) {
-
-                    }
+        var data = _app.fetch(endp);
+        var b = data.length > 0;
+        if (b) {
+            try {
+                var d = JSON.parse(data).data;
+                related_content_count = d.length;
+                for (var i = 0; i < related_content_count; i ++) {
+                    var relContainer = relatedArticle.createObject(nav);
+                    relContainer.ttitle = d[i].question_title;
+                    relContainer.tid = d[i].question_id;
+                    relContainer.tintro = d[i].answer_title;
+                    relatedArticles.add(relContainer)
                 }
-            }, [], false)
+            } catch (e) {
+
+            }
+        }
     }
     attachedObjects: [
         Common {

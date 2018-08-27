@@ -192,7 +192,14 @@ Page {
                         onCheckedChanged: {
                             _app.setv("ncache", checked)
                         }
+                        enabled: false
                     }
+                }
+                Label {
+                    text: qsTr("*This feature is now disabled.")
+                    multiline: true
+                    textStyle.fontWeight: FontWeight.W100
+                    textStyle.color: Color.Red
                 }
             }
             Header {

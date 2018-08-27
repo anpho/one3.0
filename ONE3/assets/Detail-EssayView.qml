@@ -17,37 +17,40 @@ Page {
     }
     function load() {
         var endp = endpoint.arg(essayid);
-        co.ajax("GET", endp, [], function(b, d) {
-                if (b) {
-                    try {
-                        d = JSON.parse(d).data;
 
-                        author_id = d.author[0].user_id
-                        author_img = d.author[0].web_url
-                        author_introduce = d.hp_author_introduce
-                        author_it = d.auth_it
-                        author_name = d.hp_author
-                        author_weibo = d.wb_name
+        var d = _app.fetch(endp);
+        var b = d.length > 0;
 
-                        c_content = d.hp_content
-                        console.log(c_content.length)
-                        c_intro = d.guide_word
-                        c_subtitle = co.valueOrEmpty(d.sub_title)
-                        c_title = d.hp_title
-                        c_time = d.hp_makettime
+        if (b) {
+            try {
+                d = JSON.parse(d).data;
 
-                        audio_url = d.audio
-                    } catch (e) {
-                        sst.body = qsTr("Error: %1").arg(JSON.stringify(e))
-                        sst.show();
-                    }
+                author_id = d.author[0].user_id
+                author_img = d.author[0].web_url
+                author_introduce = d.hp_author_introduce
+                author_it = d.auth_it
+                author_name = d.hp_author
+                author_weibo = d.wb_name
 
-                } else {
-                    sst.body = qsTr("Error : %1").arg(d)
-                    sst.show();
-                }
-                loadRelated()
-            }, [], false, true)
+                c_content = d.hp_content
+                console.log(c_content.length)
+                c_intro = d.guide_word
+                c_subtitle = co.valueOrEmpty(d.sub_title)
+                c_title = d.hp_title
+                c_time = d.hp_makettime
+
+                audio_url = d.audio
+            } catch (e) {
+                sst.body = qsTr("Error: %1").arg(JSON.stringify(e))
+                sst.show();
+            }
+
+        } else {
+            sst.body = qsTr("Error : %1").arg(d)
+            sst.show();
+        }
+        loadRelated()
+
     }
     // AUTHOR
     property string author_img
@@ -77,26 +80,26 @@ Page {
     function loadRelated() {
         var endp = related_endpoint.arg(essayid)
         relatedArticles.removeAll()
-        co.ajax("GET", endp, [], function(b, d) {
-                if (b) {
-                    try {
-                        d = JSON.parse(d).data;
-                        related_content_count = d.length;
-                        for (var i = 0; i < related_content_count; i ++) {
-                            var relContainer = relatedArticle.createObject(nav);
-                            relContainer.ttitle = d[i].hp_title;
-                            relContainer.tid = d[i].content_id;
-                            relContainer.tintro = d[i].guide_word;
-                            relContainer.timgurl = d[i].author[0].web_url;
-                            relContainer.tauthor = d[i].author[0].user_name;
-                            relContainer.tweibo = d[i].author[0].wb_name;
-                            relatedArticles.add(relContainer)
-                        }
-                    } catch (e) {
-
-                    }
+        var data = _app.fetch(endp);
+        var b = data.length > 0;
+        if (b) {
+            try {
+                var d = JSON.parse(data).data;
+                related_content_count = d.length;
+                for (var i = 0; i < related_content_count; i ++) {
+                    var relContainer = relatedArticle.createObject(nav);
+                    relContainer.ttitle = d[i].hp_title;
+                    relContainer.tid = d[i].content_id;
+                    relContainer.tintro = d[i].guide_word;
+                    relContainer.timgurl = d[i].author[0].web_url;
+                    relContainer.tauthor = d[i].author[0].user_name;
+                    relContainer.tweibo = d[i].author[0].wb_name;
+                    relatedArticles.add(relContainer)
                 }
-            }, [], false)
+            } catch (e) {
+                console.log(e)
+            }
+        }
     }
     attachedObjects: [
         Common {
@@ -120,7 +123,7 @@ Page {
         }
     ]
     function setActive() {
-//        scrollview.scrollRole = ScrollRole.Main
+        //        scrollview.scrollRole = ScrollRole.Main
     }
     function checkstate() {
         var nowstate = nav.audiomgr.mediaState;

@@ -31,20 +31,20 @@ Page {
     function search_movie(q) {
         var endp = search_movie_url.arg(encodeURIComponent(q));
         act_movie.running = true
-        co.ajax("GET", endp, [], function(b, d) {
-                act_movie.running = false
-                if (b) {
-                    try {
-                        var d = JSON.parse(d).data;
-                        adm.clear()
-                        adm.append(d);
-                    } catch (e) {
-                        console.log(e)
-                    }
-                } else {
-                    console.log(d)
-                }
-            }, [])
+        var d = _app.fetch(endp);
+        var b = d.length > 0;
+        act_movie.running = false
+        if (b) {
+            try {
+                var d = JSON.parse(d).data;
+                adm.clear()
+                adm.append(d);
+            } catch (e) {
+                console.log(e)
+            }
+        } else {
+            console.log(d)
+        }
     }
     function showMovie(hid) {
         var hpview = Qt.createComponent("Detail-MovieView.qml").createObject(nav);
@@ -90,7 +90,7 @@ Page {
             function requestView(hid) {
                 showMovie(hid)
             }
-            property int fontsize:nav.fontsize
+            property int fontsize: nav.fontsize
             listItemComponents: [
                 ListItemComponent {
                     type: ""
