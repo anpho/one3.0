@@ -1,5 +1,5 @@
 1
-69
+70
 ArticleItemTemplate.qml
 Common.qml
 Detail-EssayView.qml
@@ -43,6 +43,7 @@ Month-Essay-ListView.qml
 Month-HP-ListView.qml
 Month-QA-ListView.qml
 Month-Serials-ListView.qml
+one3.spon
 Page-About.qml
 Page-Articles-By-Month.qml
 Page-By-Month.qml

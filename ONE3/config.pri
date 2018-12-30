@@ -95,6 +95,7 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/icon/ic_speaker_dk.png) \
         $$quote($$BASEDIR/assets/icon/ic_speaker_mute.png) \
         $$quote($$BASEDIR/assets/main.qml) \
+        $$quote($$BASEDIR/assets/one3.spon) \
         $$quote($$BASEDIR/assets/res/144.png) \
         $$quote($$BASEDIR/assets/res/github.png) \
         $$quote($$BASEDIR/assets/res/icon.png) \
@@ -117,6 +118,8 @@ config_pri_source_group1 {
         $$quote($$BASEDIR/src/WebImageView.h) \
         $$quote($$BASEDIR/src/applicationui.hpp)
 }
+
+INCLUDEPATH += $$quote($$BASEDIR/src)
 
 CONFIG += precompile_header
 

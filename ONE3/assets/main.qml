@@ -46,7 +46,7 @@ TabbedPane {
                         currentNav.push(aboutpage)
                     }
                 }
-                enabled: false
+                
             },
             ActionItem {
                 title: qsTr("Review")

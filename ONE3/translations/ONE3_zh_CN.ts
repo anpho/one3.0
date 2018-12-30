@@ -643,27 +643,27 @@
 <context>
     <name>Page-Sponsor</name>
     <message>
-        <location filename="../assets/Page-Sponsor.qml" line="6"/>
+        <location filename="../assets/Page-Sponsor.qml" line="5"/>
         <source>Sponsors</source>
         <translation>致谢</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Sponsor.qml" line="8"/>
+        <location filename="../assets/Page-Sponsor.qml" line="7"/>
         <source>Back</source>
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Sponsor.qml" line="55"/>
+        <location filename="../assets/Page-Sponsor.qml" line="44"/>
         <source>Thanks!</source>
         <translation>感谢！</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Sponsor.qml" line="64"/>
+        <location filename="../assets/Page-Sponsor.qml" line="53"/>
         <source>I&apos;ve received many donations during development, thank you all for your support ! </source>
         <translation>在《一个 3.0》的开发过程中，得到了以下莓友的大力支持，在此向您致谢！</translation>
     </message>
     <message>
-        <location filename="../assets/Page-Sponsor.qml" line="78"/>
+        <location filename="../assets/Page-Sponsor.qml" line="67"/>
         <source>Loading</source>
         <translation>加载中</translation>
     </message>
