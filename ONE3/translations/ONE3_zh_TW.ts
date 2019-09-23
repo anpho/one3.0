@@ -761,9 +761,8 @@
         <translation type="unfinished">閱讀</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="112"/>
         <source>Music</source>
-        <translation type="unfinished">音樂</translation>
+        <translation type="obsolete">音樂</translation>
     </message>
     <message>
         <source>Movie</source>

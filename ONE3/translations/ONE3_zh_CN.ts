@@ -800,9 +800,8 @@
         <translation>阅读</translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="112"/>
         <source>Music</source>
-        <translation>音乐</translation>
+        <translation type="obsolete">音乐</translation>
     </message>
     <message>
         <source>Movie</source>
